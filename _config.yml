@@ -1,0 +1,18 @@
+# Variables can be accessed via {{ site.title }}
+title: SoSeDiK's Universe
+baseurl: ""
+url: "https://sosedik.com"
+
+# Options
+plugins: []
+
+# Misc
+exclude:
+  - CNAME
+  - README.md
+  - LICENSE
+  - .sass-cache/
+  - .jekyll-cache/
+  - Gemfile
+  - Gemfile.lock
+

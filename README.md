@@ -1,1 +1,1 @@
-# sosediks-universe.github.io
+## Static website for SoSeDiK's Universe
