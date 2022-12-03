@@ -12,9 +12,10 @@ title: "Добро пожаловать"
             <form class="ip-input"><input class="mc mc-white" type="text" id="server-ip" name="server-ip" value="sosedik.com"></form>
             <button id="ip-button" class="menu-button mc mc-white" onclick="copyIp();"><span id="ip-title" class="ip-title">Копировать!</span></button>
         </div>
-        <div class="bottom_buttons">
+        <div class="bottom-buttons">
             <button id="discord-button" class="menu-button mc mc-white" onclick="window.open('https://discord.io/sosedik', '_blank');">👾 Дискорд</button>
             <button id="wiki-button" class="menu-button mc mc-white" onclick="location.href='./wiki.html'" type="button">❓ Что это?</button>
         </div>
     </div>
+    <img src="./assets/moople_logo.svg" draggable="false" alt="Moople Logo" class="moople-logo">
 </div>
