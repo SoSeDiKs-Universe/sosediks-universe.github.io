@@ -13,7 +13,7 @@ title: "Добро пожаловать"
             <button id="ip-button" class="menu-button mc mc-white" onclick="copyIp();"><span id="ip-title" class="ip-title">Копировать!</span></button>
         </div>
         <div class="bottom-buttons">
-            <button id="discord-button" class="menu-button mc mc-white" onclick="window.open('https://discord.io/sosedik', '_blank');">👾 Дискорд</button>
+            <button id="discord-button" class="menu-button mc mc-white" onclick="window.open('https://discord.gg/vrMgAsXK8z', '_blank');">👾 Дискорд</button>
             <button id="wiki-button" class="menu-button mc mc-white" onclick="location.href='./wiki.html'" type="button">❓ Что это?</button>
         </div>
     </div>
