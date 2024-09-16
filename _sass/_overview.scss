@@ -17,6 +17,10 @@ body {
   align-items: center;
 }
 
+.pixelated {
+  image-rendering: pixelated;
+}
+
 .menu-button {
   font-size: 1.2em;
   padding: 5px 10px 10px 10px;
@@ -31,8 +35,9 @@ body {
   box-shadow: inset -2px -4px #0004, inset 2px 2px #fff5;
 
   background: #999 url("https://i.ibb.co/rb2TWXL/bgbtn.png") center / cover;
-  image-rendering: pixelated;
   border: 2px solid #000;
+
+  @extend .pixelated;
 
   &:hover {
     text-shadow: 2px 2px #202013cc;
@@ -89,7 +94,7 @@ body {
   padding-top: 1rem;
 }
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 500px) {
   .mc-buttons {
     flex-direction: column;
     gap: 1rem;

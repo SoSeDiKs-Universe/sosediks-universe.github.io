@@ -15,7 +15,7 @@ You're reading `Playerpedia`{: .mc-red} — the combined knowledge database abou
 
 You may join the server using the following server address: `{{site.server_address}}`{: .mc-gold}. Currently, the server is on version `{{site.server_version}}`{: .mc-gold}.
 
-To communicate with others or ask for help, join our 👾 [Discord]({{site.discord_invite}}){: .discord} server.
+To communicate with others or ask for help, join our 👾 [Discord]({{site.discord_invite}}){: .discord} server.
 </div>
 
 
@@ -36,10 +36,16 @@ The server is in the open `alpha`{: .mc-gold} testing phase*¹, various bugs and
 
 
 ### {% href_link 👾 | Discord %}
-The main activity between the {% symlink player, Players %} takes place in our 👾 [Discord]({{site.discord_invite}}){: .discord} server.
+The main activity between the {% symlink player, Players %} takes place in our 👾 [Discord]({{site.discord_invite}}){: .discord} server.
 
 Among other things, it features:
 - A single linked chat between Discord and the Minecraft server.
 - The list of players on the server.
 - Changelog of server updates.
 - List of known bugs.
+
+
+
+## {% href_link ⚙️ | Various changes %}
+
+### {% symlink player_changes, Players %}

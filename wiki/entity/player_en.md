@@ -21,6 +21,10 @@ Possessing, hiding, or having _any_ relations with Players is strictly prohibite
 
 Despite this, the {% symlink wandering_trader, Wandering Trader %} was able to secretly bring back Players into this world.
 
+{% see_also %}
+* For changes related to players, see {% symlink player_changes, Changes — Players %}.
+{% endsee_also %}
+
 
 
 ### {% href_link ❕ | Known abilities %}
@@ -32,7 +36,7 @@ At the peak of their existence, they were capable of destroying whole planets, b
 #### {% href_link 💬 | Communication %}
 Players are capable of communicating with each other via some unknown technology*¹ not yet learned by other species of the Universe.
 
-\*¹ Chances are, it's our 👾 [Discord]({{site.discord_invite}}){: .discord}! :)
+\*¹ Chances are, it's our 👾 [Discord]({{site.discord_invite}}){: .discord}! :)
 
 
 
@@ -44,14 +48,20 @@ Despite living within this Universe in the past, the coming spirits of Players h
 
 While being in a spirit realm, they possess the ability to control golems, undead and living species.
 
-\* For more info about ghost mechanics, see {% symlink ghost, Ghosts %}.
+{% see_also %}
+* For more info about ghost mechanics, see {% symlink ghost, Ghosts %}.
+{% endsee_also %}
 
 #### {% href_link 🌐 | Pocket Worlds %}
 Each Player owns a pocket world given to them by the {% symlink wandering_trader, Wandering Trader %}.
 
-\* For more info about pocket worlds, see {% symlink pocket_world, Pocket Worlds %}.
+{% see_also %}
+* For more info about pocket worlds, see {% symlink pocket_world, Pocket Worlds %}.
+{% endsee_also %}
 
 #### {% href_link 💤 | Dreaming %}
 The Players have the ability to dream while sleeping. In dreams they're capable of accessing whole new dimensions.
 
-\* For more info about dreaming, see {% symlink dreaming, Dreaming %}.
+{% see_also %}
+* For more info about dreaming, see {% symlink dreaming, Dreaming %}.
+{% endsee_also %}

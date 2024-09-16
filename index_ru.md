@@ -11,13 +11,13 @@ page_id: landing
     <div class="server-background center-column">
         <div class="ip center-column">
             <p class="ip-text">🎮</p>
-            <p class="ip-text mc mc-gray">{{ site.data.index.address }}</p>
-            <form class="ip-input"><input class="mc mc-white" type="text" id="server-ip" name="server-ip" value="sosedik.com"></form>
-            <button id="ip-button" class="menu-button mc mc-white" onclick="copyIp();"><span id="ip-title" class="ip-title">{{ site.data.index.copy }}</span></button>
+            <p class="ip-text mc-gray">{{ site.data.index.address }}</p>
+            <form class="ip-input"><input class="mc-white" type="text" id="server-ip" name="server-ip" value="sosedik.com"></form>
+            <button id="ip-button" class="menu-button mc-white" onclick="copyIp();"><span id="ip-title" class="ip-title">{{ site.data.index.copy }}</span></button>
         </div>
         <div class="mc-buttons">
-            <button id="discord-button" class="menu-button mc mc-white" onclick="window.open('{{ site.discord_invite }}', '_blank');">👾 Discord</button>
-            <button id="wiki-button" class="menu-button mc mc-white" onclick="location.href='./wiki'" type="button">❓ {{ site.data.index.wiki }}</button>
+            <button id="discord-button" class="menu-button mc-white" onclick="window.open('{{ site.discord_invite }}', '_blank');">👾 Discord</button>
+            <button id="wiki-button" class="menu-button mc-white" onclick="location.href='./wiki'" type="button">❓ {{ site.data.index.wiki }}</button>
         </div>
         {% include language_switcher.html %}
     </div>

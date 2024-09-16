@@ -17,6 +17,12 @@ body {
 
 
 
+.pixelated {
+  image-rendering: pixelated;
+}
+
+
+
 
 .nav-bar {
   top: 0;
@@ -158,4 +164,8 @@ div.welcome {
 
 a.href-link {
   text-decoration: none;
+}
+
+.see_also {
+  font-size: 0.8em;
 }

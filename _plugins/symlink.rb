@@ -9,6 +9,14 @@ module Jekyll
         'player' => {
           image: 'https://minecraft.wiki/images/EntitySprite_steve.png',
           url: '/wiki/entity/player'
+        },
+        'llama' => {
+          image: 'https://minecraft.wiki/images/EntitySprite_creamy-llama.png',
+          url: '/wiki/entity/llama'
+        },
+        'player_changes' => {
+          emoji: '⚙️',
+          url: '/wiki/misc/player_changes'
         }
       }
   
@@ -27,15 +35,24 @@ module Jekyll
         return %Q{<span class="mc-gold">#{link_text}</span> <span class="mc-red">[🛠️]</span>} unless tag_data
   
         image_src = tag_data[:image]
+        emoji_src = tag_data[:emoji]
         wiki_url = context.registers[:site].config['url'] + tag_data[:url]
         current_url = context.environments.first['page']['url'] || context.environments.first['page']['permalink']
   
         # No link if current page is the same
         if current_url == tag_data[:url]
-            return %Q{<img src="#{image_src}" alt="#{link_text}" draggable="false"> <span class="mc-gold">#{link_text}</span>}
+          if (emoji_src)
+            return %Q{#{emoji_src} <span class="mc-gold">#{link_text}</span>}
+          else
+            return %Q{<img src="#{image_src}" alt="#{link_text}" draggable="false" class="pixelated"> <span class="mc-gold">#{link_text}</span>}
+          end
         end
 
-        %Q{<img src="#{image_src}" alt="#{link_text}" draggable="false"> <a href="#{wiki_url}" class="wiki-link mc-gold">#{link_text}</a>}
+        if (emoji_src)
+          return %Q{#{emoji_src} <a href="#{wiki_url}" class="wiki-link mc-gold">#{link_text}</a>}
+        else
+          return %Q{<img src="#{image_src}" alt="#{link_text}" draggable="false" class="pixelated"> <a href="#{wiki_url}" class="wiki-link mc-gold">#{link_text}</a>}
+        end
       end
     end
   end
