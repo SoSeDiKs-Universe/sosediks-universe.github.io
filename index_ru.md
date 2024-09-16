@@ -16,7 +16,7 @@ page_id: landing
             <button id="ip-button" class="menu-button mc mc-white" onclick="copyIp();"><span id="ip-title" class="ip-title">{{ site.data.index.copy }}</span></button>
         </div>
         <div class="mc-buttons">
-            <button id="discord-button" class="menu-button mc mc-white" onclick="window.open('https://discord.gg/vrMgAsXK8z', '_blank');">👾 Discord</button>
+            <button id="discord-button" class="menu-button mc mc-white" onclick="window.open('{{ site.discord_invite }}', '_blank');">👾 Discord</button>
             <button id="wiki-button" class="menu-button mc mc-white" onclick="location.href='./wiki'" type="button">❓ {{ site.data.index.wiki }}</button>
         </div>
         {% include language_switcher.html %}
