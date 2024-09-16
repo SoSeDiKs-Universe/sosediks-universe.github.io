@@ -21,9 +21,9 @@ Possessing, hiding, or having _any_ relations with `Players`{: .mc-gold} is stri
 
 Despite this, the {% symlink wandering_trader, Wandering Trader %} was able to secretly bring back `Players`{: .mc-gold} into this world.
 
-{% see_also %}
+{% side_note %}
 * For changes related to `Players`{: .mc-gold}, see {% symlink player_changes, Changes — Players %}.
-{% endsee_also %}
+{% endside_note %}
 
 
 
@@ -48,20 +48,20 @@ Despite living within this Universe in the past, the coming spirits of `Players`
 
 While being in a spirit realm, they possess the ability to control golems, undead and living species.
 
-{% see_also %}
+{% side_note %}
 * For more info about ghost mechanics, see {% symlink ghost, Ghosts %}.
-{% endsee_also %}
+{% endside_note %}
 
 #### {% href_link 🌐 | Pocket Worlds %}
 Each `Player`{: .mc-gold} owns a pocket world given to them by the {% symlink wandering_trader, Wandering Trader %}.
 
-{% see_also %}
+{% side_note %}
 * For more info about pocket worlds, see {% symlink pocket_world, Pocket Worlds %}.
-{% endsee_also %}
+{% endside_note %}
 
 #### {% href_link 💤 | Dreaming %}
 The `Players`{: .mc-gold} have the ability to dream while sleeping. In dreams they're capable of accessing whole new dimensions.
 
-{% see_also %}
+{% side_note %}
 * For more info about dreaming, see {% symlink dreaming, Dreaming %}.
-{% endsee_also %}
+{% endside_note %}

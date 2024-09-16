@@ -11,8 +11,7 @@ module Jekyll
           url: '/wiki/entity/player'
         },
         'llama' => {
-          image: 'https://minecraft.wiki/images/EntitySprite_creamy-llama.png',
-          url: '/wiki/entity/llama'
+          image: 'https://minecraft.wiki/images/EntitySprite_creamy-llama.png'
         },
         'player_changes' => {
           emoji: '⚙️',
@@ -36,17 +35,18 @@ module Jekyll
   
         image_src = tag_data[:image]
         emoji_src = tag_data[:emoji]
-        wiki_url = context.registers[:site].config['url'] + tag_data[:url]
         current_url = context.environments.first['page']['url'] || context.environments.first['page']['permalink']
   
-        # No link if current page is the same
-        if current_url == tag_data[:url]
+        # No link if link is missing or the current page is the same
+        if !tag_data[:url] || current_url == tag_data[:url]
           if (emoji_src)
             return %Q{#{emoji_src} <span class="mc-gold">#{link_text}</span>}
           else
             return %Q{<img src="#{image_src}" alt="#{link_text}" draggable="false" class="pixelated"> <span class="mc-gold">#{link_text}</span>}
           end
         end
+
+        wiki_url = context.registers[:site].config['url'] + tag_data[:url]
 
         if (emoji_src)
           return %Q{#{emoji_src} <a href="#{wiki_url}" class="wiki-link mc-gold">#{link_text}</a>}

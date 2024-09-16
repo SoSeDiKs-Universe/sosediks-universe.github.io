@@ -31,9 +31,13 @@ The `Wandering Trader`{: .mc-gold} was somehow able to bring back {% symlink pla
 
 The reasons behind why the `Wandering Trader`{: .mc-gold} did this are unknown.
 
-\* For more info about ghost mechanics, see {% symlink ghost, Ghosts %}.
+{% side_note %}
+* For more info about ghost mechanics, see {% symlink ghost, Ghosts %}.
+{% endside_note %}
 
 #### {% href_link 🌐 | Pocket Worlds %}
 The `Wandering Trader`{: .mc-gold} can create pocket dimensions, bend time and break the laws of nature. The entity gives each player it has brought, an empty pocket world free of cost and no strings attached.
 
-\* For more info about pocket worlds, see {% symlink pocket_world, Pocket Worlds %}.
+{% side_note %}
+* For more info about pocket worlds, see {% symlink pocket_world, Pocket Worlds %}.
+{% endside_note %}
