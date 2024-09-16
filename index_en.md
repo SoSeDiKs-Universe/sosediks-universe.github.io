@@ -17,7 +17,7 @@ page_id: landing
         </div>
         <div class="mc-buttons">
             <button id="discord-button" class="menu-button mc mc-white" onclick="window.open('https://discord.gg/vrMgAsXK8z', '_blank');">👾 Discord</button>
-            <button id="wiki-button" class="menu-button mc mc-white" onclick="location.href='./wiki.html'" type="button">❓ {{ site.data.index.wiki }}</button>
+            <button id="wiki-button" class="menu-button mc mc-white" onclick="location.href='./wiki'" type="button">❓ {{ site.data.index.wiki }}</button>
         </div>
         {% include language_switcher.html %}
     </div>
