@@ -1,16 +1,26 @@
 # Variables can be accessed via {{ site.title }}
 title: SoSeDiK's Universe
-baseurl: ""
 url: "https://sosedik.com"
+discord_invite: "https://discord.gg/vrMgAsXK8z"
+server_address: "sosedik.com"
+server_version: "1.21.1"
+
+# Polyglot
+default_lang: "en"
+languages: ["en", "ru", "uk"]
+exclude_from_localization: ["javascript", "images", "css", "public"]
+parallel_localization: true
 
 # Options
-plugins: []
+plugins:
+  - jekyll-polyglot
 
 # Misc
 exclude:
   - CNAME
   - README.md
   - LICENSE
+  - shell.nix
   - .sass-cache/
   - .jekyll-cache/
   - Gemfile

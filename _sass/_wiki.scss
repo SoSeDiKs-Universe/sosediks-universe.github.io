@@ -20,31 +20,45 @@ body {
 
 .nav-bar {
   top: 0;
-  bottom:0;
-  position:fixed;
-  overflow-y:scroll;
-  overflow-x:hidden;
-
+  bottom: 0;
+  position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
   width: 20rem;
   margin-right: 3em;
   background-color: #2d2d2d;
+  display: flex;
+  flex-direction: column;
 
-  h2 {
-    color: #ff5555;
-    text-shadow: 1px 1px 0 #3f1515;
+  .nav-links {
+    flex: 1;
+
+    h2 {
+      color: #ff5555;
+      text-shadow: 1px 1px 0 #3f1515;
+    }
+
+    p {
+      padding-left: 1.7em;
+    }
+
+    a {
+      padding-left: 2.5em;
+      line-height: 1.5em;
+      display: block;
+      color: #b85c38;
+    }
   }
 
-  p {
-    padding-left: 1.7em;
-  }
+  .nav-langs {
+    padding: 1em;
 
-  a {
-    padding-left: 2.5em;
-    line-height: 1.5em;
-    display: block;
-    color: #b85c38;
+    a.language-link {
+      text-decoration: none;
+    }
   }
 }
+
 
 @media only screen and (max-width: 1080px) {
   .nav-bar {
@@ -137,4 +151,11 @@ div.welcome {
   .server-logo {
     height: 20vw;
   }
+}
+
+
+
+
+a.href-link {
+  text-decoration: none;
 }

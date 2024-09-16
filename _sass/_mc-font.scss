@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Minecraft";
-  src: url(../fonts/Minecraft.woff2) format('woff2'),
-       url(../fonts/Minecraft.woff) format('woff');
+  src: url(../fonts/Minecraft_Seven_2.woff2) format("woff2"),
+    url(../fonts/Minecraft_Seven_2.woff) format("woff");
 }
 
 .mc {
@@ -11,79 +11,95 @@
 .mc-black {
   color: #000000;
   text-shadow: 1px 1px 0 #000000;
+  @extend .mc;
 }
 
 .mc-dark-blue {
   color: #0000aa;
   text-shadow: 1px 1px 0 #00002a;
+  @extend .mc;
 }
 
 .mc-dark-green {
   color: #00aa00;
   text-shadow: 1px 1px 0 #002a00;
+  @extend .mc;
 }
 
 .mc-dark-aqua {
   color: #00aaaa;
   text-shadow: 1px 1px 0 #002a2a;
+  @extend .mc;
 }
 
 .mc-dark-red {
   color: #aa0000;
   text-shadow: 1px 1px 0 #2a0000;
+  @extend .mc;
 }
 
 .mc-dark-purple {
   color: #aa00aa;
   text-shadow: 1px 1px 0 #2a002a;
+  @extend .mc;
 }
 
 .mc-gold {
   color: #ffaa00;
   text-shadow: 1px 1px 0 #2a2a00;
+  @extend .mc;
 }
 
 .mc-gray {
   color: #aaaaaa;
   text-shadow: 1px 1px 0 #2a2a2a;
+  @extend .mc;
 }
 
 .mc-dark-gray {
   color: #555555;
   text-shadow: 1px 1px 0 #151515;
+  @extend .mc;
 }
 
 .mc-blue {
   color: #5555ff;
   text-shadow: 1px 1px 0 #15153f;
+  @extend .mc;
 }
 
 .mc-green {
   color: #55ff55;
   text-shadow: 1px 1px 0 #153f15;
+  @extend .mc;
 }
 
 .mc-aqua {
   color: #55ffff;
   text-shadow: 1px 1px 0 #153f3f;
+  @extend .mc;
 }
 
 .mc-red {
   color: #ff5555;
   text-shadow: 1px 1px 0 #3f1515;
+  @extend .mc;
 }
 
 .mc-light-purple {
   color: #ff55ff;
   text-shadow: 1px 1px 0 #3f153f;
+  @extend .mc;
 }
 
 .mc-yellow {
   color: #ffff55;
   text-shadow: 1px 1px 0 #3f3f15;
+  @extend .mc;
 }
 
 .mc-white {
   color: #ffffff;
   text-shadow: 1px 1px 0 #3f3f3f;
+  @extend .mc;
 }

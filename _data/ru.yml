@@ -1,0 +1,9 @@
+index:
+  title: "Вселенная Соседа"
+  address: "Адресс сервера"
+  copy: "Скопировать!"
+  wiki: "Узнать больше"
+sidebar:
+  title: "Игрокопедия"
+  sections:
+    introduction: "Вступление"

@@ -4,50 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="icon" href="./assets/favicon.svg" />
-    <link rel="stylesheet" href="./assets/css/wiki.css">
-    <link rel="stylesheet" href="./assets/css/mc-font.css">
-    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
-    <script>
-      window.onload = function() {    
-          twemoji.parse(document.body, 
-                  {folder: 'svg', ext: '.svg'}
-          );
-      
-      }
-    </script>
-    <style>
-      img.emoji {
-        display: inline !important;
-        border: none !important;
-        box-shadow: none !important;
-        height: 1em !important;
-        width: 1em !important;
-        margin: 0 .07em !important;
-        vertical-align: -0.1em !important;
-        background: none !important;
-        padding: 0 !important;
-        pointer-events: none
-      }
-    </style>
+    <link rel="icon" href="/assets/favicon.svg" />
+    <link rel="stylesheet" href="/assets/css/wiki.css">
+    <link rel="stylesheet" href="/assets/css/mc-font.css">
   </head>
-  <body class="mc mc-gray">
+  <body class="mc-gray">
     <div class="nav-bar">
-      <p>Навигация</p>
-      <a href="#-вступление">Вступление</a>
-      <a href="#-режимы-игры">Режимы игры</a>
-      <a href="#-изменения--механики">Механики</a>
-      <a href="#-изменения--предметы">Предметы</a>
-      <a href="#-изменения--снаряды">Снаряды</a>
-      <a href="#-изменения--блоки">Блоки</a>
-      <a href="#-изменения--окружение">Окружение</a>
-      <a href="#-изменения--транспорт">Транспорт</a>
-      <a href="#-изменения--передвижение">Передвижение</a>
-      <a href="#-изменения--сущностимобы">Сущности/мобы</a>
-      <a href="#-изменения--взаимодействие-между-игроками">Взаимодействия</a>
-      <a href="#-изменения--чат">Чат</a>
-      <a href="#-изменения--исправления-багов">Исправления багов</a>
-      <a href="#-изменения--что">Что?</a>
+      <div class="nav-links">
+        <p>{{ site.data.sidebar.title }}</p>
+        <a href="/wiki">{{ site.data.sidebar.sections.introduction }}</a>
+      </div>
+      <div class="nav-langs">
+        {% include language_switcher.html %}
+      </div>
     </div>
     <div class="content">
       {{ content }}

@@ -1,0 +1,24 @@
+<div class="language-switcher">
+    {% assign current_lang = site.active_lang | default: site.lang %}
+    {% assign languages = site.languages %}
+    <div class="language-flags">
+        {% for lang in languages %}
+            {% unless lang == current_lang %}
+                {% case lang %}
+                    {% when 'ru' %}
+                        {% assign lang_emoji = "🇷🇺" %}
+                    {% when 'uk' %}
+                        {% assign lang_emoji = "🇺🇦" %}
+                    {% else %}
+                        {% assign lang_emoji = "🇬🇧" %}
+                {% endcase %}
+
+                {% if lang == site.default_lang %}
+                    <a href=" {{ page.url }}" class="language-link">{{ lang_emoji }}</a>
+                {% else %}
+                    <a href="/{{ lang }}{{ page.url }}" class="language-link">{{ lang_emoji }}</a>
+                {% endif %}
+            {% endunless %}
+        {% endfor %}
+    </div>
+</div>

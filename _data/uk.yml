@@ -1,0 +1,9 @@
+index:
+  title: "Всесвіт Сусіда"
+  address: "Адреса сервера"
+  copy: "Скопіювати!"
+  wiki: "Дізнатись більше"
+sidebar:
+  title: "Гравцепедія"
+  sections:
+    introduction: "Вступ"
