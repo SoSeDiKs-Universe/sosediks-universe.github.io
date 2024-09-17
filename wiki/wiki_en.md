@@ -9,7 +9,7 @@ page_id: wiki
 <img src="/assets/server_logo.png" draggable="false" alt="Server Logo" class="server-logo">
 
 <div markdown="1" class="welcome">
-Welcome to `SoSeDiK's Universe`{: .mc-dark-aqua} (i.e. `"Neighbour's Universe"`{: .mc-dark-aqua})!
+Welcome to `SoSeDiK's Universe`{: .mc-dark-aqua} (i.e. `"Neighbor's Universe"`{: .mc-dark-aqua})!
 
 You're reading `Playerpedia`{: .mc-red} — the combined knowledge database about the server's content.
 
