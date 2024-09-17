@@ -7,6 +7,11 @@ page_id: wiki_entity_player
 ---
 
 ## {% href_link 🔗 | Player %}
+
+{% side_note %}
+* For changes related to {% symlink player, Players %}, see {% symlink player_changes, Changes — Players %}.
+{% endside_note %}
+
 {% symlink player, Players %} {% wiki_link Player %} were once a very advanced civilization capable of unimaginable things. Nowadays they are believed to be an extinct species.
 
 `Players`{: .mc-gold} spanned across many parts of the Universe, bringing both joy and destruction on their path.
@@ -20,10 +25,6 @@ After the destruction begun and `Players`{: .mc-gold} became `wanted`{: .mc-red}
 Possessing, hiding, or having _any_ relations with `Players`{: .mc-gold} is strictly prohibited by the intergalactic law.
 
 Despite this, the {% symlink wandering_trader, Wandering Trader %} was able to secretly bring back `Players`{: .mc-gold} into this world.
-
-{% side_note %}
-* For changes related to `Players`{: .mc-gold}, see {% symlink player_changes, Changes — Players %}.
-{% endside_note %}
 
 
 
