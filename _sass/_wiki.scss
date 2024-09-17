@@ -65,10 +65,17 @@ body {
   }
 }
 
+.mobile-sidebar {
+  display: none;
+}
+
 
 @media only screen and (max-width: 1080px) {
   .nav-bar {
     display: none;
+  }
+  .mobile-sidebar {
+    display: block;
   }
 }
 
@@ -112,12 +119,16 @@ body {
 @media only screen and (max-width: 660px) {
   .content {
     text-align: center;
-    font-size: 0.8em;
     padding-left: 1em;
     padding-right: 1em;
+    font-size: 0.8em;
   }
 
-  h2, h3, p, li {
+  ul, ol, li {
+    text-align: left;
+  }
+
+  h2, h3, p {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -175,6 +186,7 @@ img.img-link {
 }
 
 .game-action-key {
+  display: inline-block;
   padding: 3px 8px;
   background-color: #383838;
   outline: 2px solid #1E1E1E;

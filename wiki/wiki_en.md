@@ -46,6 +46,8 @@ Among other things, it features:
 
 
 
+<div markdown="1" class="mobile-sidebar">
 ## {% href_link ⚙️ | Various changes %}
 
 ### {% symlink player_changes, Players %}
+</div>
