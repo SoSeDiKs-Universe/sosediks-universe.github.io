@@ -50,4 +50,5 @@ Among other things, it features:
 ## {% href_link ⚙️ | Various changes %}
 
 ### {% symlink player_changes, Players %}
+### {% symlink block_changes, Blocks %}
 </div>

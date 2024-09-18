@@ -39,6 +39,18 @@ module Jekyll
         'water' => {
           image: 'https://minecraft.wiki/images/Water_JE16-a1.png'
         },
+        'campfire' => {
+          image: 'https://minecraft.wiki/images/Invicon_Campfire.png'
+        },
+        'oak_door' => {
+          image: 'https://minecraft.wiki/images/Invicon_Oak_Door.png'
+        },
+        'oak_trapdoor' => {
+          image: 'https://minecraft.wiki/images/Invicon_Oak_Trapdoor.png'
+        },
+        'oak_button' => {
+          image: 'https://minecraft.wiki/images/Invicon_Oak_Button.png'
+        },
         # Internal items
         'gloves' => {
           emoji: '🧤',
@@ -48,6 +60,10 @@ module Jekyll
         'player_changes' => {
           emoji: '⚙️',
           url: '/wiki/misc/player_changes'
+        },
+        'block_changes' => {
+          emoji: '⚙️',
+          url: '/wiki/misc/block_changes'
         }
       }
   

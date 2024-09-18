@@ -46,6 +46,9 @@ page_id: wiki
 
 
 
+<div markdown="1" class="mobile-sidebar">
 ## {% href_link ⚙️ | Различные изменения %}
 
 ### {% symlink player_changes, Игроки %}
+### {% symlink block_changes, Блоки %}
+</div>

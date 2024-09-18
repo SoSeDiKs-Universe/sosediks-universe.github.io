@@ -9,22 +9,22 @@ module Jekyll
       current_lang = context.registers[:site].config['active_lang'] || context.registers[:page]['lang']
 
       link_base = case current_lang
-                  when 'ru'
-                    "https://minecraft.wiki/w/#{@text}"
-                  when 'uk'
-                    "https://uk.minecraft.wiki/w/#{@text}"
-                  else # Default to English
-                    "https://minecraft.wiki/w/#{@text}"
-                  end
+                    when 'ru'
+                      "https://minecraft.wiki/w/#{@text}"
+                    when 'uk'
+                      "https://uk.minecraft.wiki/w/#{@text}"
+                    else # Default to English
+                      "https://minecraft.wiki/w/#{@text}"
+                    end
 
       link_text = case current_lang
-                  when 'ru'
-                    '[Вики]'
-                  when 'uk'
-                    '[Вікі]'
-                  else
-                    '[Wiki]'
-                  end
+                    when 'ru'
+                      '[Вики]'
+                    when 'uk'
+                      '[Вікі]'
+                    else
+                      '[Wiki]'
+                    end
 
       %Q{<a href="#{link_base}" class="wiki-link mc-dark-gray" target="_blank">#{link_text}</a>}
     end

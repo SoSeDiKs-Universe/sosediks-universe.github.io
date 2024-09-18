@@ -7,6 +7,8 @@ module Jekyll
     end
 
     def render(context)
+      current_lang = context.registers[:site].config['active_lang'] || context.registers[:page]['lang']
+
       action_button = case @action
                         when 'drop'
                           "Q"
@@ -15,9 +17,23 @@ module Jekyll
                         when 'advancements'
                           "L"
                         when 'attack'
-                          "LMB"
+                          case current_lang
+                            when 'ru'
+                              "ЛКМ"
+                            when 'uk'
+                              "ЛКМ"
+                            else
+                              "LMB"
+                            end
                         when 'use'
-                          "RMB"
+                          case current_lang
+                            when 'ru'
+                              "ПКМ"
+                            when 'uk'
+                              "ПКМ"
+                            else
+                              "RMB"
+                            end
                         when 'sneak'
                           "LShift"
                         when 'sprint'
