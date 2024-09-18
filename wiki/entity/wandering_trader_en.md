@@ -25,7 +25,7 @@ Other species seem to not know about the `Wandering Trader`{: .mc-gold}'s powerf
 
 
 
-### {% href_link ❔ | Unknown abilities %}
+### {% href_link ❔ | Hidden abilities %}
 #### {% href_link 🌀 | Soul Link %}
 The `Wandering Trader`{: .mc-gold} was somehow able to bring back {% symlink player, Players %} into this Universe by allowing them to "soul link" and exist within the spirit realm while also having the ability to interact with the material world.
 

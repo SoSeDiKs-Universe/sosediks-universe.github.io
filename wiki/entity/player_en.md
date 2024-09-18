@@ -41,7 +41,7 @@ At the peak of their existence, they were capable of destroying whole planets, b
 
 
 
-### {% href_link ❔ | Unknown abilities %}
+### {% href_link ❔ | Hidden abilities %}
 #### {% href_link 🌀 | Soul Link %}
 Thanks to the {% symlink wandering_trader, Wandering Trader %}, `Players`{: .mc-gold} have the ability to enter and leave our Universe any time they want.
 
