@@ -21,6 +21,19 @@ Since both clothing and armor occupy the same slots, you can switch the preview 
 
 You can put _any_ item (1 pc.) in the helmet clothing slot. Some items will have functionality when worn this way, such as lighting the way with a {% symlink torch, Torch %}, or allowing other {% symlink player, Players %} to ride on you with a {% symlink saddle, Saddle %}.
 
+
+
+## {% href_link 🤸 | Movement %}
+
+### {% href_link 🌊 | Swimming improvements %}
+When swimming on the surface of water, air won't be consumed, which allows you to swim quickly without getting out of breath.
+
+When sprinting on the surface of water, you can enter swimming mode, even if the water is one block high.
+
+Ability to jump out of the water onto a block above the water.
+
+
+
 ## {% href_link 🤝 | Player interactions %}
 
 ### {% href_link ❔ | Stealth %}
