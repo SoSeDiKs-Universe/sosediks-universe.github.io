@@ -18,11 +18,38 @@ module Jekyll
         'bucket' => {
           image: 'https://minecraft.wiki/images/Invicon_Bucket.png'
         },
+        'lava_bucket' => {
+          image: 'https://minecraft.wiki/images/Invicon_Lava_Bucket.png'
+        },
+        'blaze_powder' => {
+          image: 'https://minecraft.wiki/images/Invicon_Blaze_Powder.png'
+        },
+        'blaze_rod' => {
+          image: 'https://minecraft.wiki/images/Invicon_Blaze_Rod.png'
+        },
+        'fire_charge' => {
+          image: 'https://minecraft.wiki/images/Invicon_Fire_Charge.png'
+        },
+        'magma_cream' => {
+          image: 'https://minecraft.wiki/images/Invicon_Magma_Cream.png'
+        },
         'torch' => {
           image: 'https://minecraft.wiki/images/Invicon_Torch.png'
         },
         'saddle' => {
           image: 'https://minecraft.wiki/images/Invicon_Saddle.png'
+        },
+        'glass_bottle' => {
+          image: 'https://minecraft.wiki/images/Invicon_Glass_Bottle.png'
+        },
+        'potion' => {
+          image: 'https://minecraft.wiki/images/Invicon_Water_Bottle.png'
+        },
+        'potion_water' => {
+          image: 'https://minecraft.wiki/images/Invicon_Water_Bottle.png'
+        },
+        'honey_bottle' => {
+          image: 'https://minecraft.wiki/images/Invicon_Honey_Bottle.png'
         },
         'leather_helmet' => {
           image: 'https://minecraft.wiki/images/Invicon_Leather_Cap.png'
@@ -50,6 +77,12 @@ module Jekyll
         },
         'oak_button' => {
           image: 'https://minecraft.wiki/images/Invicon_Oak_Button.png'
+        },
+        'oak_sign' => {
+          image: 'https://minecraft.wiki/images/Invicon_Oak_Sign.png'
+        },
+        'magma_block' => {
+          image: 'https://minecraft.wiki/images/Invicon_Magma_Block.gif'
         },
         # Internal items
         'gloves' => {
