@@ -57,6 +57,12 @@ module Jekyll
         'leather_chestplate' => {
           image: 'https://minecraft.wiki/images/Invicon_Leather_Tunic.png'
         },
+        'item_frame' => {
+          image: 'https://minecraft.wiki/images/Invicon_Item_Frame.png'
+        },
+        'writable_book' => {
+          image: 'https://minecraft.wiki/images/Invicon_Book_and_Quill.png'
+        },
         'glass' => {
           image: 'https://minecraft.wiki/images/Invicon_Glass.png'
         },

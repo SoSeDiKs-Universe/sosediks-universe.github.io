@@ -17,13 +17,19 @@ If you hold a hot item in your other hand, the bottle will not refill with water
 
 ## {% href_link 🧩 | Miscellaneous %}
 
+### {% href_link 📖 | Readable books in item frames %}
+{% symlink writable_book, Books%} placed in {% symlink item_frame, Item Frames %} can be read with {% game_action use %}.
+
+### {% href_link 📓 | Book formatting preview %}
+You may preview the {% symlink writable_book, Book's %} formatting (i.e. how the book would look after signing) by using {% game_action use %} while sneaking.
+
 ### {% href_link 🫗 | Bottle retrieval %}
 Bottled items (e.g. {% symlink potion, Potions %}, {% symlink honey_bottle, Honey Bottle %}, etc.) can be turned into an empty {% symlink glass_bottle, Glass Bottle %} when placed in a crafting grid. Being underwater will produce a {% symlink potion_water, Water Bottle %} instead.
 
 ### {% href_link 🔥 | Hot items %}
 Some items are considered "hot" and may interact with gameplay mechanics, such as {% symlink gloves, Gloves %} or bottled air.
 
-The items that are considered hot:
+The following items are considered hot:
 - {% symlink lava_bucket, Lava Bucket %}
 - {% symlink blaze_powder, Blaze Powder %}
 - {% symlink blaze_rod, Blaze Rod %}

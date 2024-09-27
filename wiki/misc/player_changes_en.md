@@ -34,6 +34,16 @@ Ability to jump out of the water onto a block above the water.
 
 
 
+## {% href_link 🗣️ | Chatting %}
+
+### {% href_link *️⃣ | Formatting %}
+Chat, signs and books support formatting with Markdown and MiniMessage, allowing for rich messages.
+
+### {% href_link 💖 | Emoji %}
+Server resource pack ships with full support for Emoji 14.
+
+
+
 ## {% href_link 🤝 | Player interactions %}
 
 ### {% href_link ❔ | Stealth %}
