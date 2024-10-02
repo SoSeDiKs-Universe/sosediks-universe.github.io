@@ -60,6 +60,9 @@ module Jekyll
         'item_frame' => {
           image: 'https://minecraft.wiki/images/Invicon_Item_Frame.png'
         },
+        'painting' => {
+          image: 'https://minecraft.wiki/images/Invicon_Painting.png'
+        },
         'writable_book' => {
           image: 'https://minecraft.wiki/images/Invicon_Book_and_Quill.png'
         },
@@ -81,6 +84,9 @@ module Jekyll
         'oak_trapdoor' => {
           image: 'https://minecraft.wiki/images/Invicon_Oak_Trapdoor.png'
         },
+        'oak_fence_gate' => {
+          image: 'https://minecraft.wiki/images/Invicon_Oak_Fence_Gate.png'
+        },
         'oak_button' => {
           image: 'https://minecraft.wiki/images/Invicon_Oak_Button.png'
         },
@@ -89,6 +95,9 @@ module Jekyll
         },
         'magma_block' => {
           image: 'https://minecraft.wiki/images/Invicon_Magma_Block.gif'
+        },
+        'chest' => {
+          image: 'https://minecraft.wiki/images/Invicon_Chest.png'
         },
         # Internal items
         'gloves' => {
