@@ -50,6 +50,7 @@ page_id: wiki
 ## {% href_link ⚙️ | Різноманітні зміни %}
 
 ### {% symlink player_changes, Гравці %}
+### {% symlink vehicle_changes, Транспорт %}
 ### {% symlink item_changes, Предмети %}
 ### {% symlink block_changes, Блоки %}
 </div>

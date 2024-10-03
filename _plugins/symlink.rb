@@ -14,6 +14,9 @@ module Jekyll
         'llama' => {
           image: 'https://minecraft.wiki/images/EntitySprite_creamy-llama.png'
         },
+        'oak_boat_entity' => {
+          image: 'https://minecraft.wiki/images/thumb/Oak_Boat_JE4_BE2.png/150px-Oak_Boat_JE4_BE2.png'
+        },
         # Items
         'bucket' => {
           image: 'https://minecraft.wiki/images/Invicon_Bucket.png'
@@ -108,6 +111,14 @@ module Jekyll
         'player_changes' => {
           emoji: '⚙️',
           url: '/wiki/misc/player_changes'
+        },
+        'vehicle_changes' => {
+          emoji: '⚙️',
+          url: '/wiki/misc/vehicle_changes'
+        },
+        'item_changes' => {
+          emoji: '⚙️',
+          url: '/wiki/misc/item_changes'
         },
         'block_changes' => {
           emoji: '⚙️',
