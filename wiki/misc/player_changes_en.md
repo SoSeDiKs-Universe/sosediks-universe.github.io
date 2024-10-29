@@ -32,6 +32,9 @@ When sprinting on the surface of water, you can enter swimming mode, even if the
 
 Ability to jump out of the water onto a block above the water.
 
+### {% href_link 🔥 | Burning causes panic %}
+Burning (without any protection like {% symlink fire_resistance, Fire Resistance %}) causes the {% symlink player, Player %} to run forward in panic.
+
 
 
 ## {% href_link 🗣️ | Chatting %}

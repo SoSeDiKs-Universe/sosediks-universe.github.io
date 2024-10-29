@@ -8,6 +8,7 @@ sidebar:
   sections:
     introduction: "Вступ"
     players: "Гравці"
+    entities: "Сутності"
     vehicles: "Транспорт"
     items: "Предмети"
     blocks: "Блоки"

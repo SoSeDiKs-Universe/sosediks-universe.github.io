@@ -14,6 +14,18 @@ module Jekyll
         'llama' => {
           image: 'https://minecraft.wiki/images/EntitySprite_creamy-llama.png'
         },
+        'sheep' => {
+          image: 'https://minecraft.wiki/images/White_Sheep_JE3_BE6.png'
+        },
+        'rainbow_sheep' => {
+          image: 'https://minecraft.wiki/images/Jeb_Sheep_JE2.gif'
+        },
+        'creeper' => {
+          image: 'https://minecraft.wiki/images/Creeper_JE3_BE1.png'
+        },
+        'armor_stand_entity' => {
+          image: 'https://minecraft.wiki/images/Armor_Stand_JE5.png'
+        },
         'oak_boat_entity' => {
           image: 'https://minecraft.wiki/images/thumb/Oak_Boat_JE4_BE2.png/150px-Oak_Boat_JE4_BE2.png'
         },
@@ -102,6 +114,10 @@ module Jekyll
         'chest' => {
           image: 'https://minecraft.wiki/images/Invicon_Chest.png'
         },
+        # Potion effects
+        'fire_resistance' => {
+          image: 'https://minecraft.wiki/images/Fire_Resistance_JE2_BE2.png'
+        },
         # Internal items
         'gloves' => {
           emoji: '🧤',
@@ -123,6 +139,10 @@ module Jekyll
         'block_changes' => {
           emoji: '⚙️',
           url: '/wiki/misc/block_changes'
+        },
+        'entity_changes' => {
+          emoji: '⚙️',
+          url: '/wiki/misc/entity_changes'
         }
       }
   

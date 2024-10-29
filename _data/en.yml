@@ -8,6 +8,7 @@ sidebar:
   sections:
     introduction: "Introduction"
     players: "Players"
+    entities: "Entities"
     vehicles: "Vehicles"
     items: "Items"
     blocks: "Blocks"
