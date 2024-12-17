@@ -81,6 +81,12 @@ module Jekyll
         'writable_book' => {
           image: 'https://minecraft.wiki/images/Invicon_Book_and_Quill.png'
         },
+        'arrow' => {
+          image: 'https://minecraft.wiki/images/Arrow_(item)_JE1_BE1.png'
+        },
+        'trident' => {
+          image: 'https://minecraft.wiki/images/Trident_(item).png'
+        },
         'glass' => {
           image: 'https://minecraft.wiki/images/Invicon_Glass.png'
         },
@@ -113,6 +119,27 @@ module Jekyll
         },
         'chest' => {
           image: 'https://minecraft.wiki/images/Invicon_Chest.png'
+        },
+        'note_block' => {
+          image: 'https://minecraft.wiki/images/Note_Block_JE2_BE2.png'
+        },
+        'ice' => {
+          image: 'https://minecraft.wiki/images/Ice_JE2_BE3.png'
+        },
+        'packed_ice' => {
+          image: 'https://minecraft.wiki/images/Packed_Ice_JE2_BE3.png'
+        },
+        'blue_ice' => {
+          image: 'https://minecraft.wiki/images/Blue_Ice_JE3_BE2.png'
+        },
+        'melon' => {
+          image: 'https://minecraft.wiki/images/Melon_JE2_BE2.png'
+        },
+        'pumpkin' => {
+          image: 'https://minecraft.wiki/images/Carved_Pumpkin_(N)_JE5.png'
+        },
+        'jack_o_lantern' => {
+          image: 'https://minecraft.wiki/images/Jack_o\'Lantern_(S)_JE4.png'
         },
         # Potion effects
         'fire_resistance' => {

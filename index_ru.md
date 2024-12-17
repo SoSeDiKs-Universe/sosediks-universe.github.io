@@ -12,7 +12,7 @@ page_id: landing
         <div class="ip center-column">
             <p class="ip-text">🎮</p>
             <p class="ip-text mc-gray">{{ site.data.index.address }}</p>
-            <form class="ip-input"><input class="mc-white" type="text" id="server-ip" name="server-ip" value="sosedik.com"></form>
+            <form class="ip-input"><input class="mc-white" type="text" id="server-ip" name="server-ip" value="{{ site.server_address }}"></form>
             <button id="ip-button" class="menu-button mc-white" onclick="copyIp();"><span id="ip-title" class="ip-title">{{ site.data.index.copy }}</span></button>
         </div>
         <div class="mc-buttons">
