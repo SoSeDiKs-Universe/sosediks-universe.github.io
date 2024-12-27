@@ -18,6 +18,9 @@ Regular {% symlink ice, Ice %} will instantly melt in ultra warm dimensions like
 
 ## {% href_link 🔧 | Mechanics %}
 
+### {% href_link 🌊 | Water puddles hurt %}
+Falling into a puddle (one block of {% symlink water, Water %}) causes damage, you won't be able to save yourself with a {% symlink water_bucket, Water Bucket %}) anymore.
+
 ### {% href_link 🔔 | Knock-knock and ding-dong %}
 {% symlink oak_door, Doors %} and {% symlink oak_trapdoor, Trapdoors %} can be knocked on with {% game_action attack %}. If there is a {% symlink oak_button, Button %} next to them, {% game_action attack %} on it will act as a doorbell.
 
@@ -35,6 +38,9 @@ Opening a container exposed to liquid will release all stored items. Be especial
 
 ### {% href_link 🍈 | Exploding melons and pumpkins %}
 If any {% symlink arrow, Arrow %} or a {% symlink trident, Trident %} hits a {% symlink melon, Melon %} or {% symlink pumpkin, Pumpkin %}, the block will break into pieces.
+
+### {% href_link 🚧 | Jumping over fences %}
+{% symlink player, Players %} can jump over {% symlink oak_fence, Fences %}, but they still act as an obstacle for other entities.
 
 
 

@@ -35,6 +35,33 @@ Ability to jump out of the water onto a block above the water.
 ### {% href_link 🔥 | Burning causes panic %}
 Burning (without any protection like {% symlink fire_resistance, Fire Resistance %}) causes the {% symlink player, Player %} to run forward in panic.
 
+### {% href_link 🛹 | Crawling %}
+You can enter crawling state by pressing {% game_action sneak %} twice, which allows squeezing through single block gaps.
+
+Entering crawling state while running wil trigger sliding. The slide allows you to move faster under blocks, as well as deal minor damage and push away mobs in your path.
+
+You can exit crawling and sliding by pressing {% game_action sneak %} again.
+
+You can also crawl into a hole in front of you by jumping while holding {% game_action sneak %}.
+
+### {% href_link 💨 | Leap of Faith %}
+By triple-pressing {% game_action sneak %}, you can enter the "leap of faith" state. The fall speeds up significantly, and the player can no longer move to the side (the entire fall occurs within one block). If the player falls into water or onto a soft block, the damage from the fall is greatly reduced.
+
+### {% href_link 🍥 | Roll %}
+If you manage to hold down {% game_action sneak %} right before falling to the ground, you will perform a roll, which allows you to slightly reduce the damage from the fall (or avoid it altogether) and get a small increase in speed.
+
+Rolling moves the player forward a little, so better not to perform it on the edge of a cliff.
+
+### {% href_link 🌾 | Softer falls %}
+Some types of blocks reduce the damage from falling, allowing you to fall from greater heights.
+
+Fragile blocks can break under the player's weight when falling from a great height.
+
+### {% href_link 🪝 | Hooking onto blocks %}
+If, while in the air and without a block underneath you, you crouch ({% game_action sneak %}) in front of a block that has no obstacles above, the player will hook onto this block and hang in place. Exiting the hook gives a small upward push, which allows you to climb two blocks in height. It will not be possible to hook onto a block if the height of the fall during the hooking is more than 5 blocks. You will fall if you try to move in the direction opposite to the hooking side.
+
+If there is a one-block gap above the block you are grabbing onto that you can crawl into, pressing {% game_action use %} on the grabbed block or a block in the gap (e.g. {% symlink oak_leaves, Leaves %} that might block the gap but allow crawling) will move the player into it and enter crawling state.
+
 
 
 ## {% href_link 🗣️ | Chatting %}

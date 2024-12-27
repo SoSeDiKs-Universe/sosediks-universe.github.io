@@ -23,6 +23,9 @@ module Jekyll
         'creeper' => {
           image: 'https://minecraft.wiki/images/Creeper_JE3_BE1.png'
         },
+        'enderman' => {
+          image: 'https://minecraft.wiki/images/Enderman.png'
+        },
         'armor_stand_entity' => {
           image: 'https://minecraft.wiki/images/Armor_Stand_JE5.png'
         },
@@ -32,6 +35,9 @@ module Jekyll
         # Items
         'bucket' => {
           image: 'https://minecraft.wiki/images/Invicon_Bucket.png'
+        },
+        'water_bucket' => {
+          image: 'https://minecraft.wiki/images/Invicon_Water_Bucket.png'
         },
         'lava_bucket' => {
           image: 'https://minecraft.wiki/images/Invicon_Lava_Bucket.png'
@@ -105,6 +111,9 @@ module Jekyll
         'oak_trapdoor' => {
           image: 'https://minecraft.wiki/images/Invicon_Oak_Trapdoor.png'
         },
+        'oak_fence' => {
+          image: 'https://minecraft.wiki/images/Oak_Fence_(item)_JE3_BE2.png'
+        },
         'oak_fence_gate' => {
           image: 'https://minecraft.wiki/images/Invicon_Oak_Fence_Gate.png'
         },
@@ -113,6 +122,9 @@ module Jekyll
         },
         'oak_sign' => {
           image: 'https://minecraft.wiki/images/Invicon_Oak_Sign.png'
+        },
+        'oak_leaves' => {
+          image: 'https://minecraft.wiki/images/Oak_Leaves.png'
         },
         'magma_block' => {
           image: 'https://minecraft.wiki/images/Invicon_Magma_Block.gif'

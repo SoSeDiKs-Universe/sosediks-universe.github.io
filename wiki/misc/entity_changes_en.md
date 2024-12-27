@@ -12,6 +12,12 @@ page_id: wiki_misc_entity_changes
 The strength/radius of a {% symlink creeper, Creeper %}'s explosion depends on its remaining health.
 
 
+## {% href_link 💤 | Endermans %}
+
+### {% href_link 💣️ | Teleportation of victims %}
+{% symlink enderman, Endermans %} might decide to teleport their victims around, especially if their target is out of reach.
+
+
 ## {% href_link 🐑 | Sheep %}
 
 ### {% href_link 👕 | Natural wool %}
@@ -31,6 +37,7 @@ Burning {% symlink sheep, Sheep %} lose their wool.
 
 ### {% href_link 🤸 | Armor Stand redstone poses %}
 Similar to the Bedrock version, {% symlink armor_stand_entity, Armor Stands %} can take different poses depending on the redstone signal. At maximum signal, a random pose is chosen.
+
 
 ## {% href_link 🧩 | Miscellaneous %}
 
