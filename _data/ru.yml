@@ -1,6 +1,6 @@
 index:
   title: "Вселенная Соседа"
-  address: "Адресс сервера"
+  address: "Адрес сервера"
   copy: "Скопировать!"
   wiki: "Узнать больше"
 sidebar:
@@ -12,3 +12,4 @@ sidebar:
     vehicles: "Транспорт"
     items: "Предметы"
     blocks: "Блоки"
+    misc: "Другое"

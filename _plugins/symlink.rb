@@ -32,6 +32,9 @@ module Jekyll
         'oak_boat_entity' => {
           image: 'https://minecraft.wiki/images/thumb/Oak_Boat_JE4_BE2.png/150px-Oak_Boat_JE4_BE2.png'
         },
+        'tnt_minecart_entity' => {
+          image: 'https://minecraft.wiki/images/Minecart_with_TNT_JE2_BE2.png'
+        },
         # Items
         'bucket' => {
           image: 'https://minecraft.wiki/images/Invicon_Bucket.png'
@@ -152,6 +155,15 @@ module Jekyll
         },
         'jack_o_lantern' => {
           image: 'https://minecraft.wiki/images/Jack_o\'Lantern_(S)_JE4.png'
+        },
+        'tnt' => {
+          image: 'https://minecraft.wiki/images/TNT_JE3_BE2.png'
+        },
+        'candle' => {
+          image: 'https://minecraft.wiki/images/Candle_JE1_BE1.png'
+        },
+        'fire' => {
+          image: 'https://minecraft.wiki/images/Fire.gif'
         },
         # Potion effects
         'fire_resistance' => {

@@ -12,16 +12,16 @@ page_id: wiki_misc_entity_changes
 The strength/radius of a {% symlink creeper, Creeper %}'s explosion depends on its remaining health.
 
 
-## {% href_link 💤 | Endermans %}
+## {% href_link 💤 | Endermen %}
 
 ### {% href_link 💣️ | Teleportation of victims %}
-{% symlink enderman, Endermans %} might decide to teleport their victims around, especially if their target is out of reach.
+{% symlink enderman, Endermen %} might decide to teleport their victims around, especially if their target is out of reach.
 
 
 ## {% href_link 🐑 | Sheep %}
 
 ### {% href_link 👕 | Natural wool %}
-{% symlink sheep, Sheep %} always regrow their natural wool. Dye is required each time to obtain other colors.
+{% symlink sheep, Sheep %} always regrow their natural wool. A dye is required each time to obtain other colors.
 
 ### {% href_link 🌈 | Random wool %}
 Rainbow {% symlink rainbow_sheep, Sheep %} (named _jeb\__) drop randomly colored wool.
@@ -39,7 +39,20 @@ Burning {% symlink sheep, Sheep %} lose their wool.
 Similar to the Bedrock version, {% symlink armor_stand_entity, Armor Stands %} can take different poses depending on the redstone signal. At maximum signal, a random pose is chosen.
 
 
+## {% href_link 🏹 | Projectiles %}
+
+### {% href_link 🔥 | Lit projectiles spread fire %}
+Burning projectiles will spread the fire upon landing.
+
+This includes:
+- Litting blocks like {% symlink campfire, Campfires %} and {% symlink candle, Candles %}.
+- Fusing hit {% symlink tnt, TNT %}, {% symlink tnt_minecart_entity, Minecart with TNT %} and {% symlink creeper, Creepers %}.
+- Creating a {% symlink fire, Fire %} block upon landing.
+
+
 ## {% href_link 🧩 | Miscellaneous %}
 
-### {% href_link 🔥 | Fire spreads when attacking %}
-Burning entities may spread fire when attacking with bare hands.
+### {% href_link 🔥 | Burning entities spread fire %}
+Burning entities may spread the fire when attacking with bare hands.
+
+Thrown projectiles will be set on fire if their shooter is on fire.

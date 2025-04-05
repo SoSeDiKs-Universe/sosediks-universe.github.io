@@ -54,4 +54,5 @@ Among other things, it features:
 ### {% symlink vehicle_changes, Vehicles %}
 ### {% symlink item_changes, Items %}
 ### {% symlink block_changes, Blocks %}
+### {% symlink misc_changes, Miscellaneous %}
 </div>

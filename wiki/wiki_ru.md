@@ -54,4 +54,5 @@ page_id: wiki
 ### {% symlink vehicle_changes, Транспорт %}
 ### {% symlink item_changes, Предметы %}
 ### {% symlink block_changes, Блоки %}
+### {% symlink misc_changes, Другое %}
 </div>

@@ -15,6 +15,10 @@ Drinking water underwater automatically refills an empty bottle, turning it into
 
 If you hold a hot item in your other hand, the bottle will not refill with water, but may burst.
 
+### {% href_link 🌈 | Immersive dyes %}
+Dyes can be applied onto dyeable items in {% symlink item_frame, Item Frames %} with {% game_action use %}.
+
+
 ## {% href_link 🧩 | Miscellaneous %}
 
 ### {% href_link 📖 | Readable books in item frames %}
