@@ -35,6 +35,9 @@ module Jekyll
         'tnt_minecart_entity' => {
           image: 'https://minecraft.wiki/images/Minecart_with_TNT_JE2_BE2.png'
         },
+        'shulker_open' => {
+          image: 'https://minecraft.wiki/images/Shulker_JE1_BE1.png'
+        },
         # Items
         'bucket' => {
           image: 'https://minecraft.wiki/images/Invicon_Bucket.png'
@@ -56,6 +59,9 @@ module Jekyll
         },
         'flint_and_steel' => {
           image: 'https://minecraft.wiki/images/Flint_and_Steel_JE4_BE2.png'
+        },
+        'shears' => {
+          image: 'https://minecraft.wiki/images/Shears_JE2_BE2.png'
         },
         'magma_cream' => {
           image: 'https://minecraft.wiki/images/Invicon_Magma_Cream.png'
@@ -90,6 +96,9 @@ module Jekyll
         'painting' => {
           image: 'https://minecraft.wiki/images/Invicon_Painting.png'
         },
+        'paper' => {
+          image: 'https://minecraft.wiki/images/Paper_JE2_BE2.png'
+        },
         'writable_book' => {
           image: 'https://minecraft.wiki/images/Invicon_Book_and_Quill.png'
         },
@@ -110,6 +119,9 @@ module Jekyll
         },
         'campfire' => {
           image: 'https://minecraft.wiki/images/Invicon_Campfire.png'
+        },
+        'campfire_block_unlit' => {
+          image: 'https://minecraft.wiki/images/Unlit_Campfire_%28S%29_JE2_BE2.png'
         },
         'oak_door' => {
           image: 'https://minecraft.wiki/images/Invicon_Oak_Door.png'
@@ -164,6 +176,9 @@ module Jekyll
         },
         'candle' => {
           image: 'https://minecraft.wiki/images/Candle_JE1_BE1.png'
+        },
+        'cake_candle' => {
+          image: 'https://minecraft.wiki/images/Cake_with_Candle_JE1_BE1.png'
         },
         'fire' => {
           image: 'https://minecraft.wiki/images/Fire.gif'

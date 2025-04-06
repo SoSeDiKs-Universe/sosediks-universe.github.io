@@ -18,6 +18,10 @@ If you hold a hot item in your other hand, the bottle will not refill with water
 ### {% href_link 🌈 | Immersive dyes %}
 Dyes can be applied onto dyeable items in {% symlink item_frame, Item Frames %} with {% game_action use %}.
 
+{% symlink shulker_open, Shulkers %} can be dyed.
+
+When possible, {% symlink paper, Paper %} will remove the color.
+
 
 ## {% href_link 🧩 | Miscellaneous %}
 
