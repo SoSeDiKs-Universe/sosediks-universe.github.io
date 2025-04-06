@@ -39,6 +39,12 @@ Burning {% symlink sheep, Sheep %} lose their wool.
 Similar to the Bedrock version, {% symlink armor_stand_entity, Armor Stands %} can take different poses depending on the redstone signal. At maximum signal, a random pose is chosen.
 
 
+## {% href_link 🎞️ | Item Frames %}
+
+### {% href_link 🔄 | Reverse rotation %}
+Sneaking while rotating an {% symlink item_frame, Item Frame %} will rotate counterclockwise.
+
+
 ## {% href_link 🏹 | Projectiles %}
 
 ### {% href_link 🔥 | Lit projectiles spread fire %}
@@ -51,6 +57,9 @@ This includes:
 
 
 ## {% href_link 🧩 | Miscellaneous %}
+
+### {% href_link 🧨 | Explosive minecarts can be manually ignited %}
+{% symlink tnt_minecart_entity, Minecart with TNT %} can be activated by using {% symlink flint_and_steel, Flint and Steel %} or {% symlink fire_charge, Fire Charge %} on it.
 
 ### {% href_link 🔥 | Burning entities spread fire %}
 Burning entities may spread the fire when attacking with bare hands.

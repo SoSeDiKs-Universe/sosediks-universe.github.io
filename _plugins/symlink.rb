@@ -54,6 +54,9 @@ module Jekyll
         'fire_charge' => {
           image: 'https://minecraft.wiki/images/Invicon_Fire_Charge.png'
         },
+        'flint_and_steel' => {
+          image: 'https://minecraft.wiki/images/Flint_and_Steel_JE4_BE2.png'
+        },
         'magma_cream' => {
           image: 'https://minecraft.wiki/images/Invicon_Magma_Cream.png'
         },
