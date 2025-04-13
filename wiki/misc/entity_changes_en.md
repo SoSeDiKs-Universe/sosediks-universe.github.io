@@ -57,12 +57,18 @@ Sneaking while rotating an {% symlink item_frame, Item Frame %} will rotate coun
 Burning projectiles will spread the fire upon landing.
 
 This includes:
-- Litting blocks like {% symlink campfire_block_unlit, Campfires %}, {% symlink candle, Candles %}, and {% symlink candle_cake, Cake with Candle %}.
+- Igniting blocks like {% symlink campfire_block_unlit, Campfires %}, {% symlink candle, Candles %}, and {% symlink candle_cake, Cake with Candle %}.
 - Fusing hit {% symlink tnt, TNT %}, {% symlink tnt_minecart_entity, Minecart with TNT %} and {% symlink creeper, Creepers %}.
 - Creating a {% symlink fire, Fire %} block upon landing.
 
 
 ## {% href_link 🧩 | Miscellaneous %}
+
+### {% href_link 🧟 | Undead consecration %}
+All undead mobs now have a passive regeneration and will block 80% of the incoming damage. This can be bypassed by using `«Smite»`{: .mc-aqua} (2 seconds of vulnerability) or igniting them (20 seconds of vulnerability). The latter, of course, will not work on fire-immune mobs, like the Nether ones.
+
+### {% href_link 💢 | Angry animals %}
+All friendly mobs can now attack back instead of panicking, and their friends will gladly help them to do so.
 
 ### {% href_link 🧨 | Explosive minecarts can be manually ignited %}
 {% symlink tnt_minecart_entity, Minecart with TNT %} can be activated by using {% symlink flint_and_steel, Flint and Steel %} or {% symlink fire_charge, Fire Charge %} on it.
@@ -74,3 +80,6 @@ This includes:
 Burning entities may spread the fire when attacking with bare hands.
 
 Thrown projectiles will be set on fire if their shooter is on fire.
+
+### {% href_link 🚼️ | More babies %}
+All non-ageable mobs have a 5% chance to spawn as a small mob.

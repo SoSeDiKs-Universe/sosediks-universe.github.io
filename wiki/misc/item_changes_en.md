@@ -29,7 +29,7 @@ When possible, {% symlink paper, Paper %} will remove the color.
 {% symlink writable_book, Books%} placed in {% symlink item_frame, Item Frames %} can be read with {% game_action use %}.
 
 ### {% href_link 📓 | Book formatting preview %}
-You may preview the {% symlink writable_book, Book's %} formatting (i.e. how the book would look after signing) by using {% game_action use %} while sneaking.
+You may preview the {% symlink writable_book, Book's %} formatting (i.e., how the book would look after signing) by using {% game_action use %} while sneaking.
 
 ### {% href_link 🫗 | Bottle retrieval %}
 Bottled items (e.g. {% symlink potion, Potions %}, {% symlink honey_bottle, Honey Bottle %}, etc.) can be turned into an empty {% symlink glass_bottle, Glass Bottle %} when placed in a crafting grid. Being underwater will produce a {% symlink potion_water, Water Bottle %} instead.

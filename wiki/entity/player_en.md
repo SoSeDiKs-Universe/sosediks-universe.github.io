@@ -32,7 +32,7 @@ Despite this, the {% symlink wandering_trader, Wandering Trader %} was able to s
 #### {% href_link 🧠 | Laziness %}
 `Players`{: .mc-gold} are known to be well skilled in many aspects of life: they've succeeded in biology, cosmology, alchemy, golemancy, magic and many other sciences.
 
-At the peak of their existence, they were capable of destroying whole planets, breaking the undestructible blocks and bringing the undead to life. In fact, many `Players`{: .mc-gold} were higher undead themselves, having the capability of respawning after death.
+At the peak of their existence, they were capable of destroying whole planets, breaking the indestructible blocks and bringing the undead to life. In fact, many `Players`{: .mc-gold} were higher undead themselves, having the capability of respawning after death.
 
 #### {% href_link 💬 | Communication %}
 `Players`{: .mc-gold} are capable of communicating with each other via some unknown technology*¹ not yet learned by other species of the Universe.

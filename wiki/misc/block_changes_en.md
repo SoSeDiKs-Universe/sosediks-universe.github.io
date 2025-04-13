@@ -39,6 +39,11 @@ Opening a container exposed to liquid will release all stored items. Be especial
 ### {% href_link 🍈 | Exploding melons and pumpkins %}
 If any {% symlink arrow, Arrow %} or a {% symlink trident, Trident %} hits a {% symlink melon, Melon %} or {% symlink pumpkin, Pumpkin %}, the block will break into pieces.
 
+### {% href_link 💥 | Exploding coal ore %}
+{% symlink coal_ore, Coal Ores %} (of any kind) are not keen of {% symlink fire, Fire %}, and will explode upon contact with it. This includes lit {% symlink torch, Torches %} (of any kind) and {% symlink campfire, Campfires %}, as well as `«Fire Aspect»`{: .mc-aqua} enchantment.
+
+Moreover, trying to mine the ore with a metal tool will lead to the same result, causing level 5 fiery explosion in both cases.
+
 ### {% href_link 🚧 | Jumping over fences %}
 {% symlink player, Players %} can jump over {% symlink oak_fence, Fences %}, but they still act as an obstacle for other entities.
 

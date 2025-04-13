@@ -24,7 +24,7 @@ module Jekyll
           image: 'https://minecraft.wiki/images/Creeper_JE3_BE1.png'
         },
         'enderman' => {
-          image: 'https://minecraft.wiki/images/Enderman.png'
+          image: 'https://minecraft.wiki/images/Enderman_JE3_BE1.png'
         },
         'armor_stand_entity' => {
           image: 'https://minecraft.wiki/images/Armor_Stand_JE5.png'
@@ -154,7 +154,7 @@ module Jekyll
           image: 'https://minecraft.wiki/images/Note_Block_JE2_BE2.png'
         },
         'ice' => {
-          image: 'https://minecraft.wiki/images/Ice_JE2_BE3.png'
+          image: 'https://minecraft.wiki/images/Ice_JE4_BE6.png'
         },
         'packed_ice' => {
           image: 'https://minecraft.wiki/images/Packed_Ice_JE2_BE3.png'
@@ -177,8 +177,11 @@ module Jekyll
         'candle' => {
           image: 'https://minecraft.wiki/images/Candle_JE1_BE1.png'
         },
-        'cake_candle' => {
+        'candle_cake' => {
           image: 'https://minecraft.wiki/images/Cake_with_Candle_JE1_BE1.png'
+        },
+        'coal_ore' => {
+          image: 'https://minecraft.wiki/images/Coal_Ore_JE5_BE4.png'
         },
         'fire' => {
           image: 'https://minecraft.wiki/images/Fire.gif'
