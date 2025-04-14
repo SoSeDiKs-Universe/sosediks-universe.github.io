@@ -29,11 +29,17 @@ module Jekyll
         'enderman' => {
           image: 'https://minecraft.wiki/images/Enderman_JE3_BE1.png'
         },
+        'slime' => {
+          image: 'https://minecraft.wiki/images/Slime_JE3_BE2.png'
+        },
         'armor_stand_entity' => {
           image: 'https://minecraft.wiki/images/Armor_Stand_JE5.png'
         },
         'oak_boat_entity' => {
           image: 'https://minecraft.wiki/images/thumb/Oak_Boat_JE4_BE2.png/150px-Oak_Boat_JE4_BE2.png'
+        },
+        'minecart_entity' => {
+          image: 'https://minecraft.wiki/images/Minecart_JE4_BE2.png'
         },
         'tnt_minecart_entity' => {
           image: 'https://minecraft.wiki/images/Minecart_with_TNT_JE2_BE2.png'
@@ -167,6 +173,9 @@ module Jekyll
         },
         'blue_ice' => {
           image: 'https://minecraft.wiki/images/Blue_Ice_JE3_BE2.png'
+        },
+        'slime_block' => {
+          image: 'https://minecraft.wiki/images/Slime_Block_JE2_BE3.png'
         },
         'melon' => {
           image: 'https://minecraft.wiki/images/Melon_JE2_BE2.png'
