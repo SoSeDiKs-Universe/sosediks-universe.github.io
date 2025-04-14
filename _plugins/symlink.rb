@@ -20,6 +20,9 @@ module Jekyll
         'rainbow_sheep' => {
           image: 'https://minecraft.wiki/images/Jeb_Sheep_JE2.gif'
         },
+        'evoker' => {
+          image: 'https://minecraft.wiki/images/Evoker_JE3.png'
+        },
         'creeper' => {
           image: 'https://minecraft.wiki/images/Creeper_JE3_BE1.png'
         },
@@ -62,6 +65,9 @@ module Jekyll
         },
         'shears' => {
           image: 'https://minecraft.wiki/images/Shears_JE2_BE2.png'
+        },
+        'wooden_shovel' => {
+          image: 'https://minecraft.wiki/images/Wooden_Shovel_JE2_BE2.png'
         },
         'magma_cream' => {
           image: 'https://minecraft.wiki/images/Invicon_Magma_Cream.png'
@@ -185,6 +191,15 @@ module Jekyll
         },
         'fire' => {
           image: 'https://minecraft.wiki/images/Fire.gif'
+        },
+        'dirt' => {
+          image: 'https://minecraft.wiki/images/Dirt.png'
+        },
+        'dirt_path' => {
+          image: 'https://minecraft.wiki/images/Dirt_Path_JE4_BE3.png'
+        },
+        'farmland' => {
+          image: 'https://minecraft.wiki/images/Farmland_JE4_BE6.png'
         },
         # Potion effects
         'fire_resistance' => {

@@ -8,6 +8,12 @@ page_id: wiki_misc_misc_changes
 
 ## {% href_link ⚙️ | Miscellaneous %}
 
+### {% href_link 🙌 | Half Swap %}
+If you sneak while swapping items, only half of the items will go into the other hand.
+
+### {% href_link 🎩 | Blessing on Unbinding %}
+`«Curse of Binding»`{: .mc-red} enchantment can be mitigated by having the enhanced `«Weakness»`{: .mc-aqua} potion effect.
+
 ### {% href_link ♨️ | Item lore icons %}
 {% symlink writable_book, Books %} display their author's online status.
 

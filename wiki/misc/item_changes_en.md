@@ -22,11 +22,23 @@ Dyes can be applied onto dyeable items in {% symlink item_frame, Item Frames %} 
 
 When possible, {% symlink paper, Paper %} will remove the color.
 
+### {% href_link ✨ | «Fire Aspect» acts as Flint and Steel %}
+`«Fire Aspect»`{: .mc-aqua} enchantment allows using the item as a {% symlink flint_and_steel, Flint and Steel %}.
+
+
 
 ## {% href_link 🧩 | Miscellaneous %}
 
+### {% href_link 🔥 | Flint and Steel ignites entities %}
+Using {% symlink flint_and_steel, Flint and Steel %} on a mob while sneaking or crawling will set it on fire.
+
+### {% href_link 🪏 | Better shovels %}
+Flowers and replaceable blocks no longer prevent {% symlink dirt_path, Dirt Path %} creation.
+
+{% symlink dirt_path, Dirt Paths %} and {% symlink farmland, Farmland %} can be converted into {% symlink dirt, Dirt %} by using a {% symlink wooden_shovel, Shovel %} on them while sneaking. The {% symlink wooden_shovel, Shovel %} will lose durability with a 10% chance.
+
 ### {% href_link 📖 | Readable books in item frames %}
-{% symlink writable_book, Books%} placed in {% symlink item_frame, Item Frames %} can be read with {% game_action use %}.
+{% symlink writable_book, Books %} placed in {% symlink item_frame, Item Frames %} can be read with {% game_action use %}.
 
 ### {% href_link 📓 | Book formatting preview %}
 You may preview the {% symlink writable_book, Book's %} formatting (i.e., how the book would look after signing) by using {% game_action use %} while sneaking.

@@ -23,6 +23,8 @@ The strength/radius of a {% symlink creeper, Creeper %}'s explosion depends on i
 ### {% href_link 👕 | Natural wool %}
 {% symlink sheep, Sheep %} always regrow their natural wool. A dye is required each time to obtain other colors.
 
+{% symlink sheep, Evoker %} permanently changes {% symlink sheep, Sheep %}'s natural color after performing the "wololo" spell.
+
 ### {% href_link 🌈 | Random wool %}
 Rainbow {% symlink rainbow_sheep, Sheep %} (named _jeb\__) drop randomly colored wool.
 
@@ -65,7 +67,7 @@ This includes:
 ## {% href_link 🧩 | Miscellaneous %}
 
 ### {% href_link 🧟 | Undead consecration %}
-All undead mobs now have a passive regeneration and will block 80% of the incoming damage. This can be bypassed by using `«Smite»`{: .mc-aqua} (2 seconds of vulnerability) or igniting them (20 seconds of vulnerability). The latter, of course, will not work on fire-immune mobs, like the Nether ones.
+All undead mobs now have a passive regeneration and will block 80% of the incoming damage, with the exception of explosions. This can be bypassed by using `«Smite»`{: .mc-aqua} (2 seconds of vulnerability) or igniting them (20 seconds of vulnerability). The latter, of course, will not work on fire-immune mobs, like the Nether ones.
 
 ### {% href_link 💢 | Angry animals %}
 All friendly mobs can now attack back instead of panicking, and their friends will gladly help them to do so.
