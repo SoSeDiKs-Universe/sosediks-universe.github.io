@@ -20,3 +20,5 @@ If you sneak while swapping items, only half of the items will go into the other
 Dyed items display their color as a #hex value.
 
 Armor trim lore is shorter (1 line vs 3 lines in vanilla) and displays the material icon.
+
+Items show their attributes as icons.

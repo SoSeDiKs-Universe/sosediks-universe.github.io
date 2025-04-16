@@ -37,6 +37,11 @@ Flowers and replaceable blocks no longer prevent {% symlink dirt_path, Dirt Path
 
 {% symlink dirt_path, Dirt Paths %} and {% symlink farmland, Farmland %} can be converted into {% symlink dirt, Dirt %} by using a {% symlink wooden_shovel, Shovel %} on them while sneaking. The {% symlink wooden_shovel, Shovel %} will lose durability with a 10% chance.
 
+Using ({% game_action use %}) a {% symlink wooden_shovel, Shovel %} on a {% symlink snow_block, Snow Block %} will remove a layer from it, dropping a {% symlink snowball, Snowball %}.
+
+### {% href_link 🤺 | Piercing blow %}
+Items can now attack through grass and other vegetation. If the item is a melee weapon, the targeted block won't be insta broken.
+
 ### {% href_link 📖 | Readable books in item frames %}
 {% symlink writable_book, Books %} placed in {% symlink item_frame, Item Frames %} can be read with {% game_action use %}.
 

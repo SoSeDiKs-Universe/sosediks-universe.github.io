@@ -117,6 +117,9 @@ module Jekyll
         'arrow' => {
           image: 'https://minecraft.wiki/images/Arrow_(item)_JE1_BE1.png'
         },
+        'snowball' => {
+          image: 'https://minecraft.wiki/images/Snowball_JE3_BE3.png'
+        },
         'trident' => {
           image: 'https://minecraft.wiki/images/Trident_(item).png'
         },
@@ -173,6 +176,9 @@ module Jekyll
         },
         'blue_ice' => {
           image: 'https://minecraft.wiki/images/Blue_Ice_JE3_BE2.png'
+        },
+        'snow_block' => {
+          image: 'https://minecraft.wiki/images/Snow_Block_JE2_BE2.png'
         },
         'slime_block' => {
           image: 'https://minecraft.wiki/images/Slime_Block_JE2_BE3.png'
