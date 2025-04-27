@@ -18,6 +18,9 @@ Regular {% symlink ice, Ice %} will instantly melt in ultra warm dimensions like
 
 ## {% href_link 🔧 | Mechanics %}
 
+### {% href_link 🔄 | Shared world destruction %}
+Block breaking is now shared among players with cracks staying in place for some time.
+
 ### {% href_link 🌊 | Water puddles hurt %}
 Falling into a puddle (one block of {% symlink water, Water %}) causes damage, you won't be able to save yourself with a {% symlink water_bucket, Water Bucket %}) anymore.
 

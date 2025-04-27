@@ -84,4 +84,11 @@ Burning entities may spread the fire when attacking with bare hands.
 Thrown projectiles will be set on fire if their shooter is on fire.
 
 ### {% href_link 🚼️ | More babies %}
-All non-ageable mobs have a 5% chance to spawn as a small mob.
+All (scalable) non-ageable mobs have a 5% chance to spawn as a small mob.
+
+For balancing and fun reasons, some mobs have unique behaviors:
+- Baby {% symlink skeleton, Skeletons %} wield a {% symlink trumpet, Trumpet %} for causing ear bleeding to mobs around.
+- Baby {% symlink stray, Strays %} are equipped with {% symlink snowball, Snowballs %} with a pebble mixed in.
+- Baby {% symlink bogged, Bogged %} are eager to share {% symlink red_mushroom, Red %} and {% symlink brown_mushroom, Brown Mushrooms %}.
+- Baby {% symlink wither_skeleton, Wither Skeletons %} are scared of the {% symlink player, Player %}, thinking you'll steal the {% symlink wither_skeleton_skull, Wither Skeleton Skull %} they are always carrying around. You can exchange the skull by giving ({% game_action use %}) them a {% symlink wither_rose, Wither Rose %}.
+

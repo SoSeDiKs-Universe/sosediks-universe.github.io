@@ -8,7 +8,10 @@ page_id: wiki_misc_player_changes
 
 ## {% href_link 🎮️ | Gameplay %}
 
-### 👕 Clothes and gloves
+### {% href_link ⛏️ | Proper tooling %}
+You need to use a correct tool for breaking blocks, otherwise you won't break it.
+
+### {% href_link 👕 | Clothes and gloves %}
 In addition to the usual four armor slots, there are also four visual armor slots for clothing and a slot for {% symlink gloves, Gloves %}.
 
 {% symlink gloves, Gloves %} are required for some actions on the server, such as collecting {% symlink lava, Lava %} in a {% symlink bucket, Bucket %} or safely destroying {% symlink glass, Glass %} with bare hands.

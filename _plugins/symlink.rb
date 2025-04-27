@@ -29,6 +29,18 @@ module Jekyll
         'enderman' => {
           image: 'https://minecraft.wiki/images/Enderman_JE3_BE1.png'
         },
+        'skeleton' => {
+          image: 'https://minecraft.wiki/images/Skeleton_JE6_BE4.png'
+        },
+        'stray' => {
+          image: 'https://minecraft.wiki/images/Stray_JE2_BE4.png'
+        },
+        'bogged' => {
+          image: 'https://minecraft.wiki/images/Bogged_JE2_BE2.png'
+        },
+        'wither_skeleton' => {
+          image: 'https://minecraft.wiki/images/Wither_Skeleton_JE4_BE3.png'
+        },
         'slime' => {
           image: 'https://minecraft.wiki/images/Slime_JE3_BE2.png'
         },
@@ -119,6 +131,12 @@ module Jekyll
         },
         'snowball' => {
           image: 'https://minecraft.wiki/images/Snowball_JE3_BE3.png'
+        },
+        'red_mushroom' => {
+          image: 'https://minecraft.wiki/images/Invicon_Red_Mushroom.png'
+        },
+        'brown_mushroom' => {
+          image: 'https://minecraft.wiki/images/Invicon_Brown_Mushroom.png'
         },
         'trident' => {
           image: 'https://minecraft.wiki/images/Trident_(item).png'
@@ -215,6 +233,12 @@ module Jekyll
         },
         'farmland' => {
           image: 'https://minecraft.wiki/images/Farmland_JE4_BE6.png'
+        },
+        'wither_rose' => {
+          image: 'https://minecraft.wiki/images/Invicon_Wither_Rose.png'
+        },
+        'wither_skeleton_skull' => {
+          image: 'https://minecraft.wiki/images/Wither_Skeleton_Skull_%28S%29_JE2.png'
         },
         # Potion effects
         'fire_resistance' => {
