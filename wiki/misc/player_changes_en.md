@@ -11,6 +11,9 @@ page_id: wiki_misc_player_changes
 ### {% href_link ⛏️ | Proper tooling %}
 You need to use a correct tool for breaking blocks, otherwise you won't break it.
 
+### {% href_link 🪦 | Tombstones on death %}
+If possible, {% symlink player, Players %} will leave skeleton remains upon death. Breaking them will restore the inventory and dropped experience.
+
 ### {% href_link 👕 | Clothes and gloves %}
 In addition to the usual four armor slots, there are also four visual armor slots for clothing and a slot for {% symlink gloves, Gloves %}.
 

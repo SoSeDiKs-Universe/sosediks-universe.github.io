@@ -22,3 +22,5 @@ Dyed items display their color as a #hex value.
 Armor trim lore is shorter (1 line vs 3 lines in vanilla) and displays the material icon.
 
 Items show their attributes as icons.
+
+Some tools like {% symlink clock, Clocks %}, {% symlink lunar_clock, Lunar Clocks %}, {% symlink compass, Compasses %}, {% symlink depth_meter, Depth Meters %}, {% symlink thermometer, Thermometers %} and {% symlink speedometer, Speedometers %} show detailed info in lore.

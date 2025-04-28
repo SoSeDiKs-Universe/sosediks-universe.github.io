@@ -126,6 +126,12 @@ module Jekyll
         'writable_book' => {
           image: 'https://minecraft.wiki/images/Invicon_Book_and_Quill.png'
         },
+        'clock' => {
+          image: 'https://minecraft.wiki/images/Clock_JE3_BE3.gif'
+        },
+        'compass' => {
+          image: 'https://minecraft.wiki/images/Compass_JE3_BE3.gif'
+        },
         'arrow' => {
           image: 'https://minecraft.wiki/images/Arrow_(item)_JE1_BE1.png'
         },
