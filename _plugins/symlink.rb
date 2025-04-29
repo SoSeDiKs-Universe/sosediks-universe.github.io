@@ -147,6 +147,30 @@ module Jekyll
         'trident' => {
           image: 'https://minecraft.wiki/images/Trident_(item).png'
         },
+        'grass_block' => {
+          image: 'https://minecraft.wiki/images/Grass_Block_JE7_BE6.png'
+        },
+        'podzol' => {
+          image: 'https://minecraft.wiki/images/Podzol_JE2_BE2.png'
+        },
+        'gravel' => {
+          image: 'https://minecraft.wiki/images/Gravel_JE5_BE4.png'
+        },
+        'sand' => {
+          image: 'https://minecraft.wiki/images/Sand_JE5_BE3.png'
+        },
+        'sandstone' => {
+          image: 'https://minecraft.wiki/images/Sandstone_JE6_BE3.png'
+        },
+        'red_sand' => {
+          image: 'https://minecraft.wiki/images/Red_Sand_JE3_BE2.png'
+        },
+        'red_sandstone' => {
+          image: 'https://minecraft.wiki/images/Red_Sandstone_JE4_BE2.png'
+        },
+        'cracked_stone_bricks' => {
+          image: 'https://minecraft.wiki/images/Cracked_Stone_Bricks_JE3_BE2.png'
+        },
         'glass' => {
           image: 'https://minecraft.wiki/images/Invicon_Glass.png'
         },
@@ -233,6 +257,9 @@ module Jekyll
         },
         'dirt' => {
           image: 'https://minecraft.wiki/images/Dirt.png'
+        },
+        'coarse_dirt' => {
+          image: 'https://minecraft.wiki/images/Coarse_Dirt.png'
         },
         'dirt_path' => {
           image: 'https://minecraft.wiki/images/Dirt_Path_JE4_BE3.png'

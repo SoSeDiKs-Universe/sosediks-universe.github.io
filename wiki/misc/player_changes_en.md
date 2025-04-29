@@ -9,7 +9,7 @@ page_id: wiki_misc_player_changes
 ## {% href_link 🎮️ | Gameplay %}
 
 ### {% href_link ⛏️ | Proper tooling %}
-You need to use a correct tool for breaking blocks, otherwise you won't break it.
+You need to use a correct tool for breaking blocks, otherwise you won't break them. Moreover, you won't be able to break blocks in complete darkness.
 
 ### {% href_link 🪦 | Tombstones on death %}
 If possible, {% symlink player, Players %} will leave skeleton remains upon death. Breaking them will restore the inventory and dropped experience.

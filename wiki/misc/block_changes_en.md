@@ -14,6 +14,9 @@ If someone stands on a lit {% symlink campfire, Campfire %}, the fire will sprea
 ### {% href_link 🧊 | Melting ice in Nether %}
 Regular {% symlink ice, Ice %} will instantly melt in ultra warm dimensions like Nether. {% symlink packed_ice, Packed Ice %} will melt too, given enough time (regardless of default vanilla restrictions like the light level). {% symlink blue_ice, Blue Ice %}, on the other hand, is capable of withstanding such high temperatures.
 
+### {% href_link 🐾 | Dynamic trails %}
+If you walk the same path over time, the blocks may change. A {% symlink grass_block, Grass Block %} / {% symlink podzol, Podzol %} will turn into {% symlink dirt, Dirt %}, then {% symlink coarse_dirt, Coarse Dirt %}, then {% symlink gravel, Gravel %}, and finally {% symlink cracked_stone_bricks, Cracked Stone Bricks %}. {% symlink sand, Sand %} / {% symlink red_sand, Red Sand %} will turn into {% symlink sandstone, Sandstone %} / {% symlink red_sandstone, Red Sandstone %}.
+
 
 
 ## {% href_link 🔧 | Mechanics %}
@@ -49,6 +52,9 @@ Moreover, trying to mine the ore with a metal tool will lead to the same result,
 
 ### {% href_link 🚧 | Jumping over fences %}
 {% symlink player, Players %} can jump over {% symlink oak_fence, Fences %}, but they still act as an obstacle for other entities.
+
+### {% href_link 🔥 | Fire spread on touch %}
+Trying to extinguish {% symlink fire, Fire %} with an empty hand will set you on fire.
 
 
 
