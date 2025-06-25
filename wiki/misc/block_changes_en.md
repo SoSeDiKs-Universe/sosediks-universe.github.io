@@ -17,6 +17,9 @@ Regular {% symlink ice, Ice %} will instantly melt in ultra warm dimensions like
 ### {% href_link 🐾 | Dynamic trails %}
 If you walk the same path over time, the blocks may change. A {% symlink grass_block, Grass Block %} / {% symlink podzol, Podzol %} will turn into {% symlink dirt, Dirt %}, then {% symlink coarse_dirt, Coarse Dirt %}, then {% symlink gravel, Gravel %}, and finally {% symlink cracked_stone_bricks, Cracked Stone Bricks %}. {% symlink sand, Sand %} / {% symlink red_sand, Red Sand %} will turn into {% symlink sandstone, Sandstone %} / {% symlink red_sandstone, Red Sandstone %}.
 
+### {% href_link 🍃 | Non-solid leaves %}
+Entities can go through {% symlink oak_leaves, Leaves %}.
+
 
 
 ## {% href_link 🔧 | Mechanics %}
@@ -55,6 +58,12 @@ Moreover, trying to mine the ore with a metal tool will lead to the same result,
 
 ### {% href_link 🔥 | Fire spread on touch %}
 Trying to extinguish {% symlink fire, Fire %} with an empty hand will set you on fire.
+
+### {% href_link 🧯 | Unlit campfire %}
+{% symlink campfire, Campfires %} are no longer lit by default. Breaking them will drop the {% symlink campfire, Campfire %} as an item, with `«Silk Touch»`{: .mc-aqua} allowing to keep the lit state.
+
+### {% href_link 💧 | Wet cauldrons %}
+Entities inside {% symlink water_cauldron, Water Cauldrons %} are considered wet ([MC-145311](https://bugs.mojang.com/browse/MC-145311){: .mc .mc-gold}).
 
 
 

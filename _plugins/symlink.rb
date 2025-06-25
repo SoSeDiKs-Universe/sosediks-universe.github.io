@@ -15,10 +15,13 @@ module Jekyll
           image: 'https://minecraft.wiki/images/EntitySprite_creamy-llama.png'
         },
         'sheep' => {
-          image: 'https://minecraft.wiki/images/White_Sheep_JE3_BE6.png'
+          image: 'https://minecraft.wiki/images/White_Sheep_JE5.png'
         },
         'rainbow_sheep' => {
-          image: 'https://minecraft.wiki/images/Jeb_Sheep_JE2.gif'
+          image: 'https://minecraft.wiki/images/Jeb_Sheep_JE4_BE3.webp'
+        },
+        'silverfish' => {
+          image: 'https://minecraft.wiki/images/Silverfish_JE1_BE1.gif'
         },
         'evoker' => {
           image: 'https://minecraft.wiki/images/Evoker_JE3.png'
@@ -167,6 +170,9 @@ module Jekyll
         },
         'red_sandstone' => {
           image: 'https://minecraft.wiki/images/Red_Sandstone_JE4_BE2.png'
+        },
+        'water_cauldron' => {
+          image: 'https://minecraft.wiki/images/Water_Cauldron_JE7.png'
         },
         'cracked_stone_bricks' => {
           image: 'https://minecraft.wiki/images/Cracked_Stone_Bricks_JE3_BE2.png'

@@ -76,7 +76,7 @@ If there is a one-block gap above the block you are grabbing onto that you can c
 Chat, signs and books support formatting with Markdown and MiniMessage, allowing for rich messages.
 
 ### {% href_link 💖 | Emoji %}
-Server resource pack ships with full support for Emoji 14.
+Server resource pack ships with full support for Emoji 16.
 
 
 

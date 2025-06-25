@@ -14,7 +14,7 @@ The strength/radius of a {% symlink creeper, Creeper %}'s explosion depends on i
 
 ## {% href_link 💤 | Endermen %}
 
-### {% href_link 💣️ | Teleportation of victims %}
+### {% href_link 🔄 | Teleportation of victims %}
 {% symlink enderman, Endermen %} might decide to teleport their victims around, especially if their target is out of reach.
 
 
@@ -23,13 +23,19 @@ The strength/radius of a {% symlink creeper, Creeper %}'s explosion depends on i
 ### {% href_link 👕 | Natural wool %}
 {% symlink sheep, Sheep %} always regrow their natural wool. A dye is required each time to obtain other colors.
 
-{% symlink sheep, Evoker %} permanently changes {% symlink sheep, Sheep %}'s natural color after performing the "wololo" spell.
+{% symlink evoker, Evoker %} permanently changes {% symlink sheep, Sheep %}'s natural color after performing the "wololo" spell.
 
 ### {% href_link 🌈 | Random wool %}
 Rainbow {% symlink rainbow_sheep, Sheep %} (named _jeb\__) drop randomly colored wool.
 
 ### {% href_link 🔥 | Burning wool %}
 Burning {% symlink sheep, Sheep %} lose their wool.
+
+
+## {% href_link 🪲 | Silverfish %}
+
+### {% href_link 🔊 | More annoying Silverfish %}
+{% symlink silverfish, Silverfish %} produce moving sound.
 
 
 ## {% href_link 🐚 | Shulkers %}
@@ -91,4 +97,3 @@ For balancing and fun reasons, some mobs have unique behaviors:
 - Baby {% symlink stray, Strays %} are equipped with {% symlink snowball, Snowballs %} with a pebble mixed in.
 - Baby {% symlink bogged, Bogged %} are eager to share {% symlink red_mushroom, Red %} and {% symlink brown_mushroom, Brown Mushrooms %}.
 - Baby {% symlink wither_skeleton, Wither Skeletons %} are scared of the {% symlink player, Player %}, thinking you'll steal the {% symlink wither_skeleton_skull, Wither Skeleton Skull %} they are always carrying around. You can exchange the skull by giving ({% game_action use %}) them a {% symlink wither_rose, Wither Rose %}.
-
