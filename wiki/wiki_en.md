@@ -57,4 +57,5 @@ Among other things, it features:
 ### {% symlink item_changes, Items %}
 ### {% symlink block_changes, Blocks %}
 ### {% symlink misc_changes, Miscellaneous %}
+### {% symlink credits, Credits %}
 </div>

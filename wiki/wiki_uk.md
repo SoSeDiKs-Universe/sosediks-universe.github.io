@@ -57,4 +57,5 @@ page_id: wiki
 ### {% symlink item_changes, Предмети %}
 ### {% symlink block_changes, Блоки %}
 ### {% symlink misc_changes, Інше %}
+### {% symlink credits, Подяки %}
 </div>

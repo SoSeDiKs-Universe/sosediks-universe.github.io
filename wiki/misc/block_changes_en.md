@@ -17,6 +17,9 @@ Regular {% symlink ice, Ice %} will instantly melt in ultra warm dimensions like
 ### {% href_link 🐾 | Dynamic trails %}
 If you walk the same path over time, the blocks may change. A {% symlink grass_block, Grass Block %} / {% symlink podzol, Podzol %} will turn into {% symlink dirt, Dirt %}, then {% symlink coarse_dirt, Coarse Dirt %}, then {% symlink gravel, Gravel %}, and finally {% symlink cracked_stone_bricks, Cracked Stone Bricks %}. {% symlink sand, Sand %} / {% symlink red_sand, Red Sand %} will turn into {% symlink sandstone, Sandstone %} / {% symlink red_sandstone, Red Sandstone %}.
 
+### {% href_link 🌱 | Grass spread %}
+{% symlink grass_block, Grass Block %} (and other grass blocks) can spread onto {% symlink coarse_dirt, Coarse Dirt %}, turning it into {% symlink dirt, Dirt %}.
+
 ### {% href_link 🍃 | Non-solid leaves %}
 Entities can go through {% symlink oak_leaves, Leaves %}.
 

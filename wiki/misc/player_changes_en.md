@@ -31,6 +31,16 @@ You can put _any_ item (1 pc.) in the helmet clothing slot. Some items will have
 
 ## {% href_link 🤸 | Movement %}
 
+### {% href_link 🪑 | Sitting %}
+Some blocks ({% symlink oak_slab, Slabs %}, {% symlink oak_stairs, Stairs %}, {% symlink white_carpet, Carpets %}, {% symlink red_bed, Beds %}, {% symlink oak_pressure_plate, Pressure Plates %}) allow you to sit on them by pressing {% game_action use %}.
+
+Sitting on a bed requires pressing (and then releasing) {% game_action sneak %}.
+
+Additionally, `/sit`{: .mc .mc-gold} can be used to sit on the ground anywhere.
+
+### {% href_link 🛏️ | Lying %}
+In addition to sitting, it is possible to lie almost anywhere using `/lay`{: .mc .mc .mc-gold}.
+
 ### {% href_link 🌊 | Swimming improvements %}
 When swimming on the surface of water, air won't be consumed, which allows you to swim quickly without getting out of breath.
 
