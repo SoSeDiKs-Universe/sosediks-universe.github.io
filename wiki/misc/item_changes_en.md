@@ -22,8 +22,16 @@ Dyes can be applied onto dyeable items in {% symlink item_frame, Item Frames %} 
 
 When possible, {% symlink paper, Paper %} will remove the color.
 
+### {% href_link ♨️ | Immersive tools %}
+Some tools like {% symlink clock, Clocks %}, {% symlink lunar_clock, Lunar Clocks %}, {% symlink compass, Compasses %}, {% symlink depth_meter, Depth Meters %}, {% symlink thermometer, Barometers %}, {% symlink thermometer, Thermometers %} and {% symlink speedometer, Speedometers %} show detailed info in lore, optionally on screen, and when interacted.
+
+Additionally, F3 debug screen no longer displays information like coordinates if the player doesn't carry all the tools.
+
 ### {% href_link ✨ | «Fire Aspect» acts as Flint and Steel %}
 `«Fire Aspect»`{: .mc-aqua} enchantment allows using the item as a {% symlink flint_and_steel, Flint and Steel %}.
+
+### {% href_link 🥔 | Eternal Children %}
+Feeding a {% symlink poisonous_potato, Poisonous Potato %} to a child will make it lose the opportunity to grow up.
 
 
 
@@ -31,6 +39,9 @@ When possible, {% symlink paper, Paper %} will remove the color.
 
 ### {% href_link 🔥 | Flint and Steel ignites entities %}
 Using {% symlink flint_and_steel, Flint and Steel %} on a mob while sneaking or crawling will set it on fire.
+
+### {% href_link 🕯️ | Lit items ignite entities %}
+Attacking mobs with lit {% symlink torch, Torches %} (of any kind) or {% symlink campfire, Campfires %} will set it on fire.
 
 ### {% href_link 🪏 | Better shovels %}
 Flowers and replaceable blocks no longer prevent {% symlink dirt_path, Dirt Path %} creation.

@@ -135,6 +135,9 @@ module Jekyll
         'compass' => {
           image: 'https://minecraft.wiki/images/Compass_JE3_BE3.gif'
         },
+        'poisonous_potato' => {
+          image: 'https://minecraft.wiki/images/Poisonous_Potato_JE3_BE2.png'
+        },
         'arrow' => {
           image: 'https://minecraft.wiki/images/Arrow_(item)_JE1_BE1.png'
         },
@@ -293,6 +296,9 @@ module Jekyll
         },
         'red_bed' => {
           image: 'https://minecraft.wiki/images/Red_Bed_(N).png'
+        },
+        'bee_nest' => {
+          image: 'https://minecraft.wiki/images/Bee_Nest_(S)_JE1.png'
         },
         # Potion effects
         'fire_resistance' => {

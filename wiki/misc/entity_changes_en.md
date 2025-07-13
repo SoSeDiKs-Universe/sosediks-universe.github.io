@@ -11,6 +11,9 @@ page_id: wiki_misc_entity_changes
 ### {% href_link 💣️ | Strengthened weakening Creepers %}
 The strength/radius of a {% symlink creeper, Creeper %}'s explosion depends on its remaining health.
 
+### {% href_link 😻 | Adorable humans %}
+Non-powered {% symlink creeper, Creepers %} won't blow up if there's no danger and their target is crawling.
+
 
 ## {% href_link 💤 | Endermen %}
 
@@ -68,6 +71,9 @@ This includes:
 - Igniting blocks like {% symlink campfire_block_unlit, Campfires %}, {% symlink candle, Candles %}, and {% symlink candle_cake, Cake with Candle %}.
 - Fusing hit {% symlink tnt, TNT %}, {% symlink tnt_minecart_entity, Minecart with TNT %} and {% symlink creeper, Creepers %}.
 - Creating a {% symlink fire, Fire %} block upon landing.
+
+### {% href_link 🎯 | Projectile hits %}
+Hitting a {% symlink bee_nest, Bee Nest %} will cause it to fall, letting of angry bees.
 
 
 ## {% href_link 🧩 | Miscellaneous %}

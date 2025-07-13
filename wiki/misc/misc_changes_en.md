@@ -8,6 +8,9 @@ page_id: wiki_misc_misc_changes
 
 ## {% href_link ⚙️ | Miscellaneous %}
 
+### {% href_link ⭐️ | Advancements %}
+Server features many new advancements to achieve during your journey. Many of them grant rewards upon completion, including unlocking new abilities or gaining trophies – unique items usable only by the achiever.
+
 ### {% href_link 🙌 | Half Swap %}
 If you sneak while swapping items, only half of the items will go into the other hand.
 
@@ -23,4 +26,12 @@ Armor trim lore is shorter (1 line vs 3 lines in vanilla) and displays the mater
 
 Items show their attributes as icons.
 
-Some tools like {% symlink clock, Clocks %}, {% symlink lunar_clock, Lunar Clocks %}, {% symlink compass, Compasses %}, {% symlink depth_meter, Depth Meters %}, {% symlink thermometer, Thermometers %} and {% symlink speedometer, Speedometers %} show detailed info in lore.
+
+
+## {% href_link 🔓️ | Special Abilities %}
+
+These features are locked behind some requirements, like having obtained an advancement.
+
+
+### {% href_link ✂️ | Shearable Creepers %}
+Non-powered {% symlink creeper, Creepers %} can be sheared to neutralize them. This will get rid of its drops too, though, and, well, the {% symlink creeper, Creeper %} itself.
