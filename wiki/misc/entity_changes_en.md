@@ -72,8 +72,16 @@ This includes:
 - Fusing hit {% symlink tnt, TNT %}, {% symlink tnt_minecart_entity, Minecart with TNT %} and {% symlink creeper, Creepers %}.
 - Creating a {% symlink fire, Fire %} block upon landing.
 
-### {% href_link 🎯 | Projectile hits %}
+### {% href_link 🎯 | Arrow/Trident projectile hits %}
 Hitting a {% symlink bee_nest, Bee Nest %} will cause it to fall, letting of angry bees.
+
+Hitting a fragile block will break it.
+
+### {% href_link 🧯 | Water Potion extinguishing %}
+Throwable {% symlink splash_water_potion, Splash Water Potion %}/{% symlink lingering_water_potion, Lingering Water Potion %} splashes {% symlink torch, Torches %}/{% symlink soul_torch, Soul Torches %}.
+
+### {% href_link ☃️ | Snow fight! %}
+{% symlink snowball, Snowballs %} create a layer of {% symlink snow_layer_1, Snow %} upon landing (or drop themselves otherwise). Additionally, interacting ({% game_action use %}) with {% symlink snow_block, Snow %} with an empty hand will decrease its layers, picking up a {% symlink snowball, Snowball %}.
 
 
 ## {% href_link 🧩 | Miscellaneous %}

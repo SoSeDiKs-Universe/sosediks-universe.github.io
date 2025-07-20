@@ -23,12 +23,15 @@ If you walk the same path over time, the blocks may change. A {% symlink grass_b
 ### {% href_link 🍃 | Non-solid leaves %}
 Entities can go through {% symlink oak_leaves, Leaves %}.
 
+### {% href_link 👟 | Surroundings affect the movement speed %}
+Movement speed is dynamic and constantly changing. Walking on {% symlink dirt_path, Dirt Paths %} will be faster than walking on {% symlink dirt, Dirt %}, and vegetation on the path will slow you down instead.
+
 
 
 ## {% href_link 🔧 | Mechanics %}
 
 ### {% href_link 🔄 | Shared world destruction %}
-Block breaking is now shared among players with cracks staying in place for some time.
+Block breaking is now shared among players with cracks staying in place for some time. A cracked block can be repaired by banging ({% game_action attack %}) it with {% symlink hammer, Hammer %}.
 
 ### {% href_link 🌊 | Water puddles hurt %}
 Falling into a puddle (one block of {% symlink water, Water %}) causes damage, you won't be able to save yourself with a {% symlink water_bucket, Water Bucket %}) anymore.
@@ -80,5 +83,10 @@ Entities inside {% symlink water_cauldron, Water Cauldrons %} are considered wet
 ### {% href_link 📦 | Easier access to storage %}
 Interacting ({% game_action use %}, without crouching) with {% symlink item_frame, Item Frames %}, {% symlink painting, Paintings %} and {% symlink oak_sign, Signs %} opens the inventory of the block behind them.
 
+Some vanilla blocks also got inventories. {% symlink flower_pot, Flower Pots %} have 5 slots for you to hide items in.
+
 ### {% href_link 🎶 | Improved note blocks %}
 {% symlink note_block, Note Blocks %} display the note and instrument when played.
+
+### {% href_link 🕸️ | Flammable cobweb %}
+{% symlink cobweb, Cobweb %} can burn and catch the {% symlink fire, Fire %}.

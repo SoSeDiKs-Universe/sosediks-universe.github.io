@@ -96,6 +96,9 @@ module Jekyll
         'torch' => {
           image: 'https://minecraft.wiki/images/Invicon_Torch.png'
         },
+        'soul_torch' => {
+          image: 'https://minecraft.wiki/images/Invicon_Soul_Torch.pngg'
+        },
         'saddle' => {
           image: 'https://minecraft.wiki/images/Invicon_Saddle.png'
         },
@@ -105,8 +108,14 @@ module Jekyll
         'potion' => {
           image: 'https://minecraft.wiki/images/Invicon_Water_Bottle.png'
         },
-        'potion_water' => {
+        'water_potion' => {
           image: 'https://minecraft.wiki/images/Invicon_Water_Bottle.png'
+        },
+        'splash_water_potion' => {
+          image: 'https://minecraft.wiki/images/Invicon_Splash_Water_Bottle.png'
+        },
+        'lingering_water_potion' => {
+          image: 'https://minecraft.wiki/images/Invicon_Lingering_Water_Bottle.png'
         },
         'honey_bottle' => {
           image: 'https://minecraft.wiki/images/Invicon_Honey_Bottle.png'
@@ -243,6 +252,9 @@ module Jekyll
         'blue_ice' => {
           image: 'https://minecraft.wiki/images/Blue_Ice_JE3_BE2.png'
         },
+        'snow_layer_1' => {
+          image: 'https://minecraft.wiki/images/Snow_(layers_1)_JE3_BE3.png'
+        },
         'snow_block' => {
           image: 'https://minecraft.wiki/images/Snow_Block_JE2_BE2.png'
         },
@@ -257,6 +269,9 @@ module Jekyll
         },
         'jack_o_lantern' => {
           image: 'https://minecraft.wiki/images/Jack_o\'Lantern_(S)_JE4.png'
+        },
+        'cobweb' => {
+          image: 'https://minecraft.wiki/images/Invicon_Cobweb.png'
         },
         'tnt' => {
           image: 'https://minecraft.wiki/images/TNT_JE3_BE2.png'
@@ -299,6 +314,9 @@ module Jekyll
         },
         'bee_nest' => {
           image: 'https://minecraft.wiki/images/Bee_Nest_(S)_JE1.png'
+        },
+        'flower_pot' => {
+          image: 'https://minecraft.wiki/images/Invicon_Flower_Pot.png'
         },
         # Potion effects
         'fire_resistance' => {

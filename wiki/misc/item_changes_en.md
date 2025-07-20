@@ -11,7 +11,7 @@ page_id: wiki_misc_item_changes
 ### {% href_link 🌬️ | Bottled air %}
 When filling {% symlink glass_bottle, Glass Bottles %} with water underwater, the bottles replenish some air.
 
-Drinking water underwater automatically refills an empty bottle, turning it into a {% symlink potion_water, Water Bottle %}. The same applies to crafts that give out empty bottles as a result.
+Drinking water underwater automatically refills an empty bottle, turning it into a {% symlink water_potion, Water Bottle %}. The same applies to crafts that give out empty bottles as a result.
 
 If you hold a hot item in your other hand, the bottle will not refill with water, but may burst.
 
@@ -60,7 +60,7 @@ Items can now attack through grass and other vegetation. If the item is a melee 
 You may preview the {% symlink writable_book, Book's %} formatting (i.e., how the book would look after signing) by using {% game_action use %} while sneaking.
 
 ### {% href_link 🫗 | Bottle retrieval %}
-Bottled items (e.g. {% symlink potion, Potions %}, {% symlink honey_bottle, Honey Bottle %}, etc.) can be turned into an empty {% symlink glass_bottle, Glass Bottle %} when placed in a crafting grid. Being underwater will produce a {% symlink potion_water, Water Bottle %} instead.
+Bottled items (e.g. {% symlink potion, Potions %}, {% symlink honey_bottle, Honey Bottle %}, etc.) can be turned into an empty {% symlink glass_bottle, Glass Bottle %} when placed in a crafting grid. Being underwater will produce a {% symlink water_potion, Water Bottle %} instead.
 
 ### {% href_link 🔥 | Hot items %}
 Some items are considered "hot" and may interact with gameplay mechanics, such as {% symlink gloves, Gloves %} or bottled air.

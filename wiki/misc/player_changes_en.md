@@ -39,7 +39,7 @@ Sitting on a bed requires pressing (and then releasing) {% game_action sneak %}.
 Additionally, `/sit`{: .mc .mc-gold} can be used to sit on the ground anywhere.
 
 ### {% href_link 🛏️ | Lying %}
-In addition to sitting, it is possible to lie almost anywhere using `/lay`{: .mc .mc .mc-gold}.
+In addition to sitting, it is possible to lay almost anywhere using `/lay`{: .mc .mc .mc-gold}.
 
 ### {% href_link 🌊 | Swimming improvements %}
 When swimming on the surface of water, air won't be consumed, which allows you to swim quickly without getting out of breath.
