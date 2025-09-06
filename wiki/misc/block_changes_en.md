@@ -11,6 +11,9 @@ page_id: wiki_misc_block_changes
 ### {% href_link 🔥 | Campfires can set on fire %}
 If someone stands on a lit {% symlink campfire, Campfire %}, the fire will spread to them. Having `«Frost Walker»`{: .mc-aqua} enchantment on boots makes you exempt, though.
 
+### {% href_link 🌧️ | Campfires don't burn in rain %}
+{% symlink campfire, Campfires %} exposed to rain will randomly extinguish.
+
 ### {% href_link 🧊 | Melting ice in Nether %}
 Regular {% symlink ice, Ice %} will instantly melt in ultra warm dimensions like Nether. {% symlink packed_ice, Packed Ice %} will melt too, given enough time (regardless of default vanilla restrictions like the light level). {% symlink blue_ice, Blue Ice %}, on the other hand, is capable of withstanding such high temperatures.
 
@@ -70,6 +73,9 @@ Trying to extinguish {% symlink fire, Fire %} with an empty hand will set you on
 
 ### {% href_link 💧 | Wet cauldrons %}
 Entities inside {% symlink water_cauldron, Water Cauldrons %} are considered wet ([MC-145311](https://bugs.mojang.com/browse/MC-145311){: .mc .mc-gold}).
+
+### {% href_link ⬇️ | Campfires are affected by gravity %}
+{% symlink campfire, Campfires %} will fall due to gravity. Upon landing, a lit {% symlink campfire, Campfire %} will extinguish and spread fire to the block underneath and potentially to some of the blocks around.
 
 
 

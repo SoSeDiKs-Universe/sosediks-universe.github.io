@@ -35,6 +35,16 @@ Items show their attributes as icons.
 ### {% href_link ♟️ | Extracting furnace experience %}
 Clicking with an empty cursor on an empty result slot inside furnaces will extract collected experience and recipes.
 
+### {% href_link 🔱 | Impaling works on wet mobs %}
+Additionally to aquatic mobs, `«Impaling»`{: .mc-aqua} enchantment also affects wet mobs.
+Clicking with an empty cursor on an empty result slot inside furnaces will extract collected experience and recipes.
+
+### {% href_link 🚏 | Stop the traffic! %}
+By holding down {% game_action sneak %} and {% game_action use %} with an empty hand, you can free an entity (excluding {% symlink player, Players %}) the transport.
+
+### {% href_link 🧵 | Reach around %}
+Blocks can be placed in front of you or under other blocks.
+
 
 
 ## {% href_link 🔓️ | Special Abilities %}

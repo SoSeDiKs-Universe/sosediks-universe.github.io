@@ -41,10 +41,22 @@ Burning {% symlink sheep, Sheep %} lose their wool.
 {% symlink silverfish, Silverfish %} produce moving sound.
 
 
+## {% href_link 🎈 | Ghasts %}
+
+### {% href_link 😱 | Screaming Ghasts %}
+{% symlink ghast, Ghasts %} outside of lukewarm dimensions like Nether will occasionally scream.
+
+
 ## {% href_link 🐚 | Shulkers %}
 
 ### {% href_link 🌈 | Colored shulkers naturally %}
 {% symlink shulker_open, Shulkers %} spawn with a random color.
+
+
+## {% href_link ⛄ | Snowmen %}
+
+### {% href_link 🎃 | The Return of the Pumpkin %}
+By using a {% symlink carved_pumpkin, Carved Pumpkin %} on a sheared {% symlink snowman_sheared, Snowman %}, you can put it back on.
 
 
 ## {% href_link 🪵 | Armor Stands %}
@@ -83,11 +95,17 @@ Throwable {% symlink splash_water_potion, Splash Water Potion %}/{% symlink ling
 ### {% href_link ☃️ | Snow fight! %}
 {% symlink snowball, Snowballs %} create a layer of {% symlink snow_layer_1, Snow %} upon landing (or drop themselves otherwise). Additionally, interacting ({% game_action use %}) with {% symlink snow_block, Snow %} with an empty hand will decrease its layers, picking up a {% symlink snowball, Snowball %}.
 
+### {% href_link 🏹 | Arrows work in water %}
+The {% symlink arrow, Arrows %} have reduced water resistance, making them useful underwater.
+
 
 ## {% href_link 🧩 | Miscellaneous %}
 
 ### {% href_link 🧟 | Undead consecration %}
 All undead mobs now have a passive regeneration and will block 80% of the incoming damage, with the exception of explosions. This can be bypassed by using `«Smite»`{: .mc-aqua} (2 seconds of vulnerability) or igniting them (20 seconds of vulnerability). The latter, of course, will not work on fire-immune mobs, like the Nether ones.
+
+### {% href_link 🧟 | Undead ignore environmental damage %}
+Undead mobs don't get hurt from {% symlink cactus, cacti %} and {% symlink sweet_berries, bushes %}.
 
 ### {% href_link 💢 | Angry animals %}
 All friendly mobs can now attack back instead of panicking, and their friends will gladly help them to do so.
@@ -111,3 +129,6 @@ For balancing and fun reasons, some mobs have unique behaviors:
 - Baby {% symlink stray, Strays %} are equipped with {% symlink snowball, Snowballs %} with a pebble mixed in.
 - Baby {% symlink bogged, Bogged %} are eager to share {% symlink red_mushroom, Red %} and {% symlink brown_mushroom, Brown Mushrooms %}.
 - Baby {% symlink wither_skeleton, Wither Skeletons %} are scared of the {% symlink player, Player %}, thinking you'll steal the {% symlink wither_skeleton_skull, Wither Skeleton Skull %} they are always carrying around. You can exchange the skull by giving ({% game_action use %}) them a {% symlink wither_rose, Wither Rose %}.
+
+### {% href_link ❤️ | Love particles %}
+Animals in love mode (ready for breeding) show heart particles for the whole duration of love mode ([MC-93826](https://bugs.mojang.com/browse/MC-93826){: .mc-gold}).

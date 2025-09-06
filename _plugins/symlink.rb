@@ -23,6 +23,9 @@ module Jekyll
         'silverfish' => {
           image: 'https://minecraft.wiki/images/Silverfish_JE1_BE1.gif'
         },
+        'ghast' => {
+          image: 'https://minecraft.wiki/images/Ghast_JE3_BE3.gif'
+        },
         'evoker' => {
           image: 'https://minecraft.wiki/images/Evoker_JE3.png'
         },
@@ -61,6 +64,9 @@ module Jekyll
         },
         'shulker_open' => {
           image: 'https://minecraft.wiki/images/Shulker_JE1_BE1.png'
+        },
+        'snowman_sheared' => {
+          image: 'https://minecraft.wiki/images/Sheared_Snow_Golem_JE2_BE2.png'
         },
         # Items
         'bucket' => {
@@ -204,6 +210,12 @@ module Jekyll
         'campfire_block_unlit' => {
           image: 'https://minecraft.wiki/images/Unlit_Campfire_%28S%29_JE2_BE2.png'
         },
+        'cactus' => {
+          image: 'https://minecraft.wiki/images/Cactus_JE4.png'
+        },
+        'sweet_berries' => {
+          image: 'https://minecraft.wiki/images/Sweet_Berry_Bush_Age_3_JE1_BE1.png'
+        },
         'oak_door' => {
           image: 'https://minecraft.wiki/images/Invicon_Oak_Door.png'
         },
@@ -266,6 +278,9 @@ module Jekyll
         },
         'pumpkin' => {
           image: 'https://minecraft.wiki/images/Carved_Pumpkin_(N)_JE5.png'
+        },
+        'carved_pumpkin' => {
+          image: 'https://minecraft.wiki/images/Carved_Pumpkin_(S)_JE5.png'
         },
         'jack_o_lantern' => {
           image: 'https://minecraft.wiki/images/Jack_o\'Lantern_(S)_JE4.png'
