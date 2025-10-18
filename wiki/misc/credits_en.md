@@ -32,6 +32,10 @@ Improves berries in simple ways, like placement and usage!
 
 ## {% href_link 🆕 | New content %}
 
+### {% symlink totemic %}
+
+A mod with a focus on Totems, music and nature.
+
 ### {% symlink urkaz-moon-tools %}
 
 Adds one item and one block that helps see and detect the current Moon Phase.
@@ -43,3 +47,11 @@ Adds one item and one block that helps see and detect the current Moon Phase.
 ### {% symlink blazeandcaves-advancements-pack %}
 
 Adds many new advancements to your Minecraft world.
+
+### {% symlink bacap-enhanced-discoveries %}
+
+An expansion to BACAP with new advancements.
+
+### {% symlink bacap-torture-edition %}
+
+An expansion to BACAP with new torturous advancements.

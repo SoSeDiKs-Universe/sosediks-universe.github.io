@@ -5,9 +5,9 @@ with import <nixpkgs> {
 stdenv.mkDerivation {
   name = "ruby";
   buildInputs = [
-    ruby
-    rubyPackages.jekyll
-    rubyPackages.eventmachine
+    ruby_3_4
+    jekyll
+    rubyPackages_3_4.eventmachine
   ];
   shellHook = '''';
 }
