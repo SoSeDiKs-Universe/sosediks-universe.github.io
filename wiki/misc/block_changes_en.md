@@ -72,7 +72,7 @@ Trying to extinguish {% symlink fire, Fire %} with an empty hand will set you on
 {% symlink campfire, Campfires %} are no longer lit by default. Breaking them will drop the {% symlink campfire, Campfire %} as an item, with `«Silk Touch»`{: .mc-aqua} allowing to keep the lit state.
 
 ### {% href_link 💧 | Wet cauldrons %}
-Entities inside {% symlink water_cauldron, Water Cauldrons %} are considered wet ([MC-145311](https://bugs.mojang.com/browse/MC-145311){: .mc .mc-gold}).
+Entities inside {% symlink water_cauldron, Water Cauldrons %} are considered wet ([MC-145311](https://bugs.mojang.com/browse/MC/issues/MC-145311){: .mc .mc-gold}).
 
 ### {% href_link ⬇️ | Campfires are affected by gravity %}
 {% symlink campfire, Campfires %} will fall due to gravity. Upon landing, a lit {% symlink campfire, Campfire %} will extinguish and spread fire to the block underneath and potentially to some of the blocks around.

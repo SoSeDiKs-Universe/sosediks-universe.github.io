@@ -20,6 +20,54 @@ module Jekyll
         'rainbow_sheep' => {
           image: 'https://minecraft.wiki/images/Jeb_Sheep_JE4_BE3.webp'
         },
+        'chicken' => {
+          image: 'https://minecraft.wiki/images/Chicken_JE2_BE2.png'
+        },
+        'baby_chicken' => {
+          image: 'https://minecraft.wiki/images/Baby_Chicken_JE2_BE2.png'
+        },
+        'horse' => {
+          image: 'https://minecraft.wiki/images/White_Horse.png'
+        },
+        'mule' => {
+          image: 'https://minecraft.wiki/images/Mule_JE5.png'
+        },
+        'zombie_horse' => {
+          image: 'https://minecraft.wiki/images/Zombie_Horse_JE6.png'
+        },
+        'skeleton_horse' => {
+          image: 'https://minecraft.wiki/images/Skeleton_Horse.png'
+        },
+        'frog' => {
+          image: 'https://minecraft.wiki/images/Temperate_Frog_JE1_BE1.gif'
+        },
+        'vex' => {
+          image: 'https://minecraft.wiki/images/Vex_JE4.gif'
+        },
+        'pillager' => {
+          image: 'https://minecraft.wiki/images/Pillager_JE3.png'
+        },
+        'polar_bear' => {
+          image: 'https://minecraft.wiki/images/Polar_Bear_JE2_BE2.png'
+        },
+        'salmon_fish' => {
+          image: 'https://minecraft.wiki/images/Salmon.gif'
+        },
+        'ocelot' => {
+          image: 'https://minecraft.wiki/images/Ocelot_JE2_BE2.png'
+        },
+        'phantom' => {
+          image: 'https://minecraft.wiki/images/Phantom_JE2.gif'
+        },
+        'parrot' => {
+          image: 'https://minecraft.wiki/images/Red_Parrot_JE1_BE1.png'
+        },
+        'wolf' => {
+          image: 'https://minecraft.wiki/images/Wolf_JE2_BE2.png'
+        },
+        'pig' => {
+          image: 'https://minecraft.wiki/images/Temperate_Pig_JE4_BE2.png'
+        },
         'silverfish' => {
           image: 'https://minecraft.wiki/images/Silverfish_JE1_BE1.gif'
         },
@@ -103,10 +151,25 @@ module Jekyll
           image: 'https://minecraft.wiki/images/Invicon_Torch.png'
         },
         'soul_torch' => {
-          image: 'https://minecraft.wiki/images/Invicon_Soul_Torch.pngg'
+          image: 'https://minecraft.wiki/images/Invicon_Soul_Torch.png'
+        },
+        'copper_torch' => {
+          image: 'https://minecraft.wiki/images/Invicon_Copper_Torch_JE2_BE2.png'
         },
         'saddle' => {
           image: 'https://minecraft.wiki/images/Invicon_Saddle.png'
+        },
+        'feather' => {
+          image: 'https://minecraft.wiki/images/Feather_JE3_BE2.png'
+        },
+        'rotten_flesh' => {
+          image: 'https://minecraft.wiki/images/Rotten_Flesh_JE3_BE2.png'
+        },
+        'bone_meal' => {
+          image: 'https://minecraft.wiki/images/Bone_Meal_JE3_BE3.png'
+        },
+        'crossbow' => {
+          image: 'https://minecraft.wiki/images/Crossbow.png'
         },
         'glass_bottle' => {
           image: 'https://minecraft.wiki/images/Invicon_Glass_Bottle.png'
@@ -158,6 +221,12 @@ module Jekyll
         },
         'snowball' => {
           image: 'https://minecraft.wiki/images/Snowball_JE3_BE3.png'
+        },
+        'egg' => {
+          image: 'https://minecraft.wiki/images/Egg_JE2_BE2.png'
+        },
+        'spyglass' => {
+          image: 'https://minecraft.wiki/images/Spyglass_(item)_JE3_BE1.png'
         },
         'red_mushroom' => {
           image: 'https://minecraft.wiki/images/Invicon_Red_Mushroom.png'
@@ -337,6 +406,9 @@ module Jekyll
         'fire_resistance' => {
           image: 'https://minecraft.wiki/images/Fire_Resistance_JE2_BE2.png'
         },
+        'blindness' => {
+          image: 'https://minecraft.wiki/images/Blindness_JE2_BE2.png'
+        },
         # Internal items
         'gloves' => {
           emoji: '🧤',
@@ -380,6 +452,14 @@ module Jekyll
           text: 'Totemic',
           modrinth: 'https://modrinth.com/mod/fenns_totemic'
         },
+        'requiem' => {
+          text: 'Requiem',
+          modrinth: 'https://modrinth.com/mod/requiem'
+        },
+        'trick-or-treat' => {
+          text: 'Trick or Treat',
+          curseforge: 'https://www.curseforge.com/minecraft/mc-mods/trick-or-treat'
+        },
         'berry-good' => {
           text: 'Berry Good',
           modrinth: 'https://modrinth.com/mod/berry-good'
@@ -387,6 +467,18 @@ module Jekyll
         'urkaz-moon-tools' => {
           text: 'Urkaz Moon Tools',
           modrinth: 'https://modrinth.com/mod/urkaz-moon-tools'
+        },
+        'immersive-armor-hud' => {
+          text: 'Immersive Armor HUD',
+          curseforge: 'https://www.curseforge.com/minecraft/mc-mods/immersive-armor-hud'
+        },
+        'big-brain' => {
+          text: 'Big Brain',
+          curseforge: 'https://www.curseforge.com/minecraft/mc-mods/big-brain'
+        },
+        'mobs-attempt-parkour' => {
+          text: 'Mobs Attempt Parkour',
+          curseforge: 'https://modrinth.com/mod/mobs-attempt-parkour'
         },
         'blazeandcaves-advancements-pack' => {
           text: 'BlazeandCave\'s Advancements Pack',
@@ -429,6 +521,13 @@ module Jekyll
           text = tag_data[:text]
           mod_url = tag_data[:modrinth]
           image_src = '<svg xmlns="http://www.w3.org/2000/svg" width="512" height="514" viewBox="0 0 512 514" class="modrinth-icon brand-icon pixelated img-link" style="width: 1em; height: 1em;"><path fill="currentColor" fill-rule="evenodd" d="M503.16 323.56c11.39-42.09 12.16-87.65.04-132.8C466.57 54.23 326.04-26.8 189.33 9.78 83.81 38.02 11.39 128.07.69 230.47h43.3c10.3-83.14 69.75-155.74 155.76-178.76 106.3-28.45 215.38 28.96 253.42 129.67l-42.14 11.27c-19.39-46.85-58.46-81.2-104.73-95.83l-7.74 43.84c36.53 13.47 66.16 43.84 77 84.25 15.8 58.89-13.62 119.23-67 144.26l11.53 42.99c70.16-28.95 112.31-101.86 102.34-177.02l41.98-11.23a210.2 210.2 0 0 1-3.86 84.16z" clip-rule="evenodd"></path><path fill="currentColor" d="M321.99 504.22C185.27 540.8 44.75 459.77 8.11 323.24A257.6 257.6 0 0 1 0 275.46h43.27c1.09 11.91 3.2 23.89 6.41 35.83 3.36 12.51 7.77 24.46 13.11 35.78l38.59-23.15c-3.25-7.5-5.99-15.32-8.17-23.45-24.04-89.6 29.2-181.7 118.92-205.71 17-4.55 34.1-6.32 50.8-5.61L255.19 133c-10.46.05-21.08 1.42-31.66 4.25-66.22 17.73-105.52 85.7-87.78 151.84 1.1 4.07 2.38 8.04 3.84 11.9l49.35-29.61-14.87-39.43 46.6-47.87 58.9-12.69 17.05 20.99-27.15 27.5-23.68 7.45-16.92 17.39 8.29 23.07s16.79 17.84 16.82 17.85l23.72-6.31 16.88-18.54 36.86-11.67 10.98 24.7-38.03 46.63-63.73 20.18-28.58-31.82-49.82 29.89c25.54 29.08 63.94 45.23 103.75 41.86l11.53 42.99c-59.41 7.86-117.44-16.73-153.49-61.91l-38.41 23.04c50.61 66.49 138.2 99.43 223.97 76.48 61.74-16.52 109.79-58.6 135.81-111.78l42.64 15.5c-30.89 66.28-89.84 118.94-166.07 139.34"></path></svg>'
+          return %Q{<span style="display: inline-flex; align-items: center;" class="mc-green">#{image_src}&nbsp;<a href="#{mod_url}" class="wiki-link mc-gold">#{text}</a></span>}
+        end
+
+        if (tag_data[:curseforge])
+          text = tag_data[:text]
+          mod_url = tag_data[:curseforge]
+          image_src = '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" class="curseforge-icon brand-icon pixelated img-link" style="width: 1em; height: 1em;"><path d="M23.9074 12.0181C23.9074 12.0181 30.0327 11.0522 31 8.23523H21.6168V6H1L3.53975 8.94699V11.9664C3.53975 11.9664 9.94812 11.6332 12.427 13.5129C15.8202 16.6579 8.61065 20.9092 8.61065 20.9092L7.37439 25C9.30758 23.1593 12.9921 20.7781 19.7474 20.8929C17.1767 21.7053 14.5917 22.9743 12.5794 25H26.2354L24.9494 20.9092C24.9494 20.9092 15.0519 15.0732 23.9074 12.0184V12.0181Z" fill="#f16436" /></svg>'
           return %Q{<span style="display: inline-flex; align-items: center;" class="mc-green">#{image_src}&nbsp;<a href="#{mod_url}" class="wiki-link mc-gold">#{text}</a></span>}
         end
   

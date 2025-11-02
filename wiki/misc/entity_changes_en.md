@@ -21,6 +21,21 @@ Non-powered {% symlink creeper, Creepers %} won't blow up if there's no danger a
 {% symlink enderman, Endermen %} might decide to teleport their victims around, especially if their target is out of reach.
 
 
+## {% href_link 🐔 | Chickens %}
+
+### {% href_link 🪶 | Lost feathers %}
+{% symlink chicken, Chickens %} will naturally produce {% symlink feather, Feathers %} instead of {% symlink egg, Eggs %} 85% of the time.
+
+### {% href_link 🥚 | Hatching eggs %}
+Breeding {% symlink chicken, Chickens %} produces 1-3 {% symlink egg, Eggs %} instead of {% symlink baby_chicken, Baby Chickens %}. {% symlink egg, Eggs %} will hatch on despawn if there are suitable life conditions (i.e., no overpopulation).
+
+
+## {% href_link 🐷 | Pigs %}
+
+### {% href_link 🐽 | Extra babies %}
+{% symlink pig, Pigs %} produce 2-6 babies upon breeding.
+
+
 ## {% href_link 🐑 | Sheep %}
 
 ### {% href_link 👕 | Natural wool %}
@@ -34,6 +49,33 @@ Rainbow {% symlink rainbow_sheep, Sheep %} (named _jeb\__) drop randomly colored
 ### {% href_link 🔥 | Burning wool %}
 Burning {% symlink sheep, Sheep %} lose their wool.
 
+### {% href_link 🐺 | Scary wolves %}
+{% symlink sheep, Sheep %} try to flee from {% symlink wolf, Wolves %}.
+
+
+## {% href_link 🐸 | Frogs %}
+
+### {% href_link 🍴 | Flying flies %}
+{% symlink frog, Frogs %} can eat {% symlink vex, Vexes %}.
+
+
+## {% href_link 🐻‍❄️ | Polar Bears %}
+
+### {% href_link 🎣 | Fish hunting %}
+{% symlink polar_bear, Polar Bears %} attack nearby {% symlink salmon_fish, Fish %}.
+
+
+## {% href_link 🐆 | Ocelots %}
+
+### {% href_link 🦌 | Hunting targets %}
+{% symlink ocelot, Ocelots %} hunt nearby {% symlink creeper, Creepers %}, {% symlink phantom, Phantoms %} and {% symlink parrot, Parrots %}.
+
+
+## {% href_link 🦜 | Parrots %}
+
+### {% href_link 🐆 | Scary ocelots %}
+{% symlink parrot, Parrots %} try to avoid {% symlink ocelot, Ocelots %}.
+
 
 ## {% href_link 🪲 | Silverfish %}
 
@@ -45,6 +87,16 @@ Burning {% symlink sheep, Sheep %} lose their wool.
 
 ### {% href_link 😱 | Screaming Ghasts %}
 {% symlink ghast, Ghasts %} outside of lukewarm dimensions like Nether will occasionally scream.
+
+
+## {% href_link 🏴‍☠️ | Pillagers %}
+
+### {% href_link 💥 | Smarter pillage %}
+Patrol leaders may spawn with a {% symlink spyglass, Spyglass %} in offhand. They will notify other nearby raiders upon spotting a target.
+
+{% symlink pillager, Pillagers %} will try to stroll around while reloading.
+
+{% symlink pillager, Pillagers %} with a `«Multishot»`{: .mc-aqua} enchantment on their {% symlink crossbow, Crossbow %} will try to stay closer to the target.
 
 
 ## {% href_link 🐚 | Shulkers %}
@@ -90,10 +142,12 @@ Hitting a {% symlink bee_nest, Bee Nest %} will cause it to fall, letting of ang
 Hitting a fragile block will break it.
 
 ### {% href_link 🧯 | Water Potion extinguishing %}
-Throwable {% symlink splash_water_potion, Splash Water Potion %}/{% symlink lingering_water_potion, Lingering Water Potion %} splashes {% symlink torch, Torches %}/{% symlink soul_torch, Soul Torches %}.
+Throwable {% symlink splash_water_potion, Splash Water Potion %}/{% symlink lingering_water_potion, Lingering Water Potion %} splashes {% symlink torch, Torches %}/{% symlink soul_torch, Soul Torches %}/{% symlink copper_torch, Copper Torches %}.
 
 ### {% href_link ☃️ | Snow fight! %}
-{% symlink snowball, Snowballs %} create a layer of {% symlink snow_layer_1, Snow %} upon landing (or drop themselves otherwise). Additionally, interacting ({% game_action use %}) with {% symlink snow_block, Snow %} with an empty hand will decrease its layers, picking up a {% symlink snowball, Snowball %}.
+{% symlink snowball, Snowballs %} create a layer of {% symlink snow_layer_1, Snow %} upon landing (or drop themselves otherwise; landing into a {% symlink water, Water %} source with nothing on top turns it into an {% symlink ice, Ice %}). Additionally, interacting ({% game_action use %}) with {% symlink snow_block, Snow %} with an empty hand will decrease its layers, picking up a {% symlink snowball, Snowball %}.
+
+If a {% symlink snowball, Snowball %} hits an entity, it'll add 5 seconds of freezing. {% symlink snowball, Snowballs %} have 4 ticks of cooldown between throws.
 
 ### {% href_link 🏹 | Arrows work in water %}
 The {% symlink arrow, Arrows %} have reduced water resistance, making them useful underwater.
@@ -102,13 +156,24 @@ The {% symlink arrow, Arrows %} have reduced water resistance, making them usefu
 ## {% href_link 🧩 | Miscellaneous %}
 
 ### {% href_link 🧟 | Undead consecration %}
-All undead mobs now have a passive regeneration and will block 80% of the incoming damage, with the exception of explosions. This can be bypassed by using `«Smite»`{: .mc-aqua} (2 seconds of vulnerability) or igniting them (20 seconds of vulnerability). The latter, of course, will not work on fire-immune mobs, like the Nether ones.
+All undead mobs now have a passive regeneration and will block 80% of the incoming damage, with the exception of explosions. This can be bypassed by using `«Smite»`{: .mc-aqua} (2 seconds of vulnerability) or igniting them (20 seconds of vulnerability). The latter, of course, will not work on fire-immune mobs, like the Nether ones. Attacks from golems, other undead mobs and wolves targeting skeletons can temporarily disable regeneration.
 
 ### {% href_link 🧟 | Undead ignore environmental damage %}
-Undead mobs don't get hurt from {% symlink cactus, cacti %} and {% symlink sweet_berries, bushes %}.
+Undead mobs don't get hurt from {% symlink cactus, Cacti %} and {% symlink sweet_berries, Bushes %}.
+
+### {% href_link 👁️ | Dynamic visibility range %}
+{% symlink blindness, Blindness %} decreases the visibility range by 90%.
+
+Wielding a {% symlink spyglass, Spyglass %} increases the visibility range by twofold.
 
 ### {% href_link 💢 | Angry animals %}
 All friendly mobs can now attack back instead of panicking, and their friends will gladly help them to do so.
+
+### {% href_link 🆙 | Mobs attempt parkour %}
+Some mobs can jump over gaps.
+
+### {% href_link 🚪 | Openable fence gates %}
+Mobs that can open {% symlink oak_door, Doors %} can also now open singular {% symlink oak_fence_gate, Gates %}.
 
 ### {% href_link 🧨 | Explosive minecarts can be manually ignited %}
 {% symlink tnt_minecart_entity, Minecart with TNT %} can be activated by using {% symlink flint_and_steel, Flint and Steel %} or {% symlink fire_charge, Fire Charge %} on it.
@@ -130,5 +195,17 @@ For balancing and fun reasons, some mobs have unique behaviors:
 - Baby {% symlink bogged, Bogged %} are eager to share {% symlink red_mushroom, Red %} and {% symlink brown_mushroom, Brown Mushrooms %}.
 - Baby {% symlink wither_skeleton, Wither Skeletons %} are scared of the {% symlink player, Player %}, thinking you'll steal the {% symlink wither_skeleton_skull, Wither Skeleton Skull %} they are always carrying around. You can exchange the skull by giving ({% game_action use %}) them a {% symlink wither_rose, Wither Rose %}.
 
+### {% href_link 🐣 | Poor babies %}
+Baby variants of all mobs have their health halved.
+
 ### {% href_link ❤️ | Love particles %}
-Animals in love mode (ready for breeding) show heart particles for the whole duration of love mode ([MC-93826](https://bugs.mojang.com/browse/MC-93826){: .mc-gold}).
+Animals in love mode (ready for breeding) show heart particles for the whole duration of love mode ([MC-93826](https://bugs.mojang.com/browse/MC/issues/MC-93826){: .mc-gold}).
+
+### {% href_link ✂️ | More shearable mobs %}
+{% symlink chicken, Chickens %} can be sheared from time to time to produce 1-2 {% symlink feather, Feathers %}.
+
+{% symlink horse, Horses %} and {% symlink mule, Mules %} produce 2-4 {% symlink horsehair, Horsehairs %}.
+
+{% symlink zombie_horse, Zombie Horses %} produce 1-2 {% symlink rotten_flesh, Rotten Flesh %}.
+
+{% symlink skeleton_horse, Skeleton Horses %} produce 1 {% symlink bone_meal, Bone Meal %}.

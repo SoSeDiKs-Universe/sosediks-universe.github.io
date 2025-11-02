@@ -32,6 +32,10 @@ Improves berries in simple ways, like placement and usage!
 
 ## {% href_link 🆕 | New content %}
 
+### {% symlink requiem %}
+
+Completely changes the death system by adding new mechanics such as player souls and undead possession.
+
 ### {% symlink totemic %}
 
 A mod with a focus on Totems, music and nature.
@@ -39,6 +43,26 @@ A mod with a focus on Totems, music and nature.
 ### {% symlink urkaz-moon-tools %}
 
 Adds one item and one block that helps see and detect the current Moon Phase.
+
+### {% symlink trick-or-treat %}
+
+Spooky Halloween candy with fun effects!
+
+
+
+## {% href_link 🆕 | Misc %}
+
+### {% symlink mobs-attempt-parkour %}
+
+Gives certain mobs the ability to jump over things.
+
+### {% symlink big-brain %}
+
+Improved AI for various mobs!
+
+### {% symlink immersive-armor-hud %}
+
+Shows information about your armor's durability in HUD.
 
 
 
