@@ -456,6 +456,10 @@ module Jekyll
           text: 'Requiem',
           modrinth: 'https://modrinth.com/mod/requiem'
         },
+        'glide-away' => {
+          text: 'Glide Away!',
+          modrinth: 'https://modrinth.com/mod/glide-away'
+        },
         'trick-or-treat' => {
           text: 'Trick or Treat',
           curseforge: 'https://www.curseforge.com/minecraft/mc-mods/trick-or-treat'
@@ -467,6 +471,10 @@ module Jekyll
         'urkaz-moon-tools' => {
           text: 'Urkaz Moon Tools',
           modrinth: 'https://modrinth.com/mod/urkaz-moon-tools'
+        },
+        'cactus-juice' => {
+          text: 'Maht\'s Cactus Juice',
+          curseforge: 'https://www.curseforge.com/minecraft/mc-mods/cactus'
         },
         'immersive-armor-hud' => {
           text: 'Immersive Armor HUD',

@@ -22,15 +22,11 @@ Improves world exploration by adding skeletons with treasures.
 
 
 
-## {% href_link 🥗 | Food %}
+## {% href_link 🆕 | New content %}
 
 ### {% symlink berry-good %}
 
 Improves berries in simple ways, like placement and usage!
-
-
-
-## {% href_link 🆕 | New content %}
 
 ### {% symlink requiem %}
 
@@ -47,6 +43,14 @@ Adds one item and one block that helps see and detect the current Moon Phase.
 ### {% symlink trick-or-treat %}
 
 Spooky Halloween candy with fun effects!
+
+### {% symlink cactus-juice %}
+
+The one and only true Avatar experience, in Minecraft.
+
+### {% symlink glide-away %}
+
+Get your Hang Glider and glide away from the dangers!
 
 
 
