@@ -11,6 +11,9 @@ page_id: wiki_misc_entity_changes
 ### {% href_link 💣️ | Strengthened weakening Creepers %}
 The strength/radius of a {% symlink creeper, Creeper %}'s explosion depends on its remaining health.
 
+### {% href_link 🕶️ | Creepers stalk players %}
+{% symlink creeper, Creepers %} won't begin to fuse if their target does not see them. If the {% symlink creeper, Creeper %} happens to be behind you, it'll wait until you turn.
+
 ### {% href_link 😻 | Adorable humans %}
 Non-powered {% symlink creeper, Creepers %} won't blow up if there's no danger and their target is crawling.
 
