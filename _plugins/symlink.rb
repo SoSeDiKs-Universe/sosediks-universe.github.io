@@ -499,6 +499,42 @@ module Jekyll
         'bacap-torture-edition' => {
           text: 'BlazeandCave\'s Advancement Pack Torture Edition',
           pmc: 'https://www.planetminecraft.com/data-pack/bacap-torture-edition'
+        },
+        'tiny-skeletons' => {
+          text: 'Tiny Skeletons',
+          modrinth: 'https://modrinth.com/mod/tiny-skeletons'
+        },
+        'bucketem' => {
+          text: 'Bucket\'Em',
+          modrinth: 'https://modrinth.com/mod/bucketem'
+        },
+        'bucket-of-frog' => {
+          text: 'Bucket of Frog',
+          modrinth: 'https://modrinth.com/mod/bucket-of-frog'
+        },
+        'kfa' => {
+          text: 'Kentucky Fried Axolotls',
+          modrinth: 'https://modrinth.com/mod/kfa'
+        },
+        'axolotl-bucket-fix' => {
+          text: 'Axolotl Bucket Fix',
+          modrinth: 'https://modrinth.com/mod/axolotl-bucket-fix'
+        },
+        'wooden-buckets' => {
+          text: 'Wooden Buckets',
+          curseforge: 'https://www.curseforge.com/minecraft/mc-mods/wooden-buckets'
+        },
+        'ceramic-bucket' => {
+          text: 'Ceramic Bucket',
+          curseforge: 'https://www.curseforge.com/minecraft/mc-mods/ceramic-bucket'
+        },
+        'early-game-buckets' => {
+          text: 'Early-Game Buckets',
+          curseforge: 'https://www.curseforge.com/minecraft/mc-mods/early-game-buckets'
+        },
+        'chainmail-bucket' => {
+          text: 'Chainmail Bucket',
+          curseforge: 'https://modrinth.com/mod/chainmail-bucket'
         }
       }
   

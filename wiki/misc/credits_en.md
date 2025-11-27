@@ -52,6 +52,42 @@ The one and only true Avatar experience, in Minecraft.
 
 Get your Hang Glider and glide away from the dangers!
 
+### {% symlink tiny-skeletons %}
+
+Teeny, tiny skeletons, send shivers down your spine…
+
+### {% symlink bucketem %}
+
+A mod about adding more ways to store and move mobs in both buckets and non-bucket ways.
+
+### {% symlink bucket-of-frog %}
+
+Capture frogs in buckets and carry them safely with you.
+
+### {% symlink kfa %}
+
+Adds Fried Axolotls.
+
+### {% symlink axolotl-bucket-fix %}
+
+Makes the axolotl bucket item show the right axolotl type.
+
+### {% symlink wooden-buckets %}
+
+Adds durable buckets made of wood.
+
+### {% symlink ceramic-bucket %}
+
+A Ceramic Bucket made of clay for ALL fluids!
+
+### {% symlink early-game-buckets %}
+
+Adds wooden and ceramic buckets to the game.
+
+### {% symlink chainmail-bucket %}
+
+Adds a bucket that is only able to remove fluid source blocks, and not store them.
+
 
 
 ## {% href_link 🆕 | Misc %}
