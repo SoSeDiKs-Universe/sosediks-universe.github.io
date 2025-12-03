@@ -456,6 +456,10 @@ module Jekyll
           text: 'Requiem',
           modrinth: 'https://modrinth.com/mod/requiem'
         },
+        'consecration' => {
+          text: 'Consecration',
+          modrinth: 'https://modrinth.com/mod/consecration'
+        },
         'glide-away' => {
           text: 'Glide Away!',
           modrinth: 'https://modrinth.com/mod/glide-away'

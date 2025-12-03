@@ -32,6 +32,10 @@ Improves berries in simple ways, like placement and usage!
 
 Completely changes the death system by adding new mechanics such as player souls and undead possession.
 
+### {% symlink consecration %}
+
+Makes the undead more resilient except against fire and holy damage, and adds new features to help you slay them.
+
 ### {% symlink totemic %}
 
 A mod with a focus on Totems, music and nature.

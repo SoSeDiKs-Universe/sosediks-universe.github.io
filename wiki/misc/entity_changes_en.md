@@ -159,7 +159,7 @@ The {% symlink arrow, Arrows %} have reduced water resistance, making them usefu
 ## {% href_link 🧩 | Miscellaneous %}
 
 ### {% href_link 🧟 | Undead consecration %}
-All undead mobs now have a passive regeneration and will block 80% of the incoming damage, with the exception of explosions. This can be bypassed by using `«Smite»`{: .mc-aqua} (2 seconds of vulnerability) or igniting them (20 seconds of vulnerability). The latter, of course, will not work on fire-immune mobs, like the Nether ones. Attacks from golems, other undead mobs and wolves targeting skeletons can temporarily disable regeneration.
+All undead mobs now have a passive regeneration and will block 80% of the incoming damage, with the exception of explosions. This can be bypassed by using `«Smite»`{: .mc-aqua} (2 seconds of vulnerability, full damage), `«Flame»`{: .mc-aqua} (20 seconds of vulnerability if not immune to fire, 7 seconds of disabled regeneration instead; full damage), or igniting them (20 seconds of vulnerability). Ignition, of course, will not work on fire-immune mobs, like the Nether ones. Attacks from golems, other undead mobs and wolves targeting skeletons can temporarily disable regeneration.
 
 ### {% href_link 🧟 | Undead ignore environmental damage %}
 Undead mobs don't get hurt from {% symlink cactus, Cacti %} and {% symlink sweet_berries, Bushes %}.
@@ -170,7 +170,7 @@ Undead mobs don't get hurt from {% symlink cactus, Cacti %} and {% symlink sweet
 Wielding a {% symlink spyglass, Spyglass %} increases the visibility range by twofold.
 
 ### {% href_link 💢 | Angry animals %}
-All friendly mobs can now attack back instead of panicking, and their friends will gladly help them to do so.
+All friendly mobs can now attack back instead of panicking, and their friends will gladly help them to do so. Upon damaging a mob, mobs of the same time will become angry, and animals of other types will panic.
 
 ### {% href_link 🆙 | Mobs attempt parkour %}
 Some mobs can jump over gaps.
