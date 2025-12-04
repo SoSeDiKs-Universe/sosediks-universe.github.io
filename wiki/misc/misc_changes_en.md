@@ -18,7 +18,7 @@ Server features many new advancements to achieve during your journey. Many of th
 If you sneak while swapping items, only half of the items will go into the other hand.
 
 ### {% href_link 🐸 | Aquatic Frogs %}
-Frogs are considered as part of aquatic mobs. For example, this makes them sensitive to `«Impaling»`{: .mc-aqua} enchantment.
+{% symlink frog, Frogs %} are considered as part of aquatic mobs. For example, this makes them sensitive to `«Impaling»`{: .mc-aqua} enchantment.
 
 ### {% href_link 🎩 | Blessing of Unbinding %}
 `«Curse of Binding»`{: .mc-red} enchantment can be mitigated by having the enhanced `«Weakness»`{: .mc-aqua} potion effect.

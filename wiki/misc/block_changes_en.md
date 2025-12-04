@@ -81,6 +81,9 @@ Entities inside {% symlink water_cauldron, Water Cauldrons %} are considered wet
 
 ## {% href_link ⚙️ | Tweaks %}
 
+### {% href_link 🔲 | Crying Obsidian is still Obsidian %}
+{% symlink crying_obsidian, Crying Obsidian %} can be used as a block for the Nether portal frame.
+
 ### {% href_link 🪧 | Better sign editing %}
 {% symlink oak_sign, Sign %} editing screen is no longer opened automatically on place.
 
@@ -96,3 +99,5 @@ Some vanilla blocks also got inventories. {% symlink flower_pot, Flower Pots %} 
 
 ### {% href_link 🕸️ | Flammable cobweb %}
 {% symlink cobweb, Cobweb %} can burn and catch the {% symlink fire, Fire %}.
+
+It can also be lit with {% symlink torch, torches %} via {% game_action use %}.

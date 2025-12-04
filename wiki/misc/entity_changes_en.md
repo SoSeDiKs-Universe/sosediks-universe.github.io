@@ -105,7 +105,7 @@ Patrol leaders may spawn with a {% symlink spyglass, Spyglass %} in offhand. The
 ## {% href_link 🐚 | Shulkers %}
 
 ### {% href_link 🌈 | Colored shulkers naturally %}
-{% symlink shulker_open, Shulkers %} spawn with a random color.
+{% symlink shulker_open, Shulkers %} spawn with a random color and are dyeable.
 
 
 ## {% href_link ⛄ | Snowmen %}
@@ -161,6 +161,31 @@ The {% symlink arrow, Arrows %} have reduced water resistance, making them usefu
 ### {% href_link 🧟 | Undead consecration %}
 All undead mobs now have a passive regeneration and will block 80% of the incoming damage, with the exception of explosions. This can be bypassed by using `«Smite»`{: .mc-aqua} (2 seconds of vulnerability, full damage), `«Flame»`{: .mc-aqua} (20 seconds of vulnerability if not immune to fire, 7 seconds of disabled regeneration instead; full damage), or igniting them (20 seconds of vulnerability). Ignition, of course, will not work on fire-immune mobs, like the Nether ones. Attacks from golems, other undead mobs and wolves targeting skeletons can temporarily disable regeneration.
 
+### {% href_link 🪣 | More bucketable mobs %}
+More mobs can be picked into a {% symlink water_bucket, Water Bucket %}:
+- {% symlink frog, Frogs %};
+- {% symlink squid, Squids %};
+- {% symlink glow_squid, Glow Squids %}.
+
+Some mobs can be picked into a {% symlink lava_bucket, Lava Bucket %}:
+- {% symlink strider, Strider %}.
+
+Some mobs can be picked into an empty {% symlink bucket, Bucket %}:
+- {% symlink slime, Slimes %};
+- {% symlink magma_cube, Magma Cubes %};
+- {% symlink frog, Frogs %}.
+
+Some mobs can be picked into a {% symlink glass_bottle, Glass Bottle %}:
+- {% symlink slime, Slimes %};
+- {% symlink magma_cube, Magma Cubes %};
+- {% symlink bee, Bees %};
+- {% symlink endermite, Endermites %};
+- {% symlink silverfish, Silverfish %}.
+
+Some mobs can be picked into a {% symlink book, Book %}:
+- {% symlink allay, Allays %};
+- {% symlink vex, Vexes %}.
+
 ### {% href_link 🧟 | Undead ignore environmental damage %}
 Undead mobs don't get hurt from {% symlink cactus, Cacti %} and {% symlink sweet_berries, Bushes %}.
 
@@ -190,7 +215,7 @@ Burning entities may spread the fire when attacking with bare hands.
 Thrown projectiles will be set on fire if their shooter is on fire.
 
 ### {% href_link 🚼️ | More babies %}
-All (scalable) non-ageable mobs have a 5% chance to spawn as a small mob.
+All (scalable) non-ageable mobs have a 5% chance to spawn as a small mob, including {% symlink slime, Slimes %} and {% symlink magma_cube, Magma Cubes %}.
 
 For balancing and fun reasons, some mobs have unique behaviors:
 - Baby {% symlink skeleton, Skeletons %} wield a {% symlink trumpet, Trumpet %} for causing ear bleeding to mobs around.
@@ -200,6 +225,16 @@ For balancing and fun reasons, some mobs have unique behaviors:
 
 ### {% href_link 🐣 | Poor babies %}
 Baby variants of all mobs have their health halved.
+
+### {% href_link 😸 | Cute mobs %}
+Many mobs can be patted via {% game_action use %} when sneaking with an empty hand.
+
+{% symlink fox, Foxes %} can be pet only by trusted players.
+
+### {% href_link 🩸 | No friendly tameable damage %}
+Pets no longer take direct damage from their owner or projectiles fired by them.
+
+If you need to hit (😿) your pet, you can hold down {% game_action sneak %} (sneak).
 
 ### {% href_link ❤️ | Love particles %}
 Animals in love mode (ready for breeding) show heart particles for the whole duration of love mode ([MC-93826](https://bugs.mojang.com/browse/MC/issues/MC-93826){: .mc-gold}).

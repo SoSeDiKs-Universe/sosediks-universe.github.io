@@ -41,8 +41,20 @@ module Jekyll
         'frog' => {
           image: 'https://minecraft.wiki/images/Temperate_Frog_JE1_BE1.gif'
         },
+        'squid' => {
+          image: 'https://minecraft.wiki/images/Squid.gif'
+        },
+        'glow_squid' => {
+          image: 'https://minecraft.wiki/images/Glow_Squid_JE1.gif'
+        },
+        'allay' => {
+          image: 'https://minecraft.wiki/images/Allay_JE2_BE2.gif'
+        },
         'vex' => {
           image: 'https://minecraft.wiki/images/Vex_JE4.gif'
+        },
+        'strider' => {
+          image: 'https://minecraft.wiki/images/Strider_JE2_BE2.gif'
         },
         'pillager' => {
           image: 'https://minecraft.wiki/images/Pillager_JE3.png'
@@ -71,6 +83,9 @@ module Jekyll
         'silverfish' => {
           image: 'https://minecraft.wiki/images/Silverfish_JE1_BE1.gif'
         },
+        'endermite' => {
+          image: 'https://minecraft.wiki/images/Endermite.gif'
+        },
         'ghast' => {
           image: 'https://minecraft.wiki/images/Ghast_JE3_BE3.gif'
         },
@@ -98,6 +113,9 @@ module Jekyll
         'slime' => {
           image: 'https://minecraft.wiki/images/Slime_JE3_BE2.png'
         },
+        'magma_cube' => {
+          image: 'https://minecraft.wiki/images/Magma_Cube_JE2_BE2.png'
+        },
         'armor_stand_entity' => {
           image: 'https://minecraft.wiki/images/Armor_Stand_JE5.png'
         },
@@ -115,6 +133,9 @@ module Jekyll
         },
         'snowman_sheared' => {
           image: 'https://minecraft.wiki/images/Sheared_Snow_Golem_JE2_BE2.png'
+        },
+        'fox' => {
+          image: 'https://minecraft.wiki/images/Fox_JE1_BE1.png'
         },
         # Items
         'bucket' => {
@@ -317,6 +338,9 @@ module Jekyll
         },
         'magma_block' => {
           image: 'https://minecraft.wiki/images/Invicon_Magma_Block.gif'
+        },
+        'crying_obsidian' => {
+          image: 'https://minecraft.wiki/images/Crying_Obsidian_JE1_BE1.png'
         },
         'chest' => {
           image: 'https://minecraft.wiki/images/Invicon_Chest.png'

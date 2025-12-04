@@ -8,6 +8,9 @@ page_id: wiki_misc_item_changes
 
 ## {% href_link 🔧 | Mechanics %}
 
+### {% href_link 🛠️ | Disabled item break %}
+Tools no longer disappear after breaking, unless they have a `«Curse of Vanishing»`{: .mc-red}. An item with zero durability remains in the inventory but cannot be used to perform its function until it is repaired.
+
 ### {% href_link 🌬️ | Bottled air %}
 When filling {% symlink glass_bottle, Glass Bottles %} with water underwater, the bottles replenish some air.
 
@@ -16,11 +19,17 @@ Drinking water underwater automatically refills an empty bottle, turning it into
 If you hold a hot item in your other hand, the bottle will not refill with water, but may burst.
 
 ### {% href_link 🌈 | Immersive dyes %}
+Dyes can be applied onto dyeable placed blocks with {% game_action use %}.
+
 Dyes can be applied onto dyeable items in {% symlink item_frame, Item Frames %} with {% game_action use %}.
 
 {% symlink shulker_open, Shulkers %} can be dyed.
 
 When possible, {% symlink paper, Paper %} will remove the color.
+
+There's 8% chance that the dye will be removed upon use.
+
+Most dyeing recipes were removed.
 
 ### {% href_link ♨️ | Immersive tools %}
 Some tools like {% symlink clock, Clocks %}, {% symlink lunar_clock, Lunar Clocks %}, {% symlink compass, Compasses %}, {% symlink depth_meter, Depth Meters %}, {% symlink thermometer, Barometers %}, {% symlink thermometer, Thermometers %} and {% symlink speedometer, Speedometers %} show detailed info in lore, optionally on screen, and when interacted.
@@ -37,6 +46,9 @@ Feeding a {% symlink poisonous_potato, Poisonous Potato %} to a child will make 
 
 ## {% href_link 🧩 | Miscellaneous %}
 
+### {% href_link ✂️ | Don't run with scissors! %}
+{% symlink shears, Shears %} inflict damage when attempting to run with them in your hand.
+
 ### {% href_link 🔥 | Flint and Steel ignites entities %}
 Using {% symlink flint_and_steel, Flint and Steel %} on a mob while sneaking or crawling will set it on fire.
 
@@ -49,6 +61,9 @@ Flowers and replaceable blocks no longer prevent {% symlink dirt_path, Dirt Path
 {% symlink dirt_path, Dirt Paths %} and {% symlink farmland, Farmland %} can be converted into {% symlink dirt, Dirt %} by using a {% symlink wooden_shovel, Shovel %} on them while sneaking. The {% symlink wooden_shovel, Shovel %} will lose durability with a 10% chance.
 
 Using ({% game_action use %}) a {% symlink wooden_shovel, Shovel %} on a {% symlink snow_block, Snow Block %} will remove a layer from it, dropping a {% symlink snowball, Snowball %}.
+
+### {% href_link 🧑‍🌾 | Better hoes %}
+Flowers and replaceable blocks no longer prevent {% symlink farmland, Farmland %} creation.
 
 ### {% href_link 🤺 | Piercing blow %}
 Items can now attack through grass and other vegetation. If the item is a melee weapon, the targeted block won't be insta broken.
