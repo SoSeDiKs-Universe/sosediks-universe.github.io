@@ -32,9 +32,9 @@ There's 8% chance that the dye will be removed upon use.
 Most dyeing recipes were removed.
 
 ### {% href_link ♨️ | Immersive tools %}
-Some tools like {% symlink clock, Clocks %}, {% symlink lunar_clock, Lunar Clocks %}, {% symlink compass, Compasses %}, {% symlink depth_meter, Depth Meters %}, {% symlink thermometer, Barometers %}, {% symlink thermometer, Thermometers %} and {% symlink speedometer, Speedometers %} show detailed info in lore, optionally on screen, and when interacted.
+Some tools like {% symlink clock, Clocks %}, {% symlink lunar_clock, Lunar Clocks %}, {% symlink compass, Compasses %}, {% symlink depth_meter, Depth Meters %}, {% symlink thermometer, Barometers %}, {% symlink thermometer, Thermometers %}, {% symlink speedometer, Speedometers %}, and {% symlink luxmeter, Luxmeters %} show detailed info in lore, optionally on screen, and when interacted.
 
-Additionally, F3 debug screen no longer displays information like coordinates if the player doesn't carry all the tools.
+Additionally, F3 debug screen no longer displays information like coordinates if the player doesn't carry all the aforementioned tools.
 
 ### {% href_link ✨ | «Fire Aspect» acts as Flint and Steel %}
 `«Fire Aspect»`{: .mc-aqua} enchantment allows using the item as a {% symlink flint_and_steel, Flint and Steel %}.

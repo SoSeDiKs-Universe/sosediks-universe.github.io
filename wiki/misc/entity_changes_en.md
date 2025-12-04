@@ -223,6 +223,8 @@ For balancing and fun reasons, some mobs have unique behaviors:
 - Baby {% symlink bogged, Bogged %} are eager to share {% symlink red_mushroom, Red %} and {% symlink brown_mushroom, Brown Mushrooms %}.
 - Baby {% symlink wither_skeleton, Wither Skeletons %} are scared of the {% symlink player, Player %}, thinking you'll steal the {% symlink wither_skeleton_skull, Wither Skeleton Skull %} they are always carrying around. You can exchange the skull by giving ({% game_action use %}) them a {% symlink wither_rose, Wither Rose %}.
 
+Such baby mobs cannot grow.
+
 ### {% href_link 🐣 | Poor babies %}
 Baby variants of all mobs have their health halved.
 
