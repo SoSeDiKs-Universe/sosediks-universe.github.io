@@ -56,6 +56,12 @@ module Jekyll
         'strider' => {
           image: 'https://minecraft.wiki/images/Strider_JE2_BE2.gif'
         },
+        'nautilus' => {
+          image: 'https://minecraft.wiki/images/Nautilus_Breathe_JE1_BE2.gif'
+        },
+        'zombie_nautilus' => {
+          image: 'https://minecraft.wiki/images/Zombie_Nautilus_Breathe_JE1_BE2.gif'
+        },
         'pillager' => {
           image: 'https://minecraft.wiki/images/Pillager_JE3.png'
         },
@@ -106,6 +112,9 @@ module Jekyll
         },
         'bogged' => {
           image: 'https://minecraft.wiki/images/Bogged_JE2_BE2.png'
+        },
+        'parched' => {
+          image: 'https://minecraft.wiki/images/Parched_JE2.png'
         },
         'wither_skeleton' => {
           image: 'https://minecraft.wiki/images/Wither_Skeleton_JE4_BE3.png'

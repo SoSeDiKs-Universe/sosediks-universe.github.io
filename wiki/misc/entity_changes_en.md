@@ -164,8 +164,8 @@ All undead mobs now have a passive regeneration and will block 80% of the incomi
 ### {% href_link 🪣 | More bucketable mobs %}
 More mobs can be picked into a {% symlink water_bucket, Water Bucket %}:
 - {% symlink frog, Frogs %};
-- {% symlink squid, Squids %};
-- {% symlink glow_squid, Glow Squids %}.
+- {% symlink squid, Squids %} and {% symlink glow_squid, Glow Squids %};
+- {% symlink nautilus, Nautiluses %} and {% symlink zombie_nautilus, Zombie Nautiluses %} (if not aggravated).
 
 Some mobs can be picked into a {% symlink lava_bucket, Lava Bucket %}:
 - {% symlink strider, Strider %}.
@@ -219,8 +219,9 @@ All (scalable) non-ageable mobs have a 5% chance to spawn as a small mob, includ
 
 For balancing and fun reasons, some mobs have unique behaviors:
 - Baby {% symlink skeleton, Skeletons %} wield a {% symlink trumpet, Trumpet %} for causing ear bleeding to mobs around.
-- Baby {% symlink stray, Strays %} are equipped with {% symlink snowball, Snowballs %} with a pebble mixed in.
-- Baby {% symlink bogged, Bogged %} are eager to share {% symlink red_mushroom, Red %} and {% symlink brown_mushroom, Brown Mushrooms %}.
+- Baby {% symlink stray, Strays %} are equipped with {% symlink snowball, Snowballs %} with a pebble mixed in (15 seconds of `«Slowness»`{: .mc-aqua} on hit).
+- Baby {% symlink bogged, Bogged %} are eager to share {% symlink red_mushroom, Red %} and {% symlink brown_mushroom, Brown Mushrooms %} (2 seconds of `«Poison»`{: .mc-aqua} on hit).
+- Baby {% symlink parched, Parched %} like to play with {% symlink sandstone_rock, Sandstone Rocks %} (15 seconds of `«Weakness»`{: .mc-aqua} on hit).
 - Baby {% symlink wither_skeleton, Wither Skeletons %} are scared of the {% symlink player, Player %}, thinking you'll steal the {% symlink wither_skeleton_skull, Wither Skeleton Skull %} they are always carrying around. You can exchange the skull by giving ({% game_action use %}) them a {% symlink wither_rose, Wither Rose %}.
 
 Such baby mobs cannot grow.
