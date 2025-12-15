@@ -146,6 +146,9 @@ module Jekyll
         'fox' => {
           image: 'https://minecraft.wiki/images/Fox_JE1_BE1.png'
         },
+        'bat' => {
+          image: 'https://minecraft.wiki/images/Bat_JE4_BE3.png'
+        },
         # Items
         'bucket' => {
           image: 'https://minecraft.wiki/images/Invicon_Bucket.png'
@@ -173,6 +176,9 @@ module Jekyll
         },
         'wooden_shovel' => {
           image: 'https://minecraft.wiki/images/Wooden_Shovel_JE2_BE2.png'
+        },
+        'wooden_hoe' => {
+          image: 'https://minecraft.wiki/images/Wooden_Hoe_JE3_BE3.png'
         },
         'magma_cream' => {
           image: 'https://minecraft.wiki/images/Invicon_Magma_Cream.png'
@@ -236,6 +242,9 @@ module Jekyll
         },
         'writable_book' => {
           image: 'https://minecraft.wiki/images/Invicon_Book_and_Quill.png'
+        },
+        'enchanted_book' => {
+          image: 'https://minecraft.wiki/images/Enchanted_Book.gif'
         },
         'clock' => {
           image: 'https://minecraft.wiki/images/Clock_JE3_BE3.gif'

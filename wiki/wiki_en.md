@@ -25,7 +25,7 @@ To communicate with others or ask for help, join our 👾 [Discord]({{site.disc
 ### {% href_link ❓ | What's this server? :O %}
 We are a small friendly community trying to make the gameplay of `Minecraft`{: .mc-gold} somewhere more difficult, somewhere easier, in general more diverse and interesting.
 
-In short, the main gameplay "goal" of the server is to build your own forever world. Each {% symlink player, Player %} has their own personal permanent world, into which you can bring resources from other non-permanent worlds. Friends can visit each other's worlds and survive together. Many different obstacles await you on the way to the develop your personal world.
+In short, the main gameplay "goal" of the server is to build your own forever world. Each {% symlink player, Player %} has their own personal permanent world, into which you can bring resources from other non-permanent worlds. Friends can visit each other's worlds and survive together, or play in one of the publicly shared worlds. Many different obstacles await you on the way to the develop your personal world.
 
 Otherwise, if one would ask me (SoSeDiK) to describe the server, it would be this: relaxed hardcore survival where you can always chill and can never have a rest. If you think this makes no sense, then you start to understand this server correctly! Pray to the gods and all sorts of other evil spirits, develop from a cave bug to a space microbe, smoke a bong in reality and fly on a broom in your wet dreams. This is a hotchpotch of everything.
 

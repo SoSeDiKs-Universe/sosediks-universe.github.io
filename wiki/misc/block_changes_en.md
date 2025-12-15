@@ -99,5 +99,3 @@ Some vanilla blocks also got inventories. {% symlink flower_pot, Flower Pots %} 
 
 ### {% href_link 🕸️ | Flammable cobweb %}
 {% symlink cobweb, Cobweb %} can burn and catch the {% symlink fire, Fire %}.
-
-It can also be lit with {% symlink torch, torches %} via {% game_action use %}.

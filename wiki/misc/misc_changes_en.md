@@ -54,3 +54,12 @@ These features are locked behind some requirements, like having obtained an adva
 
 ### {% href_link ✂️ | Shearable Creepers %}
 Non-powered {% symlink creeper, Creepers %} can be sheared to neutralize them. This will get rid of its drops too, though, and, well, the {% symlink creeper, Creeper %} itself.
+
+
+
+## {% href_link 🎃 | Holidays %}
+
+### {% href_link 🦇 | Extended Halloween %}
+Restored the concept on extended Halloween (October 20 to November 3) removed from the game in 1.21.11.
+
+{% symlink bat, Bats %} can spawn at a light level of 6 or less instead of the normal light level 3 or less.
