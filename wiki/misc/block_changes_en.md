@@ -105,3 +105,8 @@ Some vanilla blocks also got inventories. {% symlink flower_pot, Flower Pots %} 
 
 ### {% href_link 🛤️ | Better rail placement %}
 {% symlink rail, Rails %} can be placed on more surfaces.
+
+### {% href_link 🔁 | Improved replaceables %}
+Replaceable blocks will be broken upon placing blocks on them, dropping any generated loot.
+
+{% symlink pink_petals, Pink Petals %} and {% symlink wildflowers, Wildflowers %} are added to replaceable blocks.

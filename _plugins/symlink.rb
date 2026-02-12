@@ -444,6 +444,12 @@ module Jekyll
         'flower_pot' => {
           image: 'https://minecraft.wiki/images/Invicon_Flower_Pot.png'
         },
+        'pink_petals' => {
+          image: 'https://minecraft.wiki/images/Pink_Petals_(item)_JE1_BE1.png'
+        },
+        'wildflowers' => {
+          image: 'https://minecraft.wiki/images/Wildflowers_(item)_JE1_BE1.png'
+        },
         # Potion effects
         'fire_resistance' => {
           image: 'https://minecraft.wiki/images/Fire_Resistance_JE2_BE2.png'
