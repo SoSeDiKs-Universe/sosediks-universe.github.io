@@ -8,7 +8,7 @@ page_id: wiki_credits
 
 ## {% href_link 💌 | Acknowledgements %}
 
-This server wouldn't be possible without a mix of many mods and other resources. If you'd like to construct your own experience, be sure to check them out!
+This server wouldn't be possible without a mix of many amazing mods and other resources. If you'd like to construct your own experience, be sure to check them out!
 
 
 
@@ -92,6 +92,38 @@ Adds wooden and ceramic buckets to the game.
 
 Adds a bucket that is only able to remove fluid source blocks, and not store them.
 
+### {% symlink dark-paintings %}
+
+Adds new paintings to Minecraft.
+
+### {% symlink portfolio %}
+
+Adds a large catalogue of paintings to the game!
+
+### {% symlink texels-paintings %}
+
+Adds paintings based on landscapes, natural environments, and structures to the game.
+
+### {% symlink macaws-paintings %}
+
+Adds custom drawn paintings to fit in your world!
+
+### {% symlink more-additional-paintings %}
+
+Adds new vanilla-style paintings to Minecraft.
+
+### {% symlink carbasa %}
+
+Adds a gallery of new paintings inspired by Kristoffer Zetterstrand's pieces.
+
+### {% symlink leons-spooky-paintings %}
+
+Adds new spooky paintings.
+
+### {% symlink leons-dungeons-paintings %}
+
+Adds new paintings from Minecraft Dungeons.
+
 
 
 ## {% href_link 🆕 | Misc %}
@@ -108,6 +140,10 @@ Improved AI for various mobs!
 
 Shows information about your armor's durability in HUD.
 
+### {% symlink gallery %}
+
+Various painting tweaks.
+
 
 
 # {% href_link 🔌 | Data packs %}
@@ -123,3 +159,7 @@ An expansion to BACAP with new advancements.
 ### {% symlink bacap-torture-edition %}
 
 An expansion to BACAP with new torturous advancements.
+
+### {% symlink invariable-paintings %}
+
+Fancy item textures for vanilla painting variants. Turns paintings into collectibles.

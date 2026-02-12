@@ -129,6 +129,18 @@ Similar to the Bedrock version, {% symlink armor_stand_entity, Armor Stands %} c
 Sneaking while rotating an {% symlink item_frame, Item Frame %} will rotate counterclockwise.
 
 
+## {% href_link 🖼️ | Paintings %}
+
+### {% href_link 🪧 | Better sturdiness %}
+{% symlink painting, Paintings %} no longer need to have a wall behind and can float in the air after placement (this also allows placement on more surfaces). They also no longer drop due to obstruction, allowing placing blocks or other entities within the same space.
+
+### {% href_link 🖌️ | Easier painting picking %}
+Using ({% game_action use %}) a {% symlink painting, Painting %} onto air while sneaking lets you pick any specific painting variant.
+
+### {% href_link ✂️ | Drop preservation %}
+Breaking a {% symlink painting, Painting %} will drop the same variant it was placed with (including random as its own variant). Breaking with {% symlink shears, Shears %} or `«Silk Touch»`{: .mc-aqua} will always drop the painting with its variant preserved even if the painting is radom. You may also interact ({% game_action use %}) with a {% symlink painting, Painting %} with an empty while sneaking to pick it (preserving random variant).
+
+
 ## {% href_link 🏹 | Projectiles %}
 
 ### {% href_link 🔥 | Lit projectiles spread fire %}

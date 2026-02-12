@@ -388,7 +388,7 @@ module Jekyll
           image: 'https://minecraft.wiki/images/Melon_JE2_BE2.png'
         },
         'pumpkin' => {
-          image: 'https://minecraft.wiki/images/Carved_Pumpkin_(N)_JE5.png'
+          image: 'https://minecraft.wiki/images/Pumpkin_JE3.png'
         },
         'carved_pumpkin' => {
           image: 'https://minecraft.wiki/images/Carved_Pumpkin_(S)_JE5.png'
@@ -566,6 +566,46 @@ module Jekyll
           text: 'Axolotl Bucket Fix',
           modrinth: 'https://modrinth.com/mod/axolotl-bucket-fix'
         },
+        'chainmail-bucket' => {
+          text: 'Chainmail Bucket',
+          modrinth: 'https://modrinth.com/mod/chainmail-bucket'
+        },
+        'invariable-paintings' => {
+          text: 'Invariable Paintings',
+          modrinth: 'https://modrinth.com/mod/invariable-paintings'
+        },
+        'dark-paintings' => {
+          text: 'Dark Paintings',
+          modrinth: 'https://modrinth.com/mod/dark-paintings'
+        },
+        'portfolio' => {
+          text: 'Portfolio',
+          modrinth: 'https://modrinth.com/datapack/portfolio'
+        },
+        'texels-paintings' => {
+          text: 'Texels Paintings',
+          modrinth: 'https://modrinth.com/mod/texels-paintings'
+        },
+        'macaws-paintings' => {
+          text: 'Macaw\'s Paintings',
+          modrinth: 'https://modrinth.com/mod/macaws-paintings'
+        },
+        'more-additional-paintings' => {
+          text: 'More Additional Paintings',
+          modrinth: 'https://modrinth.com/mod/more-additional-paintings'
+        },
+        'carbasa' => {
+          text: 'Carbasa',
+          modrinth: 'https://modrinth.com/mod/carbasa'
+        },
+        'leons-spooky-paintings' => {
+          text: 'Leon\'s Spooky Paintings',
+          modrinth: 'https://modrinth.com/mod/leons-spooky-paintings'
+        },
+        'leons-dungeons-paintings' => {
+          text: 'Leon\'s Dungeons Paintings',
+          modrinth: 'https://modrinth.com/mod/leons-dungeons-paintings'
+        },
         'wooden-buckets' => {
           text: 'Wooden Buckets',
           curseforge: 'https://www.curseforge.com/minecraft/mc-mods/wooden-buckets'
@@ -578,9 +618,9 @@ module Jekyll
           text: 'Early-Game Buckets',
           curseforge: 'https://www.curseforge.com/minecraft/mc-mods/early-game-buckets'
         },
-        'chainmail-bucket' => {
-          text: 'Chainmail Bucket',
-          curseforge: 'https://modrinth.com/mod/chainmail-bucket'
+        'gallery' => {
+          text: 'Gallery',
+          curseforge: 'https://www.curseforge.com/minecraft/mc-mods/gallery'
         }
       }
   

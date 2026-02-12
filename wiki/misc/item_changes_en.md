@@ -51,7 +51,7 @@ Feeding a {% symlink poisonous_potato, Poisonous Potato %} to a child will make 
 {% symlink shears, Shears %} inflict damage when attempting to run with them in your hand.
 
 ### {% href_link 🔥 | Flint and Steel ignites entities %}
-Using {% symlink flint_and_steel, Flint and Steel %} on a mob while sneaking or crawling will set it on fire.
+Using ({% game_action use %}) {% symlink flint_and_steel, Flint and Steel %} on a mob while sneaking or crawling will set it on fire.
 
 ### {% href_link 🕯️ | Lit items ignite surroundings %}
 Attacking mobs with lit {% symlink torch, Torches %} (of any kind), {% symlink campfire, Campfires %}, or other burning items (including `«Fire Aspect»`{: .mc-aqua} enchantment, enchanted or stored) will set it on fire.

@@ -23,14 +23,16 @@ If you sneak while swapping items, only half of the items will go into the other
 ### {% href_link 🎩 | Blessing of Unbinding %}
 `«Curse of Binding»`{: .mc-red} enchantment can be mitigated by having the enhanced `«Weakness»`{: .mc-aqua} potion effect.
 
-### {% href_link ♨️ | Item lore icons %}
+### {% href_link ♨️ | Improved item visuals %}
 {% symlink writable_book, Books %} display their author's online status.
 
 Dyed items display their color as a #hex value.
 
 Armor trim lore is shorter (1 line vs 3 lines in vanilla) and displays the material icon.
 
-Items show their attributes as icons.
+{% symlink painting, Paintings %} have variant textures and display full painting preview in tooltip.
+
+Items show their attributes/effects as icons.
 
 ### {% href_link ♟️ | Extracting furnace experience %}
 Clicking with an empty cursor on an empty result slot inside furnaces will extract collected experience and recipes.

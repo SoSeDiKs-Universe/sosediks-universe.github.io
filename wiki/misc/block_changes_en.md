@@ -29,6 +29,9 @@ Entities can go through {% symlink oak_leaves, Leaves %}.
 ### {% href_link 👟 | Surroundings affect the movement speed %}
 Movement speed is dynamic and constantly changing. Walking on {% symlink dirt_path, Dirt Paths %} will be faster than walking on {% symlink dirt, Dirt %}, and vegetation on the path will slow you down instead.
 
+### {% href_link 🧨 | Explosions work in fluids %}
+Fluids no longer prevent explosions.
+
 
 
 ## {% href_link 🔧 | Mechanics %}
@@ -99,3 +102,6 @@ Some vanilla blocks also got inventories. {% symlink flower_pot, Flower Pots %} 
 
 ### {% href_link 🕸️ | Flammable cobweb %}
 {% symlink cobweb, Cobweb %} can burn and catch the {% symlink fire, Fire %}.
+
+### {% href_link 🛤️ | Better rail placement %}
+{% symlink rail, Rails %} can be placed on more surfaces.
