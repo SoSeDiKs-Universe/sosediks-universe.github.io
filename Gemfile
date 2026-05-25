@@ -1,11 +1,13 @@
 source "https://rubygems.org"
 
 gem "jekyll"
+gem "jekyll-sass-converter"
+gem "sass-embedded"
+gem "csv"
+gem "base64"
 
 group :jekyll_plugins do
-    gem "jekyll-polyglot"
+  gem "jekyll-polyglot"
 end
 
-gem "wdm", ">= 0.1.0" if Gem.win_platform?
-
-gem "webrick", "~> 1.7"
+gem "webrick"
