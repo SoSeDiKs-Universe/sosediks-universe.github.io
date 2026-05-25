@@ -68,6 +68,10 @@ A mod about adding more ways to store and move mobs in both buckets and non-buck
 
 Capture frogs in buckets and carry them safely with you.
 
+### {% symlink bucket-of-nautilus %}
+
+Capture nautiluses in buckets and carry them safely with you.
+
 ### {% symlink kfa %}
 
 Adds Fried Axolotls.
@@ -143,6 +147,10 @@ Shows information about your armor's durability in HUD.
 ### {% symlink gallery %}
 
 Various painting tweaks.
+
+### {% symlink fabrication %}
+
+A huge collection of vanilla tweaks and small features.
 
 
 

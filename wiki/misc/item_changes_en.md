@@ -31,6 +31,8 @@ There's 8% chance that the dye will be removed upon use.
 
 Most dyeing recipes were removed.
 
+Additionally, using {% symlink slime_ball, Slimeball %} on a {% symlink piston, Piston %} will turn it into a {% symlink sticky_piston, Sticky Piston %}.
+
 ### {% href_link ♨️ | Immersive tools %}
 Some tools like {% symlink clock, Clocks %}, {% symlink lunar_clock, Lunar Clocks %}, {% symlink compass, Compasses %}, {% symlink depth_meter, Depth Meters %}, {% symlink thermometer, Barometers %}, {% symlink thermometer, Thermometers %}, {% symlink speedometer, Speedometers %}, and {% symlink luxmeter, Luxmeters %} show detailed info in lore, optionally on screen, and when interacted.
 

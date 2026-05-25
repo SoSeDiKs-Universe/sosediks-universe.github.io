@@ -31,6 +31,8 @@ page_id: wiki_misc_item_changes
 
 Більшість рецептів фарбування видалено.
 
+Додатково, використання {% symlink slime_ball, слизової кульки %} на {% symlink piston, поршні %} перетворить його на {% symlink sticky_piston, липкий поршень %}.
+
 ### {% href_link ♨️ | Імерсивні предмети %}
 Деякі інструменти, такі як {% symlink clock, годинники %}, {% symlink lunar_clock, місячні годинники %}, {% symlink compass, компаси %}, {% symlink depth_meter, глибиноміри %}, {% symlink thermometer, барометри %}, {% symlink thermometer, термометри %}, {% symlink speedometer, спідометри %} і {% symlink luxmeter, люксметри %}, показують докладну інформацію в описі предмету, опціонально на екрані та під час взаємодії ними.
 

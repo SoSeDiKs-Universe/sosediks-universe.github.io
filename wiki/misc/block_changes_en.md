@@ -80,9 +80,27 @@ Entities inside {% symlink water_cauldron, Water Cauldrons %} are considered wet
 ### {% href_link ⬇️ | Campfires are affected by gravity %}
 {% symlink campfire, Campfires %} will fall due to gravity. Upon landing, a lit {% symlink campfire, Campfire %} will extinguish and spread fire to the block underneath and potentially to some of the blocks around.
 
+### {% href_link 👁️ | Observers detect moving entities %}
+{% symlink observer, Observers %}, if not facing a solid block, produce a signal when they detect moving entities move in front of them.
+
+### {% href_link 🎴 | Individual slab breaking %}
+When breaking a double slab while sneaking ({% game_action sneak %}), only the slab the player is looking at will drop.
+
+### {% href_link 🪡 | Hurting Stonecutter %}
+{% symlink stonecutter, Stonecutter %} hurts (2 damage per damage tick) entities standing on it.
+
+### {% href_link 🎶 | Less restrictive Note Blocks %}
+{% symlink note_block, Note Block %} plays a note if any block next to it has a nonsolid face, instead of only if the block above is air.
+
+### {% href_link 🎼 | Reverse Note Block tuning %}
+Tuning a {% symlink note_block, Note Block %} while sneaking ({% game_action sneak %}) will reduce its pitch rather than increase.
+
 
 
 ## {% href_link ⚙️ | Tweaks %}
+
+### {% href_link 🪚 | Useful Stonecutter %}
+Many crafts were removed from other work station blocks, instead being added to the {% symlink stonecutter, Stonecutter %}. Things like doors, slabs, signs, buttons, etc. are now made through cutting and can be interchanged with a 1 to 1 ratio (yes, a wooden button can be made into a wooden door of the same type).
 
 ### {% href_link 🔲 | Crying Obsidian is still Obsidian %}
 {% symlink crying_obsidian, Crying Obsidian %} can be used as a block for the Nether portal frame.

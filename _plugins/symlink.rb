@@ -198,6 +198,9 @@ module Jekyll
         'feather' => {
           image: 'https://minecraft.wiki/images/Feather_JE3_BE2.png'
         },
+        'slime_ball' => {
+          image: 'https://minecraft.wiki/images/Slimeball_JE2_BE2.png'
+        },
         'rotten_flesh' => {
           image: 'https://minecraft.wiki/images/Rotten_Flesh_JE3_BE2.png'
         },
@@ -275,6 +278,15 @@ module Jekyll
         },
         'trident' => {
           image: 'https://minecraft.wiki/images/Trident_(item).png'
+        },
+        'piston' => {
+          image: 'https://minecraft.wiki/images/Piston_(U)_JE3.gif'
+        },
+        'sticky_piston' => {
+          image: 'https://minecraft.wiki/images/Sticky_Piston_(U)_JE3.gif'
+        },
+        'observer' => {
+          image: 'https://minecraft.wiki/images/Observer_JE4_BE3.pngf'
         },
         'grass_block' => {
           image: 'https://minecraft.wiki/images/Grass_Block_JE7_BE6.png'
@@ -410,6 +422,9 @@ module Jekyll
         },
         'coal_ore' => {
           image: 'https://minecraft.wiki/images/Coal_Ore_JE5_BE4.png'
+        },
+        'stonecutter' => {
+          image: 'https://minecraft.wiki/images/Stonecutter_JE2_BE1.gif'
         },
         'fire' => {
           image: 'https://minecraft.wiki/images/Fire.gif'
@@ -564,6 +579,10 @@ module Jekyll
           text: 'Bucket of Frog',
           modrinth: 'https://modrinth.com/mod/bucket-of-frog'
         },
+        'bucket-of-nautilus' => {
+          text: 'Bucket of Nautilus',
+          modrinth: 'https://modrinth.com/mod/bucket-of-nautilus'
+        },
         'kfa' => {
           text: 'Kentucky Fried Axolotls',
           modrinth: 'https://modrinth.com/mod/kfa'
@@ -627,6 +646,10 @@ module Jekyll
         'gallery' => {
           text: 'Gallery',
           curseforge: 'https://www.curseforge.com/minecraft/mc-mods/gallery'
+        },
+        'fabrication' => {
+          text: 'Fabrication',
+          curseforge: 'https://www.curseforge.com/minecraft/mc-mods/fabrication'
         }
       }
   

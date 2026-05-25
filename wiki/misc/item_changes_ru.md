@@ -31,6 +31,8 @@ page_id: wiki_misc_item_changes
 
 Большинство рецептов покраски удалены.
 
+Дополнительно, использование {% symlink slime_ball, сгустка слизи %} на {% symlink piston, поршне %} превратит его в {% symlink sticky_piston, липкий поршень %}.
+
 ### {% href_link ♨️ | Иммерсивные инструменты %}
 Некоторые инструменты, такие как {% symlink clock, часы %}, {% symlink lunar_clock, лунные часы %}, {% symlink compass, компасы %}, {% symlink depth_meter, глубинометры %}, {% symlink thermometer, барометры %}, {% symlink thermometer, термометры %} {% symlink speedometer, спидометры %} и {% symlink luxmeter, люксметры %}, показывают подробную информацию в описании предмета, опционально на экране и при взаимодействии ими.
 
