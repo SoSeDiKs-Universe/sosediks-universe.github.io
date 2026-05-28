@@ -73,7 +73,7 @@ Flowers and replaceable blocks no longer prevent {% symlink farmland, Farmland %
 Using ({% game_action use %}) a {% symlink wooden_hoe, Hoe %} on grown crops will break the crops and replant the seed if the crop has dropped its seed or the player has seeds of the same crop in their offhand or hotbar.
 
 ### {% href_link 🤺 | Piercing blow %}
-Items can now attack through grass and other vegetation. If the item is a melee weapon, the targeted block won't be insta broken.
+Items can now attack through grass and other vegetation. If the item is a melee weapon, the targeted block won't be insta-broken.
 
 ### {% href_link 📖 | Readable books in item frames %}
 {% symlink writable_book, Books %} placed in {% symlink item_frame, Item Frames %} can be read with {% game_action use %}.

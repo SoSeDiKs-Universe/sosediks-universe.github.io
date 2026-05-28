@@ -551,6 +551,10 @@ module Jekyll
           text: 'Big Brain',
           curseforge: 'https://www.curseforge.com/minecraft/mc-mods/big-brain'
         },
+        'sneaky-curses' => {
+          text: 'Sneaky Curses',
+          modrinth: 'https://modrinth.com/mod/sneaky-curses'
+        },
         'mobs-attempt-parkour' => {
           text: 'Mobs Attempt Parkour',
           curseforge: 'https://modrinth.com/mod/mobs-attempt-parkour'

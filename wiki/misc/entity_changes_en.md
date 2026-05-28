@@ -138,7 +138,7 @@ Sneaking while rotating an {% symlink item_frame, Item Frame %} will rotate coun
 Using ({% game_action use %}) a {% symlink painting, Painting %} onto air while sneaking lets you pick any specific painting variant.
 
 ### {% href_link ✂️ | Drop preservation %}
-Breaking a {% symlink painting, Painting %} will drop the same variant it was placed with (including random as its own variant). Breaking with {% symlink shears, Shears %} or `«Silk Touch»`{: .mc-aqua} will always drop the painting with its variant preserved even if the painting is radom. You may also interact ({% game_action use %}) with a {% symlink painting, Painting %} with an empty while sneaking to pick it (preserving random variant).
+Breaking a {% symlink painting, Painting %} will drop the same variant it was placed with (including random as its own variant). Breaking with {% symlink shears, Shears %} or `«Silk Touch»`{: .mc-aqua} will always drop the painting with its variant preserved even if the painting is random. You may also interact ({% game_action use %}) with a {% symlink painting, Painting %} with an empty hand while sneaking to pick it (preserving random variant).
 
 
 ## {% href_link 🏹 | Projectiles %}
@@ -152,7 +152,7 @@ This includes:
 - Creating a {% symlink fire, Fire %} block upon landing.
 
 ### {% href_link 🎯 | Arrow/Trident projectile hits %}
-Hitting a {% symlink bee_nest, Bee Nest %} will cause it to fall, letting of angry bees.
+Hitting a {% symlink bee_nest, Bee Nest %} will cause it to fall, letting loose angry bees.
 
 Hitting a fragile block will break it.
 
@@ -207,7 +207,7 @@ Undead mobs don't get hurt from {% symlink cactus, Cacti %} and {% symlink sweet
 Wielding a {% symlink spyglass, Spyglass %} increases the visibility range by twofold.
 
 ### {% href_link 💢 | Angry animals %}
-All friendly mobs can now attack back instead of panicking, and their friends will gladly help them to do so. Upon damaging a mob, mobs of the same time will become angry, and animals of other types will panic.
+All friendly mobs can now attack back instead of panicking, and their friends will gladly help them to do so. Upon damaging a mob, mobs of the same type will become angry, and animals of other types will panic.
 
 ### {% href_link 🆙 | Mobs attempt parkour %}
 Some mobs can jump over gaps.

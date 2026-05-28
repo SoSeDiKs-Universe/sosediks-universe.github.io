@@ -54,7 +54,7 @@ Burning (without any protection like {% symlink fire_resistance, Fire Resistance
 ### {% href_link 🛹 | Crawling %}
 You can enter crawling state by pressing {% game_action sneak %} twice, which allows squeezing through single block gaps.
 
-Entering crawling state while running wil trigger sliding. The slide allows you to move faster under blocks, as well as deal minor damage and push away mobs in your path.
+Entering crawling state while running will trigger sliding. The slide allows you to move faster under blocks, as well as deal minor damage and push away mobs in your path.
 
 You can exit crawling and sliding by pressing {% game_action sneak %} again.
 

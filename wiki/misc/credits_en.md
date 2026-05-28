@@ -140,6 +140,10 @@ Gives certain mobs the ability to jump over things.
 
 Improved AI for various mobs!
 
+### {% symlink sneaky-curses %}
+
+Obfuscates curses so you no longer know what to expect! Are you taking the risk?
+
 ### {% symlink immersive-armor-hud %}
 
 Shows information about your armor's durability in HUD.

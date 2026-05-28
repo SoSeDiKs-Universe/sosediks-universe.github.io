@@ -40,7 +40,7 @@ Fluids no longer prevent explosions.
 Block breaking is now shared among players with cracks staying in place for some time. A cracked block can be repaired by banging ({% game_action attack %}) it with {% symlink hammer, Hammer %}.
 
 ### {% href_link 🌊 | Water puddles hurt %}
-Falling into a puddle (one block of {% symlink water, Water %}) causes damage, you won't be able to save yourself with a {% symlink water_bucket, Water Bucket %}) anymore.
+Falling into a puddle (one block of {% symlink water, Water %}) causes damage; you won't be able to save yourself with a {% symlink water_bucket, Water Bucket %} anymore.
 
 ### {% href_link 🔔 | Knock-knock and ding-dong %}
 {% symlink oak_door, Doors %} and {% symlink oak_trapdoor, Trapdoors %} can be knocked on with {% game_action attack %}. If there is a {% symlink oak_button, Button %} next to them, {% game_action attack %} on it will act as a doorbell.
@@ -87,10 +87,10 @@ Entities inside {% symlink water_cauldron, Water Cauldrons %} are considered wet
 When breaking a double slab while sneaking ({% game_action sneak %}), only the slab the player is looking at will drop.
 
 ### {% href_link 🪡 | Hurting Stonecutter %}
-{% symlink stonecutter, Stonecutter %} hurts (2 damage per damage tick) entities standing on it.
+{% symlink stonecutter, Stonecutter %} deals 2 damage per damage tick to entities standing on it.
 
 ### {% href_link 🎶 | Less restrictive Note Blocks %}
-{% symlink note_block, Note Block %} plays a note if any block next to it has a nonsolid face, instead of only if the block above is air.
+{% symlink note_block, Note Block %} plays a note if any block next to it has a non-solid face, instead of only if the block above is air.
 
 ### {% href_link 🎼 | Reverse Note Block tuning %}
 Tuning a {% symlink note_block, Note Block %} while sneaking ({% game_action sneak %}) will reduce its pitch rather than increase.

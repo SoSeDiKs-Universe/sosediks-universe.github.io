@@ -19,7 +19,7 @@ This entity seems to be friendly to other species, including {% symlink player, 
 #### {% href_link 🏕️ | Traveling %}
 The `Wandering Trader`{: .mc-gold} travels across the Universe, mostly just observing it, collecting random things, and not interfering with how things flow.
 
-Time to time one of the entity's dolls comes to visit {% symlink player, Players %} and offer to trade random things. Killing the dolls seems to not have any changes to the entity's mood nor friendliness towards the {% symlink player, Player %}.
+From time to time, one of the entity's dolls comes to visit {% symlink player, Players %} and offer to trade random things. Killing the dolls seems to not have any changes to the entity's mood nor friendliness towards the {% symlink player, Player %}.
 
 Other species seem to not know about the `Wandering Trader`{: .mc-gold}'s powerful nature.
 

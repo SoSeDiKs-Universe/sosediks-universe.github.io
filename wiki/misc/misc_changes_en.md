@@ -20,8 +20,13 @@ If you sneak while swapping items, only half of the items will go into the other
 ### {% href_link 🐸 | Aquatic Frogs %}
 {% symlink frog, Frogs %} are considered as part of aquatic mobs. For example, this makes them sensitive to `«Impaling»`{: .mc-aqua} enchantment.
 
+### {% href_link ❓️ | Unknown curses %}
+Curses are hidden from item tooltips by default, instead only noting that the item is cursed (or holds curses) and changing the item's name to red.
+
+Curses no longer apply the enchantment glint.
+
 ### {% href_link 🎩 | Blessing of Unbinding %}
-`«Curse of Binding»`{: .mc-red} enchantment can be mitigated by having the enhanced `«Weakness»`{: .mc-aqua} potion effect.
+`«Curse of Binding»`{: .mc-red} can be mitigated by having the enhanced `«Weakness»`{: .mc-aqua} potion effect.
 
 ### {% href_link ♨️ | Improved item visuals %}
 {% symlink writable_book, Books %} display their author's online status.
@@ -32,17 +37,16 @@ Armor trim lore is shorter (1 line vs 3 lines in vanilla) and displays the mater
 
 {% symlink painting, Paintings %} have variant textures and display full painting preview in tooltip.
 
-Items show their attributes/effects as icons.
+Items show their attributes/effects/enchantments as icons.
 
 ### {% href_link ♟️ | Extracting furnace experience %}
 Clicking with an empty cursor on an empty result slot inside furnaces will extract collected experience and recipes.
 
 ### {% href_link 🔱 | Impaling works on wet mobs %}
 Additionally to aquatic mobs, `«Impaling»`{: .mc-aqua} enchantment also affects wet mobs.
-Clicking with an empty cursor on an empty result slot inside furnaces will extract collected experience and recipes.
 
 ### {% href_link 🚏 | Stop the traffic! %}
-By holding down {% game_action sneak %} and {% game_action use %} with an empty hand, you can free an entity (excluding {% symlink player, Players %}) the transport.
+By holding down {% game_action sneak %} and {% game_action use %} with an empty hand, you can free an entity (excluding {% symlink player, Players %}) from the vehicle.
 
 ### {% href_link 🧵 | Reach around %}
 Blocks can be placed in front of you or under other blocks.
@@ -62,6 +66,6 @@ Non-powered {% symlink creeper, Creepers %} can be sheared to neutralize them. T
 ## {% href_link 🎃 | Holidays %}
 
 ### {% href_link 🦇 | Extended Halloween %}
-Restored the concept on extended Halloween (October 20 to November 3) removed from the game in 1.21.11.
+Restored the concept of extended Halloween (October 20 to November 3) removed from the game in 1.21.11.
 
 {% symlink bat, Bats %} can spawn at a light level of 6 or less instead of the normal light level 3 or less.
