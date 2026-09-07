@@ -441,6 +441,12 @@ module Jekyll
         'farmland' => {
           image: 'https://minecraft.wiki/images/Farmland_JE4_BE6.png'
         },
+        'magenta_glazed_terracotta' => {
+          image: 'https://minecraft.wiki/images/Magenta_Glazed_Terracotta_(S)_JE2_BE2.png'
+        },
+        'detector_rail' => {
+          image: 'https://minecraft.wiki/images/Detector_Rail_(NS)_JE2_BE2.png'
+        },
         'wither_rose' => {
           image: 'https://minecraft.wiki/images/Invicon_Wither_Rose.png'
         },

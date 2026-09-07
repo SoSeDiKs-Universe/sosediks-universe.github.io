@@ -42,9 +42,6 @@ Additionally, F3 debug screen no longer displays information like coordinates if
 `«Fire Aspect»`{: .mc-aqua} enchantment allows using the item as a {% symlink flint_and_steel, Flint and Steel %}.
 This also includes an {% symlink enchanted_book, Enchanted Book %} with a stored enchantment, though it also sets the user on fire for 3 extra seconds.
 
-### {% href_link 🥔 | Eternal Children %}
-Feeding a {% symlink poisonous_potato, Poisonous Potato %} to a child will make it lose the opportunity to grow up.
-
 
 
 ## {% href_link 🧩 | Miscellaneous %}
@@ -82,7 +79,7 @@ Items can now attack through grass and other vegetation. If the item is a melee 
 You may preview the {% symlink writable_book, Book's %} formatting (i.e., how the book would look after signing) by using {% game_action use %} while sneaking.
 
 ### {% href_link 🫗 | Bottle retrieval %}
-Bottled items (e.g. {% symlink potion, Potions %}, {% symlink honey_bottle, Honey Bottle %}, etc.) can be turned into an empty {% symlink glass_bottle, Glass Bottle %} when placed in a crafting grid. Being underwater will produce a {% symlink water_potion, Water Bottle %} instead.
+Bottled items (e.g., {% symlink potion, Potions %}, {% symlink honey_bottle, Honey Bottle %}, etc.) can be turned into an empty {% symlink glass_bottle, Glass Bottle %} when placed in a crafting grid. Being underwater will produce a {% symlink water_potion, Water Bottle %} instead.
 
 ### {% href_link 🪣 | Fragile Buckets %}
 Buckets come in various materials (yes, including {% symlink chainmail_bucket, Chainmail Bucket %}) and have durability.
@@ -98,3 +95,11 @@ The following items are considered hot:
 - {% symlink magma_block, Magma Block %}
 - {% symlink magma_cream, Magma Cream %}
 - {% symlink campfire, Lit Campfire %}
+
+### {% href_link 🗺️ | Dynamic map height %}
+{% symlink map, Maps %} created in dimensions with a ceiling like Nether, show blocks at a height the {% symlink empty_map, Empty Map %} was used at.
+
+### {% href_link 🪖 | Armor and environment %}
+Wearing armor prevents some environmental damage:
+- Damage from {% symlink cactus, Cacti %} when wearing boots or leggings (depending on where the damage comes from).
+- Damage from {% symlink sweet_berry_bush, bushes %} when wearing boots and leggings (or the whole armor set when crawling).

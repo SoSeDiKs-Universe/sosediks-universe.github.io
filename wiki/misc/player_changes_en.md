@@ -76,7 +76,7 @@ Fragile blocks can break under the player's weight when falling from a great hei
 ### {% href_link 🪝 | Hooking onto blocks %}
 If, while in the air and without a block underneath you, you crouch ({% game_action sneak %}) in front of a block that has no obstacles above, the player will hook onto this block and hang in place. Exiting the hook gives a small upward push, which allows you to climb two blocks in height. It will not be possible to hook onto a block if the height of the fall during the hooking is more than 5 blocks. You will fall if you try to move in the direction opposite to the hooking side.
 
-If there is a one-block gap above the block you are grabbing onto that you can crawl into, pressing {% game_action use %} on the grabbed block or a block in the gap (e.g. {% symlink oak_leaves, Leaves %} that might block the gap but allow crawling) will move the player into it and enter crawling state.
+If there is a one-block gap above the block you are grabbing onto that you can crawl into, pressing {% game_action use %} on the grabbed block or a block in the gap (e.g., {% symlink oak_leaves, Leaves %} that might block the gap but allow crawling) will move the player into it and enter crawling state.
 
 
 

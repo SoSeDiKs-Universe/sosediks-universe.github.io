@@ -44,7 +44,7 @@ Among other things, it features:
 - A single linked chat between Discord and the Minecraft server.
 - The list of players on the server.
 - Changelog of server updates.
-- List of known bugs.
+- Bug reporting.
 
 
 
