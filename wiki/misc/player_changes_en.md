@@ -38,7 +38,7 @@ Sitting on a bed requires pressing (and then releasing) {% game_action sneak %}.
 
 Additionally, `/sit`{: .mc .mc-gold} can be used to sit on the ground anywhere.
 
-### {% href_link 🛏️ | Lying %}
+### {% href_link 🛏️ | Laying %}
 In addition to sitting, it is possible to lay almost anywhere using `/lay`{: .mc .mc .mc-gold}.
 
 ### {% href_link 🌊 | Swimming improvements %}

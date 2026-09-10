@@ -23,7 +23,7 @@ If you walk the same path over time, the blocks may change. A {% symlink grass_b
 ### {% href_link 🌱 | Grass spread %}
 {% symlink grass_block, Grass Block %} (and other grass blocks) can spread onto {% symlink coarse_dirt, Coarse Dirt %}, turning it into {% symlink dirt, Dirt %}.
 
-### {% href_link 🍃 | Non-solid leaves %}
+### {% href_link 🍃 | Non-solid Leaves %}
 Entities can go through {% symlink oak_leaves, Leaves %}.
 
 ### {% href_link 👟 | Surroundings affect the movement speed %}
@@ -57,24 +57,24 @@ Placing an opened {% symlink oak_trapdoor, Trapdoor %} (either one or two) above
 ### {% href_link 💧 | Containers release items in liquids %}
 Opening a container exposed to liquid will release all stored items. Be especially cautious with lava.
 
-### {% href_link 🍈 | Exploding melons and pumpkins %}
-If any {% symlink arrow, Arrow %} or a {% symlink trident, Trident %} hits a {% symlink melon, Melon %} or {% symlink pumpkin, Pumpkin %}, the block will break into pieces.
+### {% href_link 🍈 | Exploding Melons and Pumpkins %}
+If any {% symlink arrow, Arrow %} or a {% symlink trident, Trident %} hits a {% symlink melon, Melon %} or a {% symlink pumpkin, Pumpkin %}, the block will break into pieces.
 
-### {% href_link 💥 | Exploding coal ore %}
+### {% href_link 💥 | Exploding Coal Ore %}
 {% symlink coal_ore, Coal Ores %} (of any kind) are not keen of {% symlink fire, Fire %}, and will explode upon contact with it. This includes lit {% symlink torch, Torches %} (of any kind) and {% symlink campfire, Campfires %}, as well as `«Fire Aspect»`{: .mc-aqua} enchantment.
 
 Moreover, trying to mine the ore with a metal tool will lead to the same result, causing level 5 fiery explosion in both cases.
 
-### {% href_link 🚧 | Jumping over fences %}
+### {% href_link 🚧 | Jumping over Fences %}
 {% symlink player, Players %} can jump over {% symlink oak_fence, Fences %}, but they still act as an obstacle for other entities.
 
 ### {% href_link 🔥 | Fire spread on touch %}
 Trying to extinguish {% symlink fire, Fire %} with an empty hand will set you on fire.
 
-### {% href_link 🧯 | Unlit campfire %}
+### {% href_link 🧯 | Unlit Campfire %}
 {% symlink campfire, Campfires %} are no longer lit by default. Breaking them will drop the {% symlink campfire, Campfire %} as an item, with `«Silk Touch»`{: .mc-aqua} allowing to keep the lit state.
 
-### {% href_link 💧 | Wet cauldrons %}
+### {% href_link 💧 | Wet Cauldrons %}
 Entities inside {% symlink water_cauldron, Water Cauldrons %} are considered wet ([MC-145311](https://bugs.mojang.com/browse/MC/issues/MC-145311){: .mc .mc-gold}).
 
 ### {% href_link ⬇️ | Campfires are affected by gravity %}
@@ -83,7 +83,7 @@ Entities inside {% symlink water_cauldron, Water Cauldrons %} are considered wet
 ### {% href_link 👁️ | Observers detect moving entities %}
 {% symlink observer, Observers %}, if not facing a solid block, produce a signal when they detect moving entities move in front of them.
 
-### {% href_link 🎴 | Individual slab breaking %}
+### {% href_link 🎴 | Individual Slab breaking %}
 When breaking a double slab while sneaking ({% game_action sneak %}), only the slab the player is looking at will drop.
 
 ### {% href_link 🪡 | Hurting Stonecutter %}
@@ -115,10 +115,10 @@ Interacting ({% game_action use %}, without crouching) with {% symlink item_fram
 
 Some vanilla blocks also got inventories. {% symlink flower_pot, Flower Pots %} have 5 slots for you to hide items in.
 
-### {% href_link 🎶 | Improved note blocks %}
+### {% href_link 🎶 | Improved Note Blocks %}
 {% symlink note_block, Note Blocks %} display the note and instrument when played.
 
-### {% href_link 🕸️ | Flammable cobweb %}
+### {% href_link 🕸️ | Flammable Cobweb %}
 {% symlink cobweb, Cobweb %} can burn and catch the {% symlink fire, Fire %}.
 
 ### {% href_link 🛤️ | Better rail placement %}

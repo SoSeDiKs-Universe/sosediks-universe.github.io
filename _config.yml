@@ -3,12 +3,12 @@ title: SoSeDiK's Universe
 url: "https://sosedik.com"
 discord_invite: "https://discord.gg/vrMgAsXK8z"
 server_address: "sosedik.com"
-server_version: "26.1.2"
+server_version: "26.2"
 
 # Polyglot
 default_lang: "en"
 languages: ["en", "ru", "uk"]
-exclude_from_localization: ["javascript", "images", "css", "public"]
+exclude_from_localization: ["javascript", "images", "css", "public", image-audit.html]
 parallel_localization: true
 
 # Options
