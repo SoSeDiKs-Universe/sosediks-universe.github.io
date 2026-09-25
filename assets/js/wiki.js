@@ -234,6 +234,34 @@ if (tocDetails) {
     });
   }, { passive: true });
   updateCurrentSection();
+
+  // Overscroll: just enough empty space after the content for its last heading to reach the top,
+  // so every section can be jumped to and be highlighted as the one being read.
+  // CSS sizes it from the viewport height (following its every change); this measures the rest
+  var content = document.querySelector(".content");
+  var headings = content.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]");
+  var lastHeading = headings[headings.length - 1];
+  var overscroll = document.createElement("div");
+  overscroll.className = "overscroll";
+  overscroll.setAttribute("aria-hidden", "true");
+  content.appendChild(overscroll);
+
+  // (The mobile bar needs no room: it hides while scrolling or jumping down to the heading)
+  var updateOverscroll = function () {
+    // Everything from the heading to the end of the page, without the overscroll itself
+    var below = content.getBoundingClientRect().bottom - overscroll.offsetHeight - lastHeading.getBoundingClientRect().top;
+    overscroll.style.setProperty("--overscroll-offset", Math.ceil(below) + "px");
+  };
+
+  if (lastHeading) {
+    updateOverscroll();
+    // Text rewraps with the width
+    window.addEventListener("resize", updateOverscroll);
+    // Late images and fonts change the layout
+    window.addEventListener("load", updateOverscroll);
+    if (document.fonts) document.fonts.ready.then(updateOverscroll);
+    if (window.ResizeObserver) new ResizeObserver(updateOverscroll).observe(content);
+  }
 }
 
 // Search through all wiki pages of the current language, using the index built alongside the site

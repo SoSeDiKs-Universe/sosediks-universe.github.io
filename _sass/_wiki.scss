@@ -587,6 +587,13 @@ $fontPixel: 0.125em;
   }
 }
 
+// Empty space after the page's content, for its last heading to be able to reach the top
+// (wiki.js sets the offset: the height of everything below that heading)
+.overscroll {
+  height: max(0px, 100vh - var(--overscroll-offset, 100vh));
+  height: max(0px, 100dvh - var(--overscroll-offset, 100dvh));
+}
+
 // Pixel triangle to the left of a collapsible entry, pointing down while open
 @mixin toggle-marker($left, $top, $size) {
   position: relative;
