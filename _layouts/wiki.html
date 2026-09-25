@@ -7,8 +7,17 @@
     <link rel="icon" href="/assets/favicon.svg" />
     <link rel="stylesheet" href="/assets/css/wiki.css">
     <link rel="stylesheet" href="/assets/css/mc-font.css">
+    <script src="/assets/js/wiki.js" defer></script>
   </head>
   <body class="mc-gray">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <div class="mobile-bar">
+      <label for="nav-toggle" class="nav-toggle-button" aria-label="{{ site.data.sidebar.menu }}">
+        <span></span><span></span><span></span>
+      </label>
+      <a href="/" class="mobile-bar-title">{{ site.data.index.title }}</a>
+    </div>
+    <label for="nav-toggle" class="nav-backdrop" aria-hidden="true"></label>
     <div class="nav-bar">
       <div class="nav-links">
         <p>{{ site.data.sidebar.title }}</p>

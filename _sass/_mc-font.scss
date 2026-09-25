@@ -1,3 +1,7 @@
+@use "sass:color";
+@use "sass:list";
+@use "sass:math";
+
 @font-face {
   font-family: "Minecraft";
   src: url(../fonts/Minecraft_Seven_2.woff2) format("woff2"),
@@ -101,5 +105,27 @@
 .mc-white {
   color: #ffffff;
   text-shadow: 1px 1px 0 #3f3f3f;
+  @extend .mc;
+}
+
+// Fades through 16 colors, 0.6s each, blended linearly
+$jebColors: #f9f9f9, #f37d1c, #c24cb9, #39afd5, #f8d33c, #7dc21e, #ed88a6, #454d50,
+  #999994, #159898, #8631b4, #3b42a6, #805231, #5c7915, #ac2d25, #1c1c20;
+$jebColorDuration: 0.6s;
+
+@keyframes jeb {
+  @for $i from 0 through list.length($jebColors) {
+    $color: list.nth($jebColors, $i % list.length($jebColors) + 1);
+
+    #{math.percentage(math.div($i, list.length($jebColors)))} {
+      color: $color;
+      // Shadow at 1/4 brightness
+      text-shadow: 1px 1px 0 color.mix(#000000, $color, 75%);
+    }
+  }
+}
+
+.mc-jeb {
+  animation: jeb list.length($jebColors) * $jebColorDuration linear infinite;
   @extend .mc;
 }

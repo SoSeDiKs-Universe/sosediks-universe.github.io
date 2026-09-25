@@ -12,11 +12,11 @@ module Jekyll
       emoji = @params[0]
       title = @params[1]
 
-      ref = title.downcase.strip
-                .gsub(' ', '-')                 # Replace spaces with hyphens
-                .gsub(/[^[:alnum:]\p{L}-]/, '') # Remove all non-alphanumeric characters except hyphens and letters
+      ref = "#{emoji} #{title}".downcase
+                .gsub(/[^\p{Word}\- \t]/, '')
+                .tr(" \t", '-')
 
-      %Q{<a href="#-#{ref}" class="href-link">#{emoji}</a> #{title}}
+      %Q{<a href="##{ref}" class="href-link">#{emoji}</a> #{title}}
     end
   end
 end

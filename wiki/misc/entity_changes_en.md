@@ -47,7 +47,7 @@ Breeding {% symlink chicken, Chickens %} produces 1-3 {% symlink egg, Eggs %} in
 {% symlink evoker, Evoker %} permanently changes {% symlink sheep, Sheep %}'s natural color after performing the "wololo" spell.
 
 ### {% href_link 🌈 | Random wool %}
-Rainbow {% symlink rainbow_sheep, Sheep %} (named _jeb\__) drop randomly colored wool.
+Rainbow {% symlink rainbow_sheep, Sheep %} (named _jeb\__{: .mc-jeb}) drop randomly colored wool.
 
 ### {% href_link 🔥 | Burning wool %}
 Burning {% symlink sheep, Sheep %} lose their wool.

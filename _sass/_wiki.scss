@@ -1,5 +1,6 @@
 $backgroundColor: #1f1f1f;
 $bodyColor: #000000;
+$mobileBarHeight: 3.5rem;
 $bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 
 html {
@@ -65,17 +66,145 @@ body {
   }
 }
 
-.mobile-sidebar {
+.nav-toggle,
+.mobile-bar,
+.nav-backdrop {
   display: none;
 }
 
 
 @media only screen and (max-width: 1080px) {
-  .nav-bar {
-    display: none;
+  html {
+    // Keep anchor targets clear of the fixed mobile bar
+    scroll-padding-top: $mobileBarHeight;
   }
-  .mobile-sidebar {
+
+  html:has(.mobile-bar-hidden) {
+    scroll-padding-top: 0;
+  }
+
+  // Visually hidden, but still focusable so the menu is keyboard-operable
+  .nav-toggle {
     display: block;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .mobile-bar {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: $mobileBarHeight;
+    position: fixed;
+    box-sizing: border-box;
+    padding: 0 1em;
+    background-color: #2d2d2d;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+    transition: transform 0.25s ease;
+
+    .mobile-bar-title {
+      color: #b85c38;
+      text-decoration: none;
+    }
+  }
+
+  // Slide out of view while scrolling down (toggled by wiki.js)
+  .mobile-bar-hidden .mobile-bar {
+    transform: translateY(calc(-100% - 8px));
+  }
+
+  .mobile-bar-hidden .nav-toggle:focus-visible ~ .mobile-bar {
+    transform: none;
+  }
+
+  .nav-toggle-button {
+    box-sizing: border-box;
+    width: 2.5em;
+    height: 2.5em;
+    padding: 0.5em;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+
+    span {
+      display: block;
+      height: 3px;
+      border-radius: 2px;
+      background-color: #b85c38;
+      transition: transform 0.25s ease, opacity 0.25s ease;
+    }
+  }
+
+  .nav-toggle:focus-visible ~ .mobile-bar .nav-toggle-button {
+    outline: 2px solid #00aaaa;
+  }
+
+  .nav-toggle:checked ~ .mobile-bar .nav-toggle-button {
+    span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    span:nth-child(2) {
+      opacity: 0;
+    }
+
+    span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+
+  // The sidebar becomes an off-canvas drawer below the mobile bar
+  .nav-bar {
+    top: $mobileBarHeight;
+    width: 20rem;
+    max-width: 80vw;
+    margin-right: 0;
+    z-index: 25;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+  }
+
+  .nav-toggle:checked ~ .nav-bar {
+    transform: none;
+  }
+
+  .nav-backdrop {
+    top: $mobileBarHeight;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    position: fixed;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+  }
+
+  .nav-toggle:checked ~ .nav-backdrop {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobile-bar,
+  .nav-bar,
+  .nav-backdrop,
+  .nav-toggle-button span {
+    transition: none;
   }
 }
 
@@ -98,6 +227,11 @@ body {
     border-bottom: 5px solid #005d5d;
   }
 
+  h1 {
+    padding-bottom: 1em;
+    border-bottom: 5px solid #005d5d;
+  }
+
   h3 {
     color: #b85c38;
     text-shadow: 1px 1px 0 #6b3520;
@@ -112,6 +246,7 @@ body {
 
 @media only screen and (max-width: 1080px) {
   .content {
+    padding-top: $mobileBarHeight;
     padding-left: 5em;
   }
 }
@@ -181,17 +316,56 @@ a.href-link {
   font-size: 0.8em;
 }
 
-img.img-link {
-  height: 1em;
+// Keep the icon on the same line as its title, while the title itself may still wrap
+.icon-link {
+  white-space: nowrap;
+
+  > :last-child {
+    white-space: normal;
+  }
+
+  // Fixed gap (one Minecraft font space) instead of a space character, which justified text would stretch
+  > :first-child {
+    margin-right: 0.3125em;
+  }
 }
 
+img.img-link {
+  height: 1em;
+  // Minecraft font glyphs span 7/8em above the baseline and 1/8em below it
+  vertical-align: -0.125em;
+}
+
+// One pixel of the Minecraft font (8 per em); its glyphs span 1px below the baseline to 7px above it,
+// and its line box spans 1px below to 10px above
+$fontPixel: 0.125em;
+
+// Inline (not inline-block), so the key doesn't grow the line; the keycap is drawn behind the text,
+// one font pixel around the glyphs, with the right padding a pixel smaller to account for glyph spacing
 .game-action-key {
-  display: inline-block;
-  padding: 3px 8px;
-  background-color: #383838;
-  outline: 2px solid #1E1E1E;
-  border: 3px solid #444444;
-  border-radius: 4px;
-  text-align: center;
-  margin: 2px;
+  position: relative;
+  z-index: 0;
+  margin: 0 $fontPixel;
+  padding: 0 2 * $fontPixel 0 3 * $fontPixel;
+  white-space: nowrap;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 2 * $fontPixel;
+    bottom: -$fontPixel;
+    background-color: #383838;
+    box-shadow:
+      // Bevel
+      inset $fontPixel $fontPixel 0 #4c4c4c,
+      inset (-$fontPixel) (-$fontPixel) 0 #262626,
+      // Outline with cut corners
+      0 (-$fontPixel) 0 #1e1e1e,
+      0 $fontPixel 0 #1e1e1e,
+      (-$fontPixel) 0 0 #1e1e1e,
+      $fontPixel 0 0 #1e1e1e;
+  }
 }

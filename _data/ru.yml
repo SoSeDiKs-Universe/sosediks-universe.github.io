@@ -5,6 +5,7 @@ index:
   copied: "Скопировано!"
   wiki: "Игрокопедия"
 sidebar:
+  menu: "Меню"
   title: "Игрокопедия"
   sections:
     introduction: "Вступление"

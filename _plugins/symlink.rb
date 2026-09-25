@@ -192,7 +192,8 @@ module Jekyll
         image: 'https://minecraft.wiki/wiki/Special:FilePath/White_Sheep.png'
       },
       'rainbow_sheep' => {
-        image: 'https://minecraft.wiki/wiki/Special:FilePath/Jeb_Sheep_JE5.webp'
+        image: 'https://minecraft.wiki/wiki/Special:FilePath/Jeb_Sheep_JE5.webp',
+        text_class: 'mc-jeb'
       },
       'chicken' => {
         image: 'https://minecraft.wiki/wiki/Special:FilePath/Chicken.png'
@@ -866,21 +867,21 @@ module Jekyll
         text = tag_data[:text]
         mod_url = tag_data[:pmc]
         image_src = '<svg xmlns="http://www.w3.org/2000/svg" width="56" height="58" viewBox="0 0 56 58" shapeRendering="crispEdges" class="pmc-icon brand-icon pixelated img-link" style="width: 1em; height: 1em;"><g id="water"><path d="M0 38V36H19V38H52V47H51V48H50V49H47V51H46V52H45V53H44V54H38V56H37V57H36V58H20V57H19V56H18V54H11V53H10V52H9V51H8V49H6V48H5V47H4V40H2V39H1V38H0Z" fill="#012647"/><path d="M9 4H46V45H9V4Z" fill="#278EED"/><path d="M5 35H9V36H5V35Z" fill="#278EED"/><path d="M10 8H37V36H10V8Z" fill="#3DA2FF"/><path d="M37 18H42V32H37V18Z" fill="#3DA2FF"/><path d="M28 36H33V41H28V36Z" fill="#3DA2FF"/><path d="M33 36H37V41H33V36Z" fill="#2E95F4"/><path d="M37 32H42V36H37V32Z" fill="#2E95F4"/><path d="M18 8H28V22H18V8Z" fill="#57AAFF"/><path d="M18 22H23V27H18V22Z" fill="#57AAFF"/><path d="M33 8H37V18H33V8Z" fill="#4BA8FF"/><path d="M33 22H37V32H33V22Z" fill="#4BA8FF"/><path d="M28 27H33V36H28V27Z" fill="#4BA8FF"/><path d="M19 32H28V38H19V32Z" fill="#4BA8FF"/><path d="M9 41H14V45H9V41Z" fill="#0D74D3"/><path d="M19 48H23V50H19V48Z" fill="#0D74D3"/><path d="M46 32H48V36H46V32Z" fill="#0D74D3"/><path d="M46 18H49V27H46V18Z" fill="#0D74D3"/><path d="M42 36H46V45H42V36Z" fill="#0D74D3"/><path d="M37 41H42V45H37V41Z" fill="#0D74D3"/><path d="M9 45H19V50H9V45Z" fill="#014E96"/><path d="M19 50H37V55H19V50Z" fill="#014E96"/><path d="M37 45H46V50H37V45Z" fill="#014E96"/><path d="M46 36H51V45H46V36Z" fill="#014E96"/><path d="M19 0H37V4H19V0Z" fill="#0157A9"/><path d="M0 18H5V36H0V18Z" fill="#0157A9"/><path d="M5 36H9V45H5V36Z" fill="#0157A9"/><path d="M42 18H46V22H42V18Z" fill="#3198F7"/><path d="M51 38V36H56V38H55V39H54V40H52V38H51Z" fill="#132E2F"/></g><g id="land"><path d="M19 38H28V41H19V38Z" fill="#6EC310"/><path d="M23 14H24V16H23V14Z" fill="#6EC310"/><path d="M24 8H27V10H24V8Z" fill="#6EC310"/><path d="M24 18V16H25V17H26V18H24Z" fill="#6EC310"/><path d="M14 13V8H22V10H21V11H22V13H14Z" fill="#6EC310"/><path d="M14 22V13H9V22H5V35H9V36H14V34H12V33H10V30H11V29H14V30H15V31H16V27H18V22H14Z" fill="#6EC310"/><path d="M19 45V41H34V45H19Z" fill="#57B10F"/><path d="M5 22V18H9V22H5Z" fill="#57B10F"/><path d="M9 13V8H14V13H9Z" fill="#57B10F"/><path d="M19 8V4H28V6H27V8H24V7H22V8H19Z" fill="#57B10F"/><path d="M9 37V36H14V37H16V39H17V40H19V41H16V40H15V39H12V37H9Z" fill="#58AE01"/><path d="M39 11V8H46V17H45V13H42V11H39Z" fill="#448001"/><path d="M49 18H51V36H48V32H46V27H49V18Z" fill="#448001"/><path d="M37 50V45H19V48H23V50H37Z" fill="#448001"/><path d="M9 8V4H19V8H9V18H5V8H9Z" fill="#2A5401"/><path d="M37 8V4H46V8H51V18H56V36H51V18H46V8H37Z" fill="#2A5401"/><path d="M26 51V50H34V51H33V54H32V55H29V53H27V51H26Z" fill="#2A5401"/><path d="M51 38V36H49V37H50V38H51Z" fill="#2A5401"/></g><g id="sun"><path d="M14 22V13H23V22H14Z" fill="#ffffff"/></g></svg>'
-        return %Q{<span style="display: inline-flex; align-items: center;" class="mc-green">#{image_src}&nbsp;<a href="#{mod_url}" class="wiki-link mc-gold">#{text}</a></span>}
+        return %Q{<span class="mc-green icon-link">#{image_src}<a href="#{mod_url}" class="wiki-link mc-gold">#{text}</a></span>}
       end
 
       if (tag_data[:modrinth])
         text = tag_data[:text]
         mod_url = tag_data[:modrinth]
         image_src = '<svg xmlns="http://www.w3.org/2000/svg" width="512" height="514" viewBox="0 0 512 514" class="modrinth-icon brand-icon pixelated img-link" style="width: 1em; height: 1em;"><path fill="currentColor" fill-rule="evenodd" d="M503.16 323.56c11.39-42.09 12.16-87.65.04-132.8C466.57 54.23 326.04-26.8 189.33 9.78 83.81 38.02 11.39 128.07.69 230.47h43.3c10.3-83.14 69.75-155.74 155.76-178.76 106.3-28.45 215.38 28.96 253.42 129.67l-42.14 11.27c-19.39-46.85-58.46-81.2-104.73-95.83l-7.74 43.84c36.53 13.47 66.16 43.84 77 84.25 15.8 58.89-13.62 119.23-67 144.26l11.53 42.99c70.16-28.95 112.31-101.86 102.34-177.02l41.98-11.23a210.2 210.2 0 0 1-3.86 84.16z" clip-rule="evenodd"></path><path fill="currentColor" d="M321.99 504.22C185.27 540.8 44.75 459.77 8.11 323.24A257.6 257.6 0 0 1 0 275.46h43.27c1.09 11.91 3.2 23.89 6.41 35.83 3.36 12.51 7.77 24.46 13.11 35.78l38.59-23.15c-3.25-7.5-5.99-15.32-8.17-23.45-24.04-89.6 29.2-181.7 118.92-205.71 17-4.55 34.1-6.32 50.8-5.61L255.19 133c-10.46.05-21.08 1.42-31.66 4.25-66.22 17.73-105.52 85.7-87.78 151.84 1.1 4.07 2.38 8.04 3.84 11.9l49.35-29.61-14.87-39.43 46.6-47.87 58.9-12.69 17.05 20.99-27.15 27.5-23.68 7.45-16.92 17.39 8.29 23.07s16.79 17.84 16.82 17.85l23.72-6.31 16.88-18.54 36.86-11.67 10.98 24.7-38.03 46.63-63.73 20.18-28.58-31.82-49.82 29.89c25.54 29.08 63.94 45.23 103.75 41.86l11.53 42.99c-59.41 7.86-117.44-16.73-153.49-61.91l-38.41 23.04c50.61 66.49 138.2 99.43 223.97 76.48 61.74-16.52 109.79-58.6 135.81-111.78l42.64 15.5c-30.89 66.28-89.84 118.94-166.07 139.34"></path></svg>'
-        return %Q{<span style="display: inline-flex; align-items: center;" class="mc-green">#{image_src}&nbsp;<a href="#{mod_url}" class="wiki-link mc-gold">#{text}</a></span>}
+        return %Q{<span class="mc-green icon-link">#{image_src}<a href="#{mod_url}" class="wiki-link mc-gold">#{text}</a></span>}
       end
 
       if (tag_data[:curseforge])
         text = tag_data[:text]
         mod_url = tag_data[:curseforge]
         image_src = '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" class="curseforge-icon brand-icon pixelated img-link" style="width: 1em; height: 1em;"><path d="M23.9074 12.0181C23.9074 12.0181 30.0327 11.0522 31 8.23523H21.6168V6H1L3.53975 8.94699V11.9664C3.53975 11.9664 9.94812 11.6332 12.427 13.5129C15.8202 16.6579 8.61065 20.9092 8.61065 20.9092L7.37439 25C9.30758 23.1593 12.9921 20.7781 19.7474 20.8929C17.1767 21.7053 14.5917 22.9743 12.5794 25H26.2354L24.9494 20.9092C24.9494 20.9092 15.0519 15.0732 23.9074 12.0184V12.0181Z" fill="#f16436" /></svg>'
-        return %Q{<span style="display: inline-flex; align-items: center;" class="mc-green">#{image_src}&nbsp;<a href="#{mod_url}" class="wiki-link mc-gold">#{text}</a></span>}
+        return %Q{<span class="mc-green icon-link">#{image_src}<a href="#{mod_url}" class="wiki-link mc-gold">#{text}</a></span>}
       end
 
 
@@ -889,22 +890,19 @@ module Jekyll
       emoji_src = tag_data[:emoji]
       current_url = context.environments.first['page']['url'] || context.environments.first['page']['permalink']
 
+      icon = emoji_src ? %Q{<span>#{emoji_src}</span>} : %Q{<img src="#{image_src}" alt="#{link_text}" draggable="false" class="pixelated img-link">}
+
+      text_class = tag_data[:text_class] || 'mc-gold'
+
       # No link if link is missing or the current page is the same
       if !tag_data[:url] || current_url == tag_data[:url]
-        if (emoji_src)
-          return %Q{#{emoji_src}&nbsp;<span class="mc-gold">#{link_text}</span>}
-        else
-          return %Q{<span style="display: inline-flex; align-items: center;"><img src="#{image_src}" alt="#{link_text}" draggable="false" class="pixelated img-link">&nbsp;<span class="mc-gold">#{link_text}</span></span>}
-        end
-      end
-
-      wiki_url = context.registers[:site].config['url'] + tag_data[:url] 
-
-      if (emoji_src)
-        return %Q{#{emoji_src}&nbsp;<a href="#{wiki_url}" class="wiki-link mc-gold">#{link_text}</a>}
+        text = %Q{<span class="#{text_class}">#{link_text}</span>}
       else
-        return %Q{<span style="display: inline-flex; align-items: center;"><img src="#{image_src}" alt="#{link_text}" draggable="false" class="pixelated img-link">&nbsp;<a href="#{wiki_url}" class="wiki-link mc-gold">#{link_text}</a></span>}
+        wiki_url = context.registers[:site].config['url'] + tag_data[:url]
+        text = %Q{<a href="#{wiki_url}" class="wiki-link #{text_class}">#{link_text}</a>}
       end
+
+      %Q{<span class="icon-link">#{icon}#{text}</span>}
     end
   end
 end

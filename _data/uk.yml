@@ -5,6 +5,7 @@ index:
   copied: "Скопійовано!"
   wiki: "Гравцепедія"
 sidebar:
+  menu: "Меню"
   title: "Гравцепедія"
   sections:
     introduction: "Вступ"

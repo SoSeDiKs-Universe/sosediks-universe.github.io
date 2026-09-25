@@ -5,6 +5,7 @@ index:
   copied: "Copied!"
   wiki: "Playerpedia"
 sidebar:
+  menu: "Menu"
   title: "Playerpedia"
   sections:
     introduction: "Introduction"
