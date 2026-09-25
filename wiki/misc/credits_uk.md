@@ -175,3 +175,11 @@ page_id: wiki_credits
 ### {% symlink invariable-paintings %}
 
 Унікальні текстури предметів для варіантів ванільних картин. Перетворює картини на колекційні предмети.
+
+
+
+# {% href_link 🌐 | Сайт %}
+
+### {% symlink pixel-twemoji %}
+
+Емодзі на цьому сайті: піксель-арт від [Amber](https://github.com/AmberWat/PixelTwemojiMC-9){: .mc-gold} на основі [Twemoji](https://github.com/jdecked/twemoji){: .mc-gold} (© Twitter, Inc та інші учасники). Обидва поширюються за ліцензією [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.uk){: .mc-gold}.

@@ -175,3 +175,11 @@ page_id: wiki_credits
 ### {% symlink invariable-paintings %}
 
 Уникальные текстуры предметов для вариантов ванильных картин. Превращает картины в предметы коллекционирования.
+
+
+
+# {% href_link 🌐 | Сайт %}
+
+### {% symlink pixel-twemoji %}
+
+Эмодзи на этом сайте: пиксель-арт от [Amber](https://github.com/AmberWat/PixelTwemojiMC-9){: .mc-gold} на основе [Twemoji](https://github.com/jdecked/twemoji){: .mc-gold} (© Twitter, Inc и другие участники). Оба распространяются по лицензии [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ru){: .mc-gold}.

@@ -34,6 +34,31 @@ document.addEventListener("click", function (event) {
 
 if (location.hash) prepareJump(location.hash);
 
+// Emoji drawn as pixel art, like the build does for the pages' text (see _plugins/pixel_emoji.rb), for the text
+// made here. The sheet cells of the emoji in use come with the page (for tooltips) and with the search index
+var emojiCells = {};
+var emojiPattern = null;
+
+function addEmoji(cells) {
+  if (!cells) return;
+  Object.keys(cells).forEach(function (emoji) { emojiCells[emoji] = cells[emoji]; });
+  var emoji = Object.keys(emojiCells).sort(function (a, b) { return b.length - a.length; });
+  if (!emoji.length) return;
+  emojiPattern = new RegExp(emoji.map(function (e) { return e.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }).join("|"), "g");
+}
+
+// HTML (escaped text) with its emoji drawn
+function pixelEmoji(html) {
+  if (!emojiPattern) return html;
+  return html.replace(emojiPattern, function (emoji) {
+    var cell = emojiCells[emoji];
+    return "<span class=\"emoji emoji-" + cell[0] + "\" style=\"--x:" + cell[1] + ";--y:" + cell[2] + "\">" + emoji + "</span>";
+  });
+}
+
+var pageEmoji = document.getElementById("emoji-map");
+if (pageEmoji) addEmoji(JSON.parse(pageEmoji.textContent));
+
 // Icons of grouped entries cycle through their members' images, all in step
 var cycleIcons = document.querySelectorAll("img[data-cycle]");
 var cycleStep = 0;
@@ -68,16 +93,16 @@ function placeTooltip() {
 
 function updateTooltip() {
   if (tooltipTarget.hasAttribute("data-tooltip")) {
-    tooltip.textContent = tooltipTarget.getAttribute("data-tooltip");
+    tooltip.innerHTML = pixelEmoji(escapeHtml(tooltipTarget.getAttribute("data-tooltip")));
     var note = tooltipTarget.getAttribute("data-tooltip-note");
     if (note) {
       var noteLine = document.createElement("span");
       noteLine.className = "mc-tooltip-note";
-      noteLine.textContent = note;
+      noteLine.innerHTML = pixelEmoji(escapeHtml(note));
       tooltip.appendChild(noteLine);
     }
   } else {
-    tooltip.textContent = cycleEntry(tooltipTarget, "data-cycle-names", "|");
+    tooltip.innerHTML = pixelEmoji(escapeHtml(cycleEntry(tooltipTarget, "data-cycle-names", "|")));
   }
   placeTooltip();
 }
@@ -293,6 +318,7 @@ function loadSearchIndex() {
           entry.text = normalizeSearch(entry.x);
           entry.title = normalizeSearch(entry.page.t);
         });
+        addEmoji(data.emoji);
         searchIndex = data;
       })
       .catch(function () { searchLoading = null; });
@@ -318,7 +344,7 @@ function findResults(terms) {
   return results.slice(0, 30);
 }
 
-// Escaped text with every term occurrence marked
+// Escaped text with every term occurrence marked (and its emoji drawn)
 function highlight(text, terms) {
   var normalized = normalizeSearch(text);
   var marks = [];
@@ -337,7 +363,7 @@ function highlight(text, terms) {
     html += escapeHtml(text.slice(pos, start)) + "<mark>" + escapeHtml(text.slice(start, mark[1])) + "</mark>";
     pos = mark[1];
   });
-  return html + escapeHtml(text.slice(pos));
+  return pixelEmoji(html + escapeHtml(text.slice(pos)));
 }
 
 // A piece of the section's text around the first found term
@@ -388,7 +414,7 @@ function renderSearch() {
     if (href === "#") href = entry.page.u;
     return "<a href=\"" + escapeHtml(href) + "\">" +
       "<span class=\"search-heading\">" + highlight(entry.h || entry.page.t, terms) + "</span>" +
-      (entry.h ? "<span class=\"search-page\">" + escapeHtml(entry.page.t) + "</span>" : "") +
+      (entry.h ? "<span class=\"search-page\">" + pixelEmoji(escapeHtml(entry.page.t)) + "</span>" : "") +
       (entry.x ? "<span class=\"search-snippet\">" + snippet(entry, terms) + "</span>" : "") +
       "</a>";
   }).join("");

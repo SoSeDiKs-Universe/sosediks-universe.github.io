@@ -175,3 +175,11 @@ An expansion to BACAP with new torturous advancements.
 ### {% symlink invariable-paintings %}
 
 Fancy item textures for vanilla painting variants. Turns paintings into collectibles.
+
+
+
+# {% href_link 🌐 | Website %}
+
+### {% symlink pixel-twemoji %}
+
+The emoji on this website: pixel art by [Amber](https://github.com/AmberWat/PixelTwemojiMC-9){: .mc-gold}, based on [Twemoji](https://github.com/jdecked/twemoji){: .mc-gold} (© Twitter, Inc and other contributors). Both are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/){: .mc-gold}.

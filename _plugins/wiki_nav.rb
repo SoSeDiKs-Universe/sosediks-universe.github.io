@@ -119,7 +119,12 @@ module Jekyll
         end
       end
 
-      File.write(File.join(site.dest, 'search-index.json'), JSON.generate({ pages: pages, entries: entries }))
+      # Cells of the emoji in it, for the results to draw them as pixel art
+      emoji = {}
+      pages.each { |page| PixelEmoji.used(page[:t].to_s, emoji) }
+      entries.each { |entry| PixelEmoji.used("#{entry[:h]} #{entry[:x]}", emoji) }
+
+      File.write(File.join(site.dest, 'search-index.json'), JSON.generate({ pages: pages, entries: entries, emoji: emoji }))
     end
   end
 end
