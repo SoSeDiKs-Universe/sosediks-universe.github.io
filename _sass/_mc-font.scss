@@ -157,22 +157,24 @@ $jebColorDuration: 0.6s;
   --p: 0.125em;
   position: relative;
   display: inline-block;
-  // Room for the shadow, a pixel right and down, which overlaps what follows like in-game
+  // Room for the shadow, a pixel to the right, which overlaps what follows like in-game
   width: calc(var(--p) * 10);
-  height: calc(var(--p) * 10);
   margin-right: calc(var(--p) * -1);
-  vertical-align: calc(var(--p) * -2);
-  overflow: hidden;
+  // The emoji character stays inside, invisible, on the text's baseline and as tall as the font
+  // (a font pixel below the baseline to 10 above it), so selecting it highlights it like any character
+  // (Its fill stays transparent while selected too, unlike its color; styling ::selection would drop the highlight)
+  line-height: 1.375em;
   color: transparent;
+  -webkit-text-fill-color: transparent;
   text-shadow: none;
-  text-indent: 2em;
   white-space: nowrap;
 
+  // The art: 9 pixels, the lowest one below the baseline
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 0;
+    bottom: calc(0.125em - var(--p));
     left: 0;
     width: calc(var(--p) * 9);
     height: calc(var(--p) * 9);
@@ -182,9 +184,9 @@ $jebColorDuration: 0.6s;
     image-rendering: pixelated;
   }
 
-  // The shadow: the emoji darkened to a quarter, like the shadow of white text
+  // The shadow: the emoji darkened to a quarter, like the shadow of white text, a pixel right and down
   &::before {
-    top: var(--p);
+    bottom: calc(0.125em - var(--p) * 2);
     left: var(--p);
     filter: brightness(0.25);
   }

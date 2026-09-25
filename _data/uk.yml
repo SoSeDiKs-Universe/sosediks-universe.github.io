@@ -1,11 +1,16 @@
 locale: "uk_UA"
 index:
-  description: "Сервер Minecraft: Java Edition із виживанням, сповненим нових механік і змін."
+  description: "Сервер Minecraft: Java Edition %version% із виживанням, сповненим нових механік і змін."
   title: "Всесвіт Сусіда"
   address: "Адреса сервера"
   copy: "Скопіювати!"
   copied: "Скопійовано!"
   wiki: "Гравцепедія"
+  pinging: "Зʼєднання…"
+  cannot_connect: "Не вдається підʼєднатися до сервера"
+  trivia: "А Ви знали?"
+  trivia_more: "Докладніше"
+  trivia_next: "Інший факт"
 sidebar:
   menu: "Меню"
   title: "Гравцепедія"

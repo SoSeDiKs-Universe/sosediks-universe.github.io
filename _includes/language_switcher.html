@@ -7,16 +7,19 @@
                 {% case lang %}
                     {% when 'ru' %}
                         {% assign lang_emoji = "🇷🇺" %}
+                        {% assign lang_name = "Русский" %}
                     {% when 'uk' %}
                         {% assign lang_emoji = "🇺🇦" %}
+                        {% assign lang_name = "Українська" %}
                     {% else %}
                         {% assign lang_emoji = "🇬🇧" %}
+                        {% assign lang_name = "English" %}
                 {% endcase %}
 
                 {% if lang == site.default_lang %}
-                    <a href=" {{ page.url }}" class="language-link">{{ lang_emoji }}</a>
+                    <a href=" {{ page.url }}" class="language-link" hreflang="{{ lang }}" lang="{{ lang }}" title="{{ lang_name }}" aria-label="{{ lang_name }}">{{ lang_emoji }}</a>
                 {% else %}
-                    <a href="/{{ lang }}{{ page.url }}" class="language-link">{{ lang_emoji }}</a>
+                    <a href="/{{ lang }}{{ page.url }}" class="language-link" hreflang="{{ lang }}" lang="{{ lang }}" title="{{ lang_name }}" aria-label="{{ lang_name }}">{{ lang_emoji }}</a>
                 {% endif %}
             {% endunless %}
         {% endfor %}

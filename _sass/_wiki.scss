@@ -1,3 +1,4 @@
+@use "mc-text";
 $backgroundColor: #1f1f1f;
 $bodyColor: #000000;
 $mobileBarHeight: 3.5rem;
@@ -316,43 +317,6 @@ a.href-link {
   font-size: 0.8em;
 }
 
-// Keep the icon on the same line as its title, while the title itself may still wrap
-.icon-link {
-  white-space: nowrap;
-
-  > :last-child {
-    white-space: normal;
-  }
-
-  // Fixed gap (one Minecraft font space) instead of a space character, which justified text would stretch
-  > :first-child {
-    margin-right: 0.3125em;
-  }
-}
-
-// Icons are part of the text, so they get its cursor (or the link's one),
-// as does the gap after them
-.img-link,
-.icon-link {
-  cursor: text;
-
-  a & {
-    cursor: pointer;
-  }
-}
-
-img.img-link {
-  height: 1em;
-  // Minecraft font glyphs span 7/8em above the baseline and 1/8em below it
-  vertical-align: -0.125em;
-}
-
-// Fixed box, so members with different proportions don't shift the text while cycling
-img.img-cycle {
-  width: 1em;
-  object-fit: contain;
-}
-
 // One pixel of the Minecraft font (8 per em); its glyphs span 1px below the baseline to 7px above it,
 // and its line box spans 1px below to 10px above
 $fontPixel: 0.125em;
@@ -440,48 +404,6 @@ $fontPixel: 0.125em;
   }
 }
 
-
-// Tooltip like in Minecraft (shown by wiki.js): translucent dark purple background with cut corners,
-// a faint purple gradient border inside it, and white text 2 font pixels from the border
-.mc-tooltip {
-  position: fixed;
-  z-index: 50;
-  pointer-events: none;
-  font-family: "Minecraft";
-  font-size: 1rem;
-  white-space: nowrap;
-  text-align: left;
-  color: #ffffff;
-  text-shadow: $fontPixel $fontPixel 0 #3f3f3f;
-  // The line box has 3 empty font pixels above capitals and none below descenders
-  padding: 0 2 * $fontPixel 2 * $fontPixel;
-  border: $fontPixel solid;
-  border-image: linear-gradient(to bottom, rgba(80, 0, 255, 0.31), rgba(40, 0, 127, 0.31)) 1;
-  background-color: rgba(16, 0, 16, 0.94);
-  box-shadow:
-    0 (-$fontPixel) 0 rgba(16, 0, 16, 0.94),
-    0 $fontPixel 0 rgba(16, 0, 16, 0.94),
-    (-$fontPixel) 0 0 rgba(16, 0, 16, 0.94),
-    $fontPixel 0 0 rgba(16, 0, 16, 0.94);
-
-  &::before {
-    content: "";
-    display: block;
-    margin-top: -$fontPixel;
-  }
-
-  &[hidden] {
-    display: none;
-  }
-
-  // Gray line below the main text, after an empty one
-  .mc-tooltip-note {
-    display: block;
-    margin-top: 1lh;
-    color: #aaaaaa;
-    text-shadow: $fontPixel $fontPixel 0 #2a2a2a;
-  }
-}
 
 // Link like in chat: an icon and the underlined text
 .mc-link {

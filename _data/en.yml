@@ -1,11 +1,16 @@
 locale: "en_US"
 index:
-  description: "A Minecraft: Java Edition survival server full of new mechanics and changes."
+  description: "A Minecraft: Java Edition %version% survival server full of new mechanics and changes."
   title: "SoSeDiK's Universe"
   address: "Server Address"
   copy: "Copy!"
   copied: "Copied!"
   wiki: "Playerpedia"
+  pinging: "Pinging…"
+  cannot_connect: "Can't connect to server"
+  trivia: "Did you know?"
+  trivia_more: "Read more"
+  trivia_next: "Another fact"
 sidebar:
   menu: "Menu"
   title: "Playerpedia"

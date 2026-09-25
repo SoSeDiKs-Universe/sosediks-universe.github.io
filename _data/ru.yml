@@ -1,11 +1,16 @@
 locale: "ru_RU"
 index:
-  description: "Сервер Minecraft: Java Edition с выживанием, полным новых механик и изменений."
+  description: "Сервер Minecraft: Java Edition %version% с выживанием, полным новых механик и изменений."
   title: "Вселенная Соседа"
   address: "Адрес сервера"
   copy: "Скопировать!"
   copied: "Скопировано!"
   wiki: "Игрокопедия"
+  pinging: "Соединение…"
+  cannot_connect: "Невозможно подключиться к серверу"
+  trivia: "А Вы знали?"
+  trivia_more: "Подробнее"
+  trivia_next: "Другой факт"
 sidebar:
   menu: "Меню"
   title: "Игрокопедия"

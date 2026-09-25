@@ -1,0 +1,41 @@
+<div class="server">
+    <h1 class="server-title"><img src="/assets/server_logo.png" draggable="false" alt="{{ site.title }}" class="server-logo"></h1>
+    <div class="server-background center-column">
+        <p class="server-tagline mc-white">{{ site.data.index.description | replace: "%version%", site.server_version }}</p>
+        <div class="ip center-column">
+            <label for="server-ip" class="ip-text mc-gray">🎮 {{ site.data.index.address }}</label>
+            <div class="ip-input"><input class="mc-white" type="text" id="server-ip" value="{{ site.server_address }}" spellcheck="false" autocomplete="off"></div>
+            <button id="ip-button" class="menu-button mc-white" type="button">
+                <span id="ip-title" class="ip-title" aria-live="polite"
+                    data-copy="{{ site.data.index.copy }}"
+                    data-copied="{{ site.data.index.copied }}">{{ site.data.index.copy }}</span>
+            </button>
+        </div>
+        {%- comment -%} The server as seen in the game's server list, filled in by observer.js {%- endcomment %}
+        <div class="server-entry mc" id="server-entry" role="status" hidden
+            data-address="{{ site.server_address }}"
+            data-pinging="{{ site.data.index.pinging }}"
+            data-cannot-connect="{{ site.data.index.cannot_connect }}">
+            <img class="server-entry-icon pixelated" alt="" hidden>
+            <div class="server-entry-motd"></div>
+            <div class="server-entry-status">
+                <span class="server-entry-players"></span>
+                <span class="server-entry-ping" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>
+            </div>
+        </div>
+        <div class="mc-buttons">
+            <a id="discord-button" class="menu-button mc-white" href="{{ site.discord_invite }}" target="_blank" rel="noopener">👾 Discord</a>
+            <a id="wiki-button" class="menu-button mc-white" href="/wiki">❓ {{ site.data.index.wiki }}</a>
+        </div>
+        {% include language_switcher.html %}
+    </div>
+    <div class="server-footer">
+        <img src="/assets/moople_logo.svg" draggable="false" alt="" class="moople-logo">
+        <section class="trivia" aria-labelledby="trivia-title" hidden>
+            <h2 class="trivia-title mc-yellow" id="trivia-title"><a id="trivia-link" class="trivia-link" href="/wiki" data-tooltip="{{ site.data.index.trivia_more }}" data-tooltip-size="1.5rem" aria-label="{{ site.data.index.trivia_more }}">💡</a> {{ site.data.index.trivia }}</h2>
+            <button id="trivia-next" class="menu-button icon-button mc-white" type="button" data-tooltip="{{ site.data.index.trivia_next }}" data-tooltip-size="1.5rem" aria-label="{{ site.data.index.trivia_next }}">🔄</button>
+            {%- comment -%} Filled with facts from the wiki by _plugins/home_trivia.rb {%- endcomment %}
+            <ul class="trivia-facts" aria-live="polite"><!-- trivia --></ul>
+        </section>
+    </div>
+</div>

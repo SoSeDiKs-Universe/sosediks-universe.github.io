@@ -8,7 +8,7 @@ server_version: "26.2"
 # Polyglot
 default_lang: "en"
 languages: ["en", "ru", "uk"]
-exclude_from_localization: ["javascript", "images", "css", "public", sitemap.xml, robots.txt]
+exclude_from_localization: [assets, sitemap.xml, robots.txt]
 parallel_localization: true
 
 # Options
@@ -21,6 +21,8 @@ exclude:
   - README.md
   - LICENSE
   - shell.nix
+  - flake.nix
+  - flake.lock
   - .sass-cache/
   - .jekyll-cache/
   - Gemfile

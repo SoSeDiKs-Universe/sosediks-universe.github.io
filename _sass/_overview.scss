@@ -1,3 +1,5 @@
+@use "mc-text";
+
 html {
   scroll-behavior: smooth;
 }
@@ -34,10 +36,17 @@ body {
 
   box-shadow: inset -2px -4px #0004, inset 2px 2px #fff5;
 
-  background: #999 url("https://i.ibb.co/rb2TWXL/bgbtn.png") center / cover;
+  background: #999 url("../button.png") center / cover;
   border: 2px solid #000;
 
   @extend .pixelated;
+
+  // Links looking like buttons
+  @at-root a#{&} {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+  }
 
   &:hover {
     text-shadow: 2px 2px #202013cc;
@@ -46,7 +55,7 @@ body {
         rgba(100, 100, 255, 0.45),
         rgba(100, 100, 255, 0.45)
       ),
-      url("https://i.ibb.co/rb2TWXL/bgbtn.png") center / cover;
+      url("../button.png") center / cover;
   }
 
   &:active {
@@ -67,9 +76,128 @@ body {
   flex-direction: column;
   align-items: center;
 
+  // The logo is the page's heading
+  &-title {
+    margin: 0;
+    font-size: inherit;
+    line-height: 0;
+  }
+
   &-logo {
     height: 30vw;
-    margin: 2rem 0 3rem 0;
+    margin: 1.25rem 0;
+  }
+
+  &-tagline {
+    max-width: 40rem;
+    margin: 1rem 1rem 0;
+    font-size: 1.25em;
+    text-align: center;
+  }
+
+  // The server as seen in the game's server list (at 2x scale: 64px icon, 2px font pixels)
+  &-entry {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: start;
+    gap: 0 0.75rem;
+    width: calc(100% - 2rem);
+    max-width: 38rem;
+    min-height: calc(64px + 1rem);
+    margin: 1rem 0 0;
+    padding: 0.5rem;
+    font-size: 16px;
+    line-height: 18px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border: 2px solid #808080;
+
+    &[hidden] {
+      display: none;
+    }
+
+    &-icon {
+      grid-column: 1;
+      width: 64px;
+      height: 64px;
+    }
+
+    &-motd {
+      grid-column: 2;
+      min-width: 0;
+      overflow-wrap: break-word;
+    }
+
+    &-status {
+      grid-column: 3;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      white-space: nowrap;
+    }
+
+    // Signal bars: green while online, dark gray otherwise
+    &-ping {
+      display: flex;
+      align-items: flex-end;
+      gap: 2px;
+      height: 14px;
+
+      span {
+        width: 2px;
+        background-color: #555555;
+        box-shadow: 2px 2px 0 #151515;
+
+        @for $i from 1 through 5 {
+          &:nth-child(#{$i}) {
+            height: 2px * ($i + 1) + 2px;
+          }
+        }
+      }
+    }
+
+    &.online &-ping span {
+      background-color: #00ff21;
+      box-shadow: 2px 2px 0 #00400a;
+    }
+
+    &.incompatible &-ping span {
+      background-color: #ff5555;
+      box-shadow: 2px 2px 0 #3f1515;
+    }
+
+    &.pinging &-ping span {
+      animation: ping-wave 1s steps(1) infinite;
+
+      @for $i from 1 through 5 {
+        &:nth-child(#{$i}) {
+          animation-delay: -1s + 0.2s * $i;
+        }
+      }
+    }
+
+    // Narrow screens: the status above the MOTD
+    @media only screen and (max-width: 500px) {
+      grid-template-columns: auto 1fr;
+
+      &-status {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: end;
+      }
+
+      &-motd {
+        grid-row: 2;
+      }
+
+      &-icon {
+        grid-row: 1 / 3;
+      }
+    }
+
+    // Without an icon, the text starts at the left
+    &:not(:has(.server-entry-icon:not([hidden]))) &-motd {
+      grid-column: 1 / 3;
+    }
   }
 
   &-background {
@@ -101,10 +229,27 @@ body {
   }
 }
 
+// The cow beside the trivia, or under it on narrow screens
+.server-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: calc(100% - 2rem);
+  max-width: 60rem;
+  margin: 0 auto 0.5rem;
+}
+
 .moople-logo {
   display: block;
-  height: 250px;
-  margin: auto auto;
+  flex: none;
+  height: 200px;
+}
+
+@media only screen and (max-width: 700px) {
+  .server-footer {
+    flex-direction: column-reverse;
+  }
 }
 
 .ip {
@@ -113,12 +258,17 @@ body {
   &-text {
     font-size: 2em;
     margin: 0;
+
+    @media only screen and (max-width: 500px) {
+      font-size: 1.6em;
+    }
   }
 
   &-input {
     margin: 1em;
     height: 3em;
     input {
+      cursor: text;
       font-size: 1.25em;
       height: 100%;
       width: 100%;
@@ -140,7 +290,7 @@ body {
       rgba(100, 100, 255, 0.45),
       rgba(100, 100, 255, 0.45)
     ),
-    url("https://i.ibb.co/rb2TWXL/bgbtn.png") center / cover;
+    url("../button.png") center / cover;
 }
 .ip-title-hover {
   text-shadow: 2px 2px #202013cc;
@@ -152,4 +302,78 @@ body {
 a.language-link {
   text-decoration: none;
   font-size: 1.5em;
+}
+
+// A random fact about the server, linking to where the wiki tells more
+.trivia {
+  position: relative;
+  flex: 1;
+  max-width: 40rem;
+  padding: 1rem 1rem 0.2rem;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../dirt.png");
+
+  // Clear of the reload button on both sides, to stay centered
+  &-title {
+    margin: 0 0 0.5rem;
+    padding: 0 2.5rem;
+    font-size: 1.5em;
+    font-weight: normal;
+  }
+
+  &-facts {
+    margin: 0 0 1rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  &-fact {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+
+  // The fact's heading, on a line of its own
+  &-fact-title {
+    display: block;
+  }
+
+  // The bulb, leading to the shown fact's section
+  &-link {
+    text-decoration: none;
+
+    &:hover .emoji,
+    &:focus-visible .emoji {
+      filter: brightness(1.3);
+    }
+  }
+
+  // Another fact
+  #trivia-next {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+}
+
+// A square button with just an icon
+.menu-button.icon-button {
+  min-width: 0;
+  width: 2.2em;
+  height: 2.2em;
+  padding: 0 0 4px;
+  margin: 0;
+  font-size: 1em;
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+@keyframes ping-wave {
+  0% {
+    background-color: #555555;
+  }
+  50% {
+    background-color: #aaaaaa;
+  }
 }

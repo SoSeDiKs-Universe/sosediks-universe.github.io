@@ -1,7 +1,8 @@
 {%- comment -%} Description, link preview (Open Graph) and language versions of the page {%- endcomment -%}
 {%- assign lang_prefix = "" -%}
 {%- if site.active_lang != site.default_lang -%}{%- assign lang_prefix = "/" | append: site.active_lang -%}{%- endif -%}
-{%- assign meta_description = include.description | default: site.data.index.description -%}
+{%- assign site_description = site.data.index.description | replace: "%version%", site.server_version -%}
+{%- assign meta_description = include.description | default: site_description -%}
     <meta name="description" content="{{ meta_description | escape }}">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="{{ site.data.index.title | escape }}">

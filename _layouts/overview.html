@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ site.title }}</title>
-    {% include meta.html title=site.title description=page.description %}
-    <link rel="icon" href="./assets/favicon.svg" />
-    <link rel="stylesheet" href="./assets/css/overview.css">
-    <link rel="stylesheet" href="./assets/css/mc-font.css">
-    <script src="./assets/js/observer.js"></script>
+    <title>{{ site.data.index.title }}</title>
+    {% include meta.html title=site.data.index.title description=page.description %}
+    <link rel="icon" href="/assets/favicon.svg" />
+    <link rel="stylesheet" href="/assets/css/overview.css?v={{ site.time | date: "%s" }}">
+    <link rel="stylesheet" href="/assets/css/mc-font.css?v={{ site.time | date: "%s" }}">
+    <script src="/assets/js/mc-text.js?v={{ site.time | date: "%s" }}" defer></script>
+    <script src="/assets/js/observer.js?v={{ site.time | date: "%s" }}" defer></script>
   </head>
   <body>
     <div class="content">
