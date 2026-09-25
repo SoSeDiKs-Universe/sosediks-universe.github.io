@@ -93,7 +93,7 @@ Markdown следует варианту Discord:
 - `__подчёркнутый__`{: .mc-gold} → <span class="mc-white mc-underline">подчёркнутый</span>
 - `~~зачёркнутый~~`{: .mc-gold} → <span class="mc-white mc-strikethrough">зачёркнутый</span>
 - `||спойлер||`{: .mc-gold} → <span class="icon-link" data-tooltip="спойлер"><img src="/assets/icons/spoiler.png" alt="" class="pixelated img-link"><span>[…?]</span></span> (наведите или нажмите, чтобы увидеть)
-- Ссылки становятся <a class="mc-link" href="{{ site.url }}" data-tooltip="Нажмите для посещения!" data-tooltip-note="{{ site.url }}"><img src="/assets/icons/link.png" alt="" class="pixelated">кликабельными</a>.
+- Ссылки становятся <a class="mc-link" href="/ru/" data-tooltip="Нажмите для посещения!" data-tooltip-note="{{ site.url }}/ru/"><img src="/assets/icons/link.png" alt="" class="pixelated">кликабельными</a>.
 
 ### {% href_link 💖 | Эмодзи %}
 Пакет ресурсов сервера имеет полную поддержку Emoji 16.

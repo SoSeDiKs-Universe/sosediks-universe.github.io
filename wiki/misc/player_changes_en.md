@@ -93,7 +93,7 @@ Markdown follows Discord's flavor:
 - `__underline__`{: .mc-gold} → <span class="mc-white mc-underline">underline</span>
 - `~~strikethrough~~`{: .mc-gold} → <span class="mc-white mc-strikethrough">strikethrough</span>
 - `||spoiler||`{: .mc-gold} → <span class="icon-link" data-tooltip="spoiler"><img src="/assets/icons/spoiler.png" alt="" class="pixelated img-link"><span>[…?]</span></span> (hover or tap to reveal)
-- Links become <a class="mc-link" href="{{ site.url }}" data-tooltip="Click to visit!" data-tooltip-note="{{ site.url }}"><img src="/assets/icons/link.png" alt="" class="pixelated">clickable</a>.
+- Links become <a class="mc-link" href="/" data-tooltip="Click to visit!" data-tooltip-note="{{ site.url }}/"><img src="/assets/icons/link.png" alt="" class="pixelated">clickable</a>.
 
 ### {% href_link 💖 | Emoji %}
 Server resource pack ships with full support for Emoji 16.

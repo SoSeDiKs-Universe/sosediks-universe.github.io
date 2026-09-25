@@ -93,7 +93,7 @@ Markdown відповідає варіанту Discord:
 - `__підкреслений__`{: .mc-gold} → <span class="mc-white mc-underline">підкреслений</span>
 - `~~закреслений~~`{: .mc-gold} → <span class="mc-white mc-strikethrough">закреслений</span>
 - `||спойлер||`{: .mc-gold} → <span class="icon-link" data-tooltip="спойлер"><img src="/assets/icons/spoiler.png" alt="" class="pixelated img-link"><span>[…?]</span></span> (наведіть або натисніть, щоб побачити)
-- Посилання стають <a class="mc-link" href="{{ site.url }}" data-tooltip="Натисніть, щоб відвідати!" data-tooltip-note="{{ site.url }}"><img src="/assets/icons/link.png" alt="" class="pixelated">клікабельними</a>.
+- Посилання стають <a class="mc-link" href="/uk/" data-tooltip="Натисніть, щоб відвідати!" data-tooltip-note="{{ site.url }}/uk/"><img src="/assets/icons/link.png" alt="" class="pixelated">клікабельними</a>.
 
 ### {% href_link 💖 | Емодзі %}
 Пакет ресурсів сервера має повну підтримку Emoji 16.
