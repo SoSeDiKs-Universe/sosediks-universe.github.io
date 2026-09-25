@@ -430,6 +430,9 @@ module Jekyll
       'shears' => {
         image: 'https://minecraft.wiki/wiki/Special:FilePath/Invicon_Shears.png'
       },
+      'elytra' => {
+        image: 'https://minecraft.wiki/wiki/Special:FilePath/Invicon_Elytra.png'
+      },
       'wooden_shovel' => {
         image: 'https://minecraft.wiki/wiki/Special:FilePath/Invicon_Wooden_Shovel.png'
       },

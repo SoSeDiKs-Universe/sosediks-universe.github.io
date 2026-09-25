@@ -61,7 +61,7 @@ You can exit crawling and sliding by pressing {% game_action sneak %} again.
 You can also crawl into a hole in front of you by jumping while holding {% game_action sneak %}.
 
 ### {% href_link 💨 | Leap of Faith %}
-By triple-pressing {% game_action sneak %}, you can enter the "leap of faith" state. The fall speeds up significantly, and the player can no longer move to the side (the entire fall occurs within one block). If the player falls into water or onto a {% symlink soft_blocks, soft block %}, they take no fall damage.
+By quickly triple-pressing {% game_action sneak %} (less than a second between presses) while falling, you can enter the "leap of faith" state. The last press has to come after falling at least 3 blocks, and it doesn't work while flying, gliding with an {% symlink elytra, Elytra %} or swimming. On entering the leap, the player is centered on the block and looks straight down. The fall speeds up significantly, and the player can no longer move to the side (the entire fall occurs within one block). If the player falls into water or onto a {% symlink soft_blocks, soft block %}, they take no fall damage.
 
 ### {% href_link 🍥 | Roll %}
 If you manage to hold down {% game_action sneak %} right before falling to the ground, you will perform a roll, which allows you to slightly reduce the damage from the fall (or avoid it altogether) and get a small increase in speed.
@@ -84,6 +84,8 @@ If there is a one-block gap above the block you are grabbing onto that you can c
 
 ### {% href_link *️⃣ | Formatting %}
 Chat, signs and books support formatting with Markdown and MiniMessage, allowing for rich messages.
+
+Markdown follows Discord's flavor: `**bold**`{: .mc-gold}, `*italic*`{: .mc-gold}, `__underline__`{: .mc-gold}, `~~strikethrough~~`{: .mc-gold}, `||spoiler||`{: .mc-gold}, and links are clickable.
 
 ### {% href_link 💖 | Emoji %}
 Server resource pack ships with full support for Emoji 16.
