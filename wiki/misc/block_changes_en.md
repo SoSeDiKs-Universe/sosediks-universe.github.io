@@ -9,7 +9,7 @@ page_id: wiki_misc_block_changes
 ## {% href_link 🏞️ | Environmental %}
 
 ### {% href_link 🔥 | Campfires can set on fire %}
-If someone stands on a lit {% symlink campfire, Campfire %}, the fire will spread to them. Having `«Frost Walker»`{: .mc-aqua} enchantment on boots makes you exempt, though.
+If someone stands on a lit {% symlink campfire, Campfire %}, the fire will spread to them. Having {% symlink frost_walker, Frost Walker %} enchantment on boots makes you exempt, though.
 
 ### {% href_link 🌧️ | Campfires don't burn in rain %}
 {% symlink campfire, Campfires %} exposed to rain will randomly extinguish.
@@ -61,7 +61,7 @@ Opening a container exposed to liquid will release all stored items. Be especial
 If any {% symlink arrow, Arrow %} or a {% symlink trident, Trident %} hits a {% symlink melon, Melon %} or a {% symlink pumpkin, Pumpkin %}, the block will break into pieces.
 
 ### {% href_link 💥 | Exploding Coal Ore %}
-{% symlink coal_ore, Coal Ores %} (of any kind) are not keen of {% symlink fire, Fire %}, and will explode upon contact with it. This includes lit {% symlink torch, Torches %} (of any kind) and {% symlink campfire, Campfires %}, as well as `«Fire Aspect»`{: .mc-aqua} enchantment.
+{% symlink coal_ore, Coal Ores %} (of any kind) are not keen of {% symlink fire, Fire %}, and will explode upon contact with it. This includes lit {% symlink torch, Torches %} (of any kind) and {% symlink campfire, Campfires %}, as well as {% symlink fire_aspect, Fire Aspect %} enchantment.
 
 Moreover, trying to mine the ore with a metal tool will lead to the same result, causing level 5 fiery explosion in both cases.
 
@@ -72,7 +72,7 @@ Moreover, trying to mine the ore with a metal tool will lead to the same result,
 Trying to extinguish {% symlink fire, Fire %} with an empty hand will set you on fire.
 
 ### {% href_link 🧯 | Unlit Campfire %}
-{% symlink campfire, Campfires %} are no longer lit by default. Breaking them will drop the {% symlink campfire, Campfire %} as an item, with `«Silk Touch»`{: .mc-aqua} allowing to keep the lit state.
+{% symlink campfire, Campfires %} are no longer lit by default. Breaking them will drop the {% symlink campfire, Campfire %} as an item, with {% symlink silk_touch, Silk Touch %} allowing to keep the lit state.
 
 ### {% href_link 💧 | Wet Cauldrons %}
 Entities inside {% symlink water_cauldron, Water Cauldrons %} are considered wet ([MC-145311](https://bugs.mojang.com/browse/MC/issues/MC-145311){: .mc .mc-gold}).

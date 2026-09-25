@@ -18,7 +18,7 @@ Server features many new advancements to achieve during your journey. Many of th
 If you sneak while swapping items, only half of the items will go into the other hand.
 
 ### {% href_link 🐸 | Aquatic Frogs %}
-{% symlink frog, Frogs %} are considered as part of aquatic mobs. For example, this makes them sensitive to `«Impaling»`{: .mc-aqua} enchantment.
+{% symlink frog, Frogs %} are considered as part of aquatic mobs. For example, this makes them sensitive to {% symlink impaling, Impaling %} enchantment.
 
 ### {% href_link ❓️ | Unknown curses %}
 Curses are hidden from item tooltips by default, instead only noting that the item is cursed (or holds curses) and changing the item's name to red.
@@ -26,7 +26,7 @@ Curses are hidden from item tooltips by default, instead only noting that the it
 Curses no longer apply the enchantment glint.
 
 ### {% href_link 🎩 | Blessing of Unbinding %}
-`«Curse of Binding»`{: .mc-red} can be mitigated by having the enhanced `«Weakness»`{: .mc-aqua} potion effect.
+{% symlink binding_curse, Curse of Binding %} can be mitigated by having the enhanced {% symlink weakness, Weakness %} potion effect.
 
 ### {% href_link ♨️ | Improved item visuals %}
 {% symlink writable_book, Books %} display their author's online status.
@@ -43,7 +43,7 @@ Items show their attributes/effects/enchantments as icons.
 Clicking with an empty cursor on an empty result slot inside furnaces will extract collected experience and recipes.
 
 ### {% href_link 🔱 | Impaling works on wet mobs %}
-Additionally to aquatic mobs, `«Impaling»`{: .mc-aqua} enchantment also affects wet mobs.
+Additionally to aquatic mobs, {% symlink impaling, Impaling %} enchantment also affects wet mobs.
 
 ### {% href_link 🚏 | Stop the traffic! %}
 By holding down {% game_action sneak %} and {% game_action use %} with an empty hand, you can free an entity (excluding {% symlink player, Players %}) from the vehicle.

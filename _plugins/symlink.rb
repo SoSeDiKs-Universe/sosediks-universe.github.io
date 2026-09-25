@@ -175,6 +175,15 @@ end
 module Jekyll
   class SymlinkTag < Liquid::Tag
 
+    # Game terms quoted as «Name» and colored by their kind
+    KIND_CLASSES = {
+      enchantment: 'mc-aqua',
+      curse: 'mc-red',
+      beneficial_effect: 'mc-blue',
+      neutral_effect: 'mc-yellow',
+      harmful_effect: 'mc-red'
+    }
+
     MAPPINGS = {
       # Entities
       'wandering_trader' => {
@@ -657,11 +666,35 @@ module Jekyll
       },
       # Potion effects
       'fire_resistance' => {
-        image: 'https://minecraft.wiki/wiki/Special:FilePath/Fire_Resistance.png'
+        image: 'https://minecraft.wiki/wiki/Special:FilePath/Fire_Resistance.png',
+        kind: :beneficial_effect
       },
       'blindness' => {
-        image: 'https://minecraft.wiki/wiki/Special:FilePath/Blindness.png'
+        image: 'https://minecraft.wiki/wiki/Special:FilePath/Blindness.png',
+        kind: :harmful_effect
       },
+      'slowness' => {
+        image: 'https://minecraft.wiki/wiki/Special:FilePath/Slowness.png',
+        kind: :harmful_effect
+      },
+      'poison' => {
+        image: 'https://minecraft.wiki/wiki/Special:FilePath/Poison.png',
+        kind: :harmful_effect
+      },
+      'weakness' => {
+        image: 'https://minecraft.wiki/wiki/Special:FilePath/Weakness.png',
+        kind: :harmful_effect
+      },
+      # Enchantments
+      'fire_aspect' => { kind: :enchantment },
+      'flame' => { kind: :enchantment },
+      'frost_walker' => { kind: :enchantment },
+      'impaling' => { kind: :enchantment },
+      'multishot' => { kind: :enchantment },
+      'silk_touch' => { kind: :enchantment },
+      'smite' => { kind: :enchantment },
+      'binding_curse' => { kind: :curse },
+      'vanishing_curse' => { kind: :curse },
       # Internal items
       'gloves' => {
         emoji: '🧤',
@@ -887,12 +920,21 @@ module Jekyll
 
       link_text = @params[1]
       image_src = Jekyll::McImages.url_for(id) || tag_data[:image]
+      # Enchantments without an own image use the enchanted book
+      if !image_src && [:enchantment, :curse].include?(tag_data[:kind])
+        image_src = Jekyll::McImages.url_for('enchanted_book') || MAPPINGS['enchanted_book'][:image]
+      end
       emoji_src = tag_data[:emoji]
       current_url = context.environments.first['page']['url'] || context.environments.first['page']['permalink']
 
-      icon = emoji_src ? %Q{<span>#{emoji_src}</span>} : %Q{<img src="#{image_src}" alt="#{link_text}" draggable="false" class="pixelated img-link">}
+      icon = if emoji_src
+               %Q{<span>#{emoji_src}</span>}
+             elsif image_src
+               %Q{<img src="#{image_src}" alt="#{link_text}" draggable="false" class="pixelated img-link">}
+             end
 
-      text_class = tag_data[:text_class] || 'mc-gold'
+      text_class = tag_data[:text_class] || KIND_CLASSES[tag_data[:kind]] || 'mc-gold'
+      link_text = "«#{link_text}»" if tag_data[:kind]
 
       # No link if link is missing or the current page is the same
       if !tag_data[:url] || current_url == tag_data[:url]
@@ -901,6 +943,8 @@ module Jekyll
         wiki_url = context.registers[:site].config['url'] + tag_data[:url]
         text = %Q{<a href="#{wiki_url}" class="wiki-link #{text_class}">#{link_text}</a>}
       end
+
+      return text unless icon
 
       %Q{<span class="icon-link">#{icon}#{text}</span>}
     end

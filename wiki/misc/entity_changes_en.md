@@ -99,7 +99,7 @@ Patrol leaders may spawn with a {% symlink spyglass, Spyglass %} in offhand. The
 
 {% symlink pillager, Pillagers %} will try to stroll around while reloading.
 
-{% symlink pillager, Pillagers %} with a `«Multishot»`{: .mc-aqua} enchantment on their {% symlink crossbow, Crossbow %} will try to stay closer to the target.
+{% symlink pillager, Pillagers %} with a {% symlink multishot, Multishot %} enchantment on their {% symlink crossbow, Crossbow %} will try to stay closer to the target.
 
 
 ## {% href_link 🐚 | Shulkers %}
@@ -138,7 +138,7 @@ Sneaking while rotating an {% symlink item_frame, Item Frame %} will rotate coun
 Using ({% game_action use %}) a {% symlink painting, Painting %} onto air while sneaking lets you pick any specific painting variant.
 
 ### {% href_link ✂️ | Drop preservation %}
-Breaking a {% symlink painting, Painting %} will drop the same variant it was placed with (including random as its own variant). Breaking with {% symlink shears, Shears %} or `«Silk Touch»`{: .mc-aqua} will always drop the painting with its variant preserved even if the painting is random. You may also interact ({% game_action use %}) with a {% symlink painting, Painting %} with an empty hand while sneaking to pick it (preserving random variant).
+Breaking a {% symlink painting, Painting %} will drop the same variant it was placed with (including random as its own variant). Breaking with {% symlink shears, Shears %} or {% symlink silk_touch, Silk Touch %} will always drop the painting with its variant preserved even if the painting is random. You may also interact ({% game_action use %}) with a {% symlink painting, Painting %} with an empty hand while sneaking to pick it (preserving random variant).
 
 
 ## {% href_link 🏹 | Projectiles %}
@@ -171,7 +171,7 @@ The {% symlink arrow, Arrows %} have reduced water resistance, making them usefu
 ## {% href_link 🧩 | Miscellaneous %}
 
 ### {% href_link 🧟 | Undead consecration %}
-All undead mobs now have a passive regeneration and will block 80% of the incoming damage, with the exception of explosions. This can be bypassed by using `«Smite»`{: .mc-aqua} (2 seconds of vulnerability, full damage), `«Flame»`{: .mc-aqua} (20 seconds of vulnerability if not immune to fire, 7 seconds of disabled regeneration instead; full damage), or igniting them (20 seconds of vulnerability). Ignition, of course, will not work on fire-immune mobs, like the Nether ones. Attacks from golems, other undead mobs and wolves targeting skeletons can temporarily disable regeneration.
+All undead mobs now have a passive regeneration and will block 80% of the incoming damage, with the exception of explosions. This can be bypassed by using {% symlink smite, Smite %} (2 seconds of vulnerability, full damage), {% symlink flame, Flame %} (20 seconds of vulnerability if not immune to fire, 7 seconds of disabled regeneration instead; full damage), or igniting them (20 seconds of vulnerability). Ignition, of course, will not work on fire-immune mobs, like the Nether ones. Attacks from golems, other undead mobs and wolves targeting skeletons can temporarily disable regeneration.
 
 ### {% href_link 🪣 | More bucketable mobs %}
 More mobs can be picked into a {% symlink water_bucket, Water Bucket %}:
@@ -231,9 +231,9 @@ All (scalable) non-ageable mobs have a 5% chance to spawn as a small mob, includ
 
 For balancing and fun reasons, some mobs have unique behaviors:
 - Baby {% symlink skeleton, Skeletons %} wield a {% symlink trumpet, Trumpet %} for causing ear bleeding to mobs around.
-- Baby {% symlink stray, Strays %} are equipped with {% symlink snowball, Snowballs %} with a pebble mixed in (15 seconds of `«Slowness»`{: .mc-aqua} on hit).
-- Baby {% symlink bogged, Bogged %} are eager to share {% symlink red_mushroom, Red %} and {% symlink brown_mushroom, Brown Mushrooms %} (2 seconds of `«Poison»`{: .mc-aqua} on hit).
-- Baby {% symlink parched, Parched %} like to play with {% symlink sandstone_rock, Sandstone Rocks %} (15 seconds of `«Weakness»`{: .mc-aqua} on hit).
+- Baby {% symlink stray, Strays %} are equipped with {% symlink snowball, Snowballs %} with a pebble mixed in (15 seconds of {% symlink slowness, Slowness %} on hit).
+- Baby {% symlink bogged, Bogged %} are eager to share {% symlink red_mushroom, Red %} and {% symlink brown_mushroom, Brown Mushrooms %} (2 seconds of {% symlink poison, Poison %} on hit).
+- Baby {% symlink parched, Parched %} like to play with {% symlink sandstone_rock, Sandstone Rocks %} (15 seconds of {% symlink weakness, Weakness %} on hit).
 - Baby {% symlink wither_skeleton, Wither Skeletons %} are scared of the {% symlink player, Player %}, thinking you'll steal the {% symlink wither_skeleton_skull, Wither Skeleton Skull %} they are always carrying around. You can exchange the skull by giving ({% game_action use %}) them a {% symlink wither_rose, Wither Rose %}.
 
 Such baby mobs cannot grow.

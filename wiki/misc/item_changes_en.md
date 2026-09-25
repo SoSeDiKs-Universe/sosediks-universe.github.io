@@ -9,7 +9,7 @@ page_id: wiki_misc_item_changes
 ## {% href_link 🔧 | Mechanics %}
 
 ### {% href_link 🛠️ | Disabled item break %}
-Tools no longer disappear after breaking, unless they have a `«Curse of Vanishing»`{: .mc-red}. An item with zero durability remains in the inventory but cannot be used to perform its function until it is repaired.
+Tools no longer disappear after breaking, unless they have a {% symlink vanishing_curse, Curse of Vanishing %}. An item with zero durability remains in the inventory but cannot be used to perform its function until it is repaired.
 
 ### {% href_link 🌬️ | Bottled Air %}
 When filling {% symlink glass_bottle, Glass Bottles %} with water underwater, the bottles replenish some air.
@@ -39,7 +39,7 @@ Some tools like {% symlink clock, Clocks %}, {% symlink lunar_clock, Lunar Clock
 Additionally, F3 debug screen no longer displays information like coordinates if the player doesn't carry all the aforementioned tools.
 
 ### {% href_link ✨ | «Fire Aspect» acts as Flint and Steel %}
-`«Fire Aspect»`{: .mc-aqua} enchantment allows using the item as a {% symlink flint_and_steel, Flint and Steel %}.
+{% symlink fire_aspect, Fire Aspect %} enchantment allows using the item as a {% symlink flint_and_steel, Flint and Steel %}.
 This also includes an {% symlink enchanted_book, Enchanted Book %} with a stored enchantment, though it also sets the user on fire for 3 extra seconds.
 
 
@@ -53,7 +53,7 @@ This also includes an {% symlink enchanted_book, Enchanted Book %} with a stored
 Using ({% game_action use %}) {% symlink flint_and_steel, Flint and Steel %} on a mob while sneaking or crawling will set it on fire.
 
 ### {% href_link 🕯️ | Lit items ignite surroundings %}
-Attacking mobs with lit {% symlink torch, Torches %} (of any kind), {% symlink campfire, Campfires %}, or other burning items (including `«Fire Aspect»`{: .mc-aqua} enchantment, enchanted or stored) will set it on fire.
+Attacking mobs with lit {% symlink torch, Torches %} (of any kind), {% symlink campfire, Campfires %}, or other burning items (including {% symlink fire_aspect, Fire Aspect %} enchantment, enchanted or stored) will set it on fire.
 
 Lit items can also burn {% symlink cobweb, Cobwebs %} via {% game_action use %}.
 
