@@ -789,6 +789,10 @@ module Jekyll
         emoji: '🪟',
         url: '/wiki/mechanics/fragile_blocks'
       },
+      'hot_items' => {
+        emoji: '🔥',
+        url: '/wiki/mechanics/hot_items'
+      },
       'soft_blocks' => {
         emoji: '🌾',
         url: '/wiki/mechanics/soft_blocks'

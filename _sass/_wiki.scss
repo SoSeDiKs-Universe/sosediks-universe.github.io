@@ -619,6 +619,7 @@ $fontPixel: 0.125em;
 }
 
 .nav-page[open] > summary::before,
+.nav-group[open] > summary::before,
 .toc-group[open] > summary::before {
   transform: rotate(90deg);
 }
@@ -633,6 +634,24 @@ $fontPixel: 0.125em;
     display: inline;
     padding-left: 0;
   }
+}
+
+// Sidebar category of pages (e.g. mechanics), collapsed unless one of its pages is viewed
+.nav-group > summary {
+  @include toggle-marker(1.35em, 0.5em, 0.5em);
+  padding-left: 2.5em;
+  line-height: 1.5em;
+  color: #b85c38;
+}
+
+// The page being viewed is inside the collapsed category
+.nav-group:not([open]):has([aria-current]) > summary {
+  color: #ffaa00;
+  text-shadow: 1px 1px 0 #2a2a00;
+}
+
+.nav-group-pages {
+  padding-left: 1em;
 }
 
 .toc {
@@ -688,6 +707,7 @@ $fontPixel: 0.125em;
 
 @media (prefers-reduced-motion: reduce) {
   .nav-page > summary::before,
+  .nav-group > summary::before,
   .toc-group > summary::before {
     transition: none;
   }

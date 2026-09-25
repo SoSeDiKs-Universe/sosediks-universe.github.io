@@ -11,7 +11,7 @@ page_id: wiki_mechanics_gloves
 {% symlink gloves, Рукавиці %} — це пара обладнання, необхідного для безпечного виконання деяких дій на сервері.
 
 `Рукавиці`{: .mc-gold} потрібні, щоб:
-- Тримати гарячі предмети.
+- Тримати {% symlink hot_items, розпечені речі %}.
 - Наповняти {% symlink bucket, відра %} {% symlink lava, лавою %}.
 - Наповняти {% symlink bucket, відра %} {% symlink water, водою %} у холодних біомах.
 - Розбивати {% symlink glass_blocks, скло %} `/`{: .mc-dark-gray} {% symlink glass_panes, шибки %} голими руками.

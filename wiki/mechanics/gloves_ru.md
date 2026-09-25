@@ -11,7 +11,7 @@ page_id: wiki_mechanics_gloves
 {% symlink gloves, Перчатки %} — это пара снаряжения, необходимая для безопасного выполнения некоторых действий на сервере.
 
 `Перчатки`{: .mc-gold} требуются для:
-- Удержания горячих предметов.
+- Удержания {% symlink hot_items, раскалённых предметов %}.
 - Наполнения {% symlink bucket, вёдер %} {% symlink lava, лавой %}.
 - Наполнения {% symlink bucket, вёдер %} {% symlink water, водой %} в холодных биомах.
 - Разбивания {% symlink glass_blocks, стёкол %} `/`{: .mc-dark-gray} {% symlink glass_panes, стеклянных панелей %} голыми руками.

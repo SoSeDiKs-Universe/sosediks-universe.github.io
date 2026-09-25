@@ -31,7 +31,17 @@
           {%- assign in_nav = false -%}
           {%- for item in site.data.navigation %}
           <a href="{{ item.url }}"{% if item.url == page.url %}{% assign in_nav = true %} aria-current="page"{% endif %} data-toc>{{ site.data.sidebar.sections[item.key] }}</a>
-          {%- endfor -%}
+          {%- endfor %}
+          <details class="nav-group"{% if page.url contains "/wiki/mechanics/" %} open{% endif %}>
+            <summary>{{ site.data.sidebar.mechanics }}</summary>
+            <div class="nav-group-pages">
+            {%- assign mechanics = site.pages | where: "layout", "wiki" | where: "lang", site.active_lang | sort: "title" -%}
+            {%- for mechanic in mechanics -%}
+              {%- unless mechanic.url contains "/wiki/mechanics/" -%}{%- continue -%}{%- endunless %}
+            <a href="{{ mechanic.url }}"{% if mechanic.url == page.url %}{% assign in_nav = true %} aria-current="page"{% endif %} data-toc>{{ mechanic.title }}</a>
+            {%- endfor %}
+            </div>
+          </details>
           {%- unless in_nav or page.noindex %}
           <a href="{{ page.url }}" aria-current="page" data-toc>{{ page.title }}</a>
           {%- endunless %}

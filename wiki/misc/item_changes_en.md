@@ -16,7 +16,7 @@ When filling {% symlink glass_bottle, Glass Bottles %} with water underwater, th
 
 Drinking water underwater automatically refills an empty bottle, turning it into a {% symlink water_potion, Water Bottle %}. The same applies to crafts that give out empty bottles as a result.
 
-If you hold a hot item in your other hand, the bottle will not refill with water, but may burst.
+If you hold a {% symlink hot_items, hot item %} in your other hand, the bottle will not refill with water, but may burst.
 
 ### {% href_link 🌈 | Immersive Dyes %}
 Dyes can be applied onto dyeable placed blocks with {% game_action use %}.
@@ -85,16 +85,7 @@ Bottled items (e.g., {% symlink potion, Potions %}, {% symlink honey_bottle, Hon
 Buckets come in various materials (yes, including {% symlink chainmail_bucket, Chainmail Bucket %}) and have durability.
 
 ### {% href_link 🔥 | Hot items %}
-Some items are considered "hot" and may interact with gameplay mechanics, such as {% symlink gloves, Gloves %} or bottled air.
-
-The following items are considered hot:
-- {% symlink lava_bucket, Lava Bucket %}
-- {% symlink blaze_powder, Blaze Powder %}
-- {% symlink blaze_rod, Blaze Rod %}
-- {% symlink fire_charge, Fire Charge %}
-- {% symlink magma_block, Magma Block %}
-- {% symlink magma_cream, Magma Cream %}
-- {% symlink campfires, Lit Campfire %}
+Some items are considered {% symlink hot_items, hot %}: they can't be held without {% symlink gloves, Gloves %} and interfere with bottled air.
 
 ### {% href_link 🗺️ | Dynamic map height %}
 {% symlink map, Maps %} created in dimensions with a ceiling like Nether, show blocks at a height the {% symlink empty_map, Empty Map %} was used at.
