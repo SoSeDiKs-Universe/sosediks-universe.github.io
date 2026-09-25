@@ -61,7 +61,7 @@ You can exit crawling and sliding by pressing {% game_action sneak %} again.
 You can also crawl into a hole in front of you by jumping while holding {% game_action sneak %}.
 
 ### {% href_link 💨 | Leap of Faith %}
-By triple-pressing {% game_action sneak %}, you can enter the "leap of faith" state. The fall speeds up significantly, and the player can no longer move to the side (the entire fall occurs within one block). If the player falls into water or onto a soft block, the damage from the fall is greatly reduced.
+By triple-pressing {% game_action sneak %}, you can enter the "leap of faith" state. The fall speeds up significantly, and the player can no longer move to the side (the entire fall occurs within one block). If the player falls into water or onto a {% symlink soft_blocks, soft block %}, they take no fall damage.
 
 ### {% href_link 🍥 | Roll %}
 If you manage to hold down {% game_action sneak %} right before falling to the ground, you will perform a roll, which allows you to slightly reduce the damage from the fall (or avoid it altogether) and get a small increase in speed.
@@ -69,7 +69,7 @@ If you manage to hold down {% game_action sneak %} right before falling to the g
 Rolling moves the player forward a little, so better not to perform it on the edge of a cliff.
 
 ### {% href_link 🌾 | Softer falls %}
-Some types of blocks reduce the damage from falling, allowing you to fall from greater heights.
+{% symlink soft_blocks, Soft blocks %} reduce the damage from falling, allowing you to fall from greater heights.
 
 {% symlink fragile_blocks, Fragile blocks %} can break under the player's weight when falling from a great height.
 

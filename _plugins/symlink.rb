@@ -261,6 +261,7 @@ module Jekyll
       'boats' => { group: [*BOAT_WOOD_TYPES.map { |w| "#{w}_boat_entity" }, 'bamboo_raft_entity'] },
       'beds' => { group: DYE_COLORS.map { |c| "#{c}_bed" } },
       'carpets' => { group: DYE_COLORS.map { |c| "#{c}_carpet" } },
+      'wool' => { group: DYE_COLORS.map { |c| "#{c}_wool" } },
       'candles' => { group: ['candle', *DYE_COLORS.map { |c| "#{c}_candle" }] },
       'slabs' => { group: SLABS },
       'stairs' => { group: STAIRS },
@@ -654,6 +655,12 @@ module Jekyll
       'snow_block' => {
         image: 'https://minecraft.wiki/wiki/Special:FilePath/Invicon_Snow_Block.png'
       },
+      'powder_snow' => {
+        image: 'https://minecraft.wiki/wiki/Special:FilePath/Invicon_Powder_Snow.png'
+      },
+      'hay_block' => {
+        image: 'https://minecraft.wiki/wiki/Special:FilePath/Invicon_Hay_Bale.png'
+      },
       'slime_block' => {
         image: 'https://minecraft.wiki/wiki/Special:FilePath/Invicon_Slime_Block.png'
       },
@@ -775,6 +782,10 @@ module Jekyll
       'fragile_blocks' => {
         emoji: '🪟',
         url: '/wiki/mechanics/fragile_blocks'
+      },
+      'soft_blocks' => {
+        emoji: '🌾',
+        url: '/wiki/mechanics/soft_blocks'
       },
       # Internal
       'block_changes' => {
@@ -967,6 +978,7 @@ module Jekyll
       add_image("#{color}_stained_glass_pane", "Invicon_#{name}_Stained_Glass_Pane.png")
       add_image("#{color}_bed", "Invicon_#{name}_Bed.png")
       add_image("#{color}_carpet", "Invicon_#{name}_Carpet.png")
+      add_image("#{color}_wool", "Invicon_#{name}_Wool.png")
       add_image("#{color}_candle", "Invicon_#{name}_Candle.png")
       add_image("#{color}_sheep", "#{name}_Sheep.png")
     end
