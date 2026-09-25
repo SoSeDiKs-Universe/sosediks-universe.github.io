@@ -22,14 +22,20 @@
     <div class="nav-bar">
       <div class="nav-links">
         <p>{{ site.data.sidebar.title }}</p>
-        <a href="/wiki">{{ site.data.sidebar.sections.introduction }}</a>
-        <a href="/wiki/misc/player_changes">{{ site.data.sidebar.sections.players }}</a>
-        <a href="/wiki/misc/entity_changes">{{ site.data.sidebar.sections.entities }}</a>
-        <a href="/wiki/misc/vehicle_changes">{{ site.data.sidebar.sections.vehicles }}</a>
-        <a href="/wiki/misc/item_changes">{{ site.data.sidebar.sections.items }}</a>
-        <a href="/wiki/misc/misc_changes">{{ site.data.sidebar.sections.misc }}</a>
-        <a href="/wiki/misc/block_changes">{{ site.data.sidebar.sections.blocks }}</a>
-        <a href="/wiki/misc/credits">{{ site.data.sidebar.sections.credits }}</a>
+        <div class="nav-search" role="search">
+          <input type="search" class="search-input" placeholder="{{ site.data.sidebar.search }}" aria-label="{{ site.data.sidebar.search }}" aria-controls="search-results" autocomplete="off" spellcheck="false"
+                 data-index="{% if site.active_lang != site.default_lang %}/{{ site.active_lang }}{% endif %}/search-index.json" data-no-results="{{ site.data.sidebar.no_results }}">
+          <div class="search-results" id="search-results" hidden></div>
+        </div>
+        <nav class="nav-pages" aria-label="{{ site.data.sidebar.title }}">
+          {%- assign in_nav = false -%}
+          {%- for item in site.data.navigation %}
+          <a href="{{ item.url }}"{% if item.url == page.url %}{% assign in_nav = true %} aria-current="page"{% endif %} data-toc>{{ site.data.sidebar.sections[item.key] }}</a>
+          {%- endfor -%}
+          {%- unless in_nav or page.noindex %}
+          <a href="{{ page.url }}" aria-current="page" data-toc>{{ page.title }}</a>
+          {%- endunless %}
+        </nav>
       </div>
       <div class="nav-langs">
         {% include language_switcher.html %}

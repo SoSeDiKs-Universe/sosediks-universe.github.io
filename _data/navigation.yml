@@ -1,0 +1,17 @@
+# Sidebar links, labeled by site.data.sidebar.sections
+- key: introduction
+  url: /wiki
+- key: players
+  url: /wiki/misc/player_changes
+- key: entities
+  url: /wiki/misc/entity_changes
+- key: vehicles
+  url: /wiki/misc/vehicle_changes
+- key: items
+  url: /wiki/misc/item_changes
+- key: misc
+  url: /wiki/misc/misc_changes
+- key: blocks
+  url: /wiki/misc/block_changes
+- key: credits
+  url: /wiki/misc/credits

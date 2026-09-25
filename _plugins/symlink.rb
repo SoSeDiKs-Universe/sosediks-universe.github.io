@@ -682,6 +682,9 @@ module Jekyll
       'cobweb' => {
         image: 'https://minecraft.wiki/wiki/Special:FilePath/Invicon_Cobweb.png'
       },
+      'scaffolding' => {
+        image: 'https://minecraft.wiki/wiki/Special:FilePath/Invicon_Scaffolding.png'
+      },
       'tnt' => {
         image: 'https://minecraft.wiki/wiki/Special:FilePath/Invicon_TNT.png'
       },

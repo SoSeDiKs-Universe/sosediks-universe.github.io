@@ -4,6 +4,7 @@ title: "Старая Вики"
 lang: ru
 permalink: /wiki_old
 page_id: wiki_old
+search: false
 ---
 
 ## <a href="#-режимы-игры">🔗</a> Режимы игры

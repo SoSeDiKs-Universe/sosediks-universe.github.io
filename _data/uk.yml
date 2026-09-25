@@ -7,6 +7,9 @@ index:
 sidebar:
   menu: "Меню"
   title: "Гравцепедія"
+  search: "Пошук у вікі"
+  no_results: "Нічого не знайдено"
+  contents: "Зміст"
   sections:
     introduction: "Вступ"
     players: "Гравці"

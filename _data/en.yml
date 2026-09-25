@@ -7,6 +7,9 @@ index:
 sidebar:
   menu: "Menu"
   title: "Playerpedia"
+  search: "Search the wiki"
+  no_results: "Nothing found"
+  contents: "Contents"
   sections:
     introduction: "Introduction"
     players: "Players"

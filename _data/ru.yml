@@ -7,6 +7,9 @@ index:
 sidebar:
   menu: "Меню"
   title: "Игрокопедия"
+  search: "Поиск по вики"
+  no_results: "Ничего не найдено"
+  contents: "Содержание"
   sections:
     introduction: "Вступление"
     players: "Игроки"
