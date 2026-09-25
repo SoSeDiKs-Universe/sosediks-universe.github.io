@@ -17,7 +17,7 @@ If possible, {% symlink player, Players %} will leave skeleton remains upon deat
 ### {% href_link 👕 | Clothes and gloves %}
 In addition to the usual four armor slots, there are also four visual armor slots for clothing and a slot for {% symlink gloves, Gloves %}.
 
-{% symlink gloves, Gloves %} are required for some actions on the server, such as collecting {% symlink lava, Lava %} in a {% symlink bucket, Bucket %} or safely destroying {% symlink glass, Glass %} with bare hands.
+{% symlink gloves, Gloves %} are required for some actions on the server, such as collecting {% symlink lava, Lava %} in a {% symlink bucket, Bucket %} or safely destroying {% symlink glass_blocks, Glass %} `/`{: .mc-dark-gray} {% symlink glass_panes, Glass Panes %} with bare hands.
 
 Clothing is worn over armor and serves both for visuals and to help with other aspects of the game, such as {% symlink temperature, Temperature %}.
 
@@ -25,14 +25,14 @@ The {% symlink player, Player %} renders their clothing first, and falls back to
 
 Since both clothing and armor occupy the same slots, you can switch the preview between armor and clothing in the inventory using {% game_action drop %}.
 
-You can put _any_ item (1 pc.) in the helmet clothing slot. Some items will have functionality when worn this way, such as lighting the way with a {% symlink torch, Torch %}, or allowing other {% symlink player, Players %} to ride on you with a {% symlink saddle, Saddle %}.
+You can put _any_ item (1 pc.) in the helmet clothing slot. Some items will have functionality when worn this way, such as lighting the way with a {% symlink torches, Torch %}, or allowing other {% symlink player, Players %} to ride on you with a {% symlink saddle, Saddle %}.
 
 
 
 ## {% href_link 🤸 | Movement %}
 
 ### {% href_link 🪑 | Sitting %}
-Some blocks ({% symlink oak_slab, Slabs %}, {% symlink oak_stairs, Stairs %}, {% symlink white_carpet, Carpets %}, {% symlink red_bed, Beds %}, {% symlink oak_pressure_plate, Pressure Plates %}) allow you to sit on them by pressing {% game_action use %}.
+Some blocks ({% symlink slabs, Slabs %}, {% symlink stairs, Stairs %}, {% symlink carpets, Carpets %}, {% symlink beds, Beds %}, {% symlink pressure_plates, Pressure Plates %}) allow you to sit on them by pressing {% game_action use %}.
 
 Sitting on a bed requires pressing (and then releasing) {% game_action sneak %}.
 
@@ -71,12 +71,12 @@ Rolling moves the player forward a little, so better not to perform it on the ed
 ### {% href_link 🌾 | Softer falls %}
 Some types of blocks reduce the damage from falling, allowing you to fall from greater heights.
 
-Fragile blocks can break under the player's weight when falling from a great height.
+{% symlink fragile_blocks, Fragile blocks %} can break under the player's weight when falling from a great height.
 
 ### {% href_link 🪝 | Hooking onto blocks %}
 If, while in the air and without a block underneath you, you crouch ({% game_action sneak %}) in front of a block that has no obstacles above, the player will hook onto this block and hang in place. Exiting the hook gives a small upward push, which allows you to climb two blocks in height. It will not be possible to hook onto a block if the height of the fall during the hooking is more than 5 blocks. You will fall if you try to move in the direction opposite to the hooking side.
 
-If there is a one-block gap above the block you are grabbing onto that you can crawl into, pressing {% game_action use %} on the grabbed block or a block in the gap (e.g., {% symlink oak_leaves, Leaves %} that might block the gap but allow crawling) will move the player into it and enter crawling state.
+If there is a one-block gap above the block you are grabbing onto that you can crawl into, pressing {% game_action use %} on the grabbed block or a block in the gap (e.g., {% symlink leaves, Leaves %} that might block the gap but allow crawling) will move the player into it and enter crawling state.
 
 
 

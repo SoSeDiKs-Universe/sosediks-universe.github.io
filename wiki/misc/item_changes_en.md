@@ -53,7 +53,7 @@ This also includes an {% symlink enchanted_book, Enchanted Book %} with a stored
 Using ({% game_action use %}) {% symlink flint_and_steel, Flint and Steel %} on a mob while sneaking or crawling will set it on fire.
 
 ### {% href_link 🕯️ | Lit items ignite surroundings %}
-Attacking mobs with lit {% symlink torch, Torches %} (of any kind), {% symlink campfire, Campfires %}, or other burning items (including {% symlink fire_aspect, Fire Aspect %} enchantment, enchanted or stored) will set it on fire.
+Attacking mobs with lit {% symlink torches, Torches %} (of any kind), {% symlink campfires, Campfires %}, or other burning items (including {% symlink fire_aspect, Fire Aspect %} enchantment, enchanted or stored) will set it on fire.
 
 Lit items can also burn {% symlink cobweb, Cobwebs %} via {% game_action use %}.
 
@@ -94,7 +94,7 @@ The following items are considered hot:
 - {% symlink fire_charge, Fire Charge %}
 - {% symlink magma_block, Magma Block %}
 - {% symlink magma_cream, Magma Cream %}
-- {% symlink campfire, Lit Campfire %}
+- {% symlink campfires, Lit Campfire %}
 
 ### {% href_link 🗺️ | Dynamic map height %}
 {% symlink map, Maps %} created in dimensions with a ceiling like Nether, show blocks at a height the {% symlink empty_map, Empty Map %} was used at.

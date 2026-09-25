@@ -7,12 +7,12 @@ page_id: wiki_misc_vehicle_changes
 ---
 
 ### {% href_link 🛶 | Jumpy Boats %}
-You can jump while riding a {% symlink oak_boat_entity, Boat %}! This allows you to easily get your {% symlink oak_boat_entity, Boat %} to the shore from the water or climb up slabs/stairs.
+You can jump while riding a {% symlink boats, Boat %}! This allows you to easily get your {% symlink boats, Boat %} to the shore from the water or climb up slabs/stairs.
 
-If used carefully, it can also save your {% symlink oak_boat_entity, Boat %} from drowning or help you float upstream against the current in difficult situations.
+If used carefully, it can also save your {% symlink boats, Boat %} from drowning or help you float upstream against the current in difficult situations.
 
 ### {% href_link 🌉 | Fragile boats %}
-{% symlink oak_boat_entity, Boats %} break and cause fall damage when falling from more than 3 blocks.
+{% symlink boats, Boats %} break and cause fall damage when falling from more than 3 blocks.
 
 ### {% href_link 📏 | Passenger-inclusive collision %}
 Vehicles include passengers in their collision bounds, preventing them from clipping through blocks.

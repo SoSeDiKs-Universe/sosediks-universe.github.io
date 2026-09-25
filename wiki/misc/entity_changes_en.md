@@ -65,7 +65,7 @@ Burning {% symlink sheep, Sheep %} lose their wool.
 ## {% href_link 🐻‍❄️ | Polar Bears %}
 
 ### {% href_link 🎣 | Fish hunting %}
-{% symlink polar_bear, Polar Bears %} attack nearby {% symlink salmon_fish, Fish %}.
+{% symlink polar_bear, Polar Bears %} attack nearby {% symlink fish, Fish %}.
 
 
 ## {% href_link 🐆 | Ocelots %}
@@ -147,14 +147,14 @@ Breaking a {% symlink painting, Painting %} will drop the same variant it was pl
 Burning projectiles will spread the fire upon landing.
 
 This includes:
-- Igniting blocks like {% symlink campfire_block_unlit, Campfires %}, {% symlink candle, Candles %}, and {% symlink candle_cake, Cake with Candle %}.
+- Igniting blocks like {% symlink campfire_block_unlit, Campfires %}, {% symlink candles, Candles %}, and {% symlink candle_cake, Cake with Candle %}.
 - Fusing hit {% symlink tnt, TNT %}, {% symlink tnt_minecart_entity, Minecart with TNT %} and {% symlink creeper, Creepers %}.
 - Creating a {% symlink fire, Fire %} block upon landing.
 
 ### {% href_link 🎯 | Arrow/Trident projectile hits %}
 Hitting a {% symlink bee_nest, Bee Nest %} will cause it to fall, letting loose angry bees.
 
-Hitting a fragile block will break it.
+Hitting a {% symlink fragile_blocks, fragile block %} will break it.
 
 ### {% href_link 🧯 | Water Potion extinguishing %}
 Throwable {% symlink splash_water_potion, Splash Water Potion %}/{% symlink lingering_water_potion, Lingering Water Potion %} splashes {% symlink torch, Torches %}/{% symlink soul_torch, Soul Torches %}/{% symlink copper_torch, Copper Torches %}.
@@ -165,7 +165,7 @@ Throwable {% symlink splash_water_potion, Splash Water Potion %}/{% symlink ling
 If a {% symlink snowball, Snowball %} hits an entity, it'll add 5 seconds of freezing. {% symlink snowball, Snowballs %} have 4 ticks of cooldown between throws.
 
 ### {% href_link 🏹 | Arrows work in water %}
-The {% symlink arrow, Arrows %} have reduced water resistance, making them useful underwater.
+The {% symlink arrows, Arrows %} have reduced water resistance, making them useful underwater.
 
 
 ## {% href_link 🧩 | Miscellaneous %}
@@ -213,7 +213,7 @@ All friendly mobs can now attack back instead of panicking, and their friends wi
 Some mobs can jump over gaps.
 
 ### {% href_link 🚪 | Openable fence gates %}
-Mobs that can open {% symlink oak_door, Doors %} can also now open singular {% symlink oak_fence_gate, Gates %}.
+Mobs that can open {% symlink doors, Doors %} can also now open singular {% symlink fence_gates, Gates %}.
 
 ### {% href_link 🧨 | Explosive minecarts can be manually ignited %}
 {% symlink tnt_minecart_entity, Minecart with TNT %} can be activated by using {% symlink flint_and_steel, Flint and Steel %} or {% symlink fire_charge, Fire Charge %} on it.

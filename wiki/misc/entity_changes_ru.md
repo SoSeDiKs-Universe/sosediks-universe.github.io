@@ -65,7 +65,7 @@ page_id: wiki_misc_entity_changes
 ## {% href_link 🐻‍❄️ | Белые медведи %}
 
 ### {% href_link 🎣 | Рыбная охота %}
-{% symlink polar_bear, Белые медведи %} атакуют {% symlink salmon_fish, рыбу %} поблизости.
+{% symlink polar_bear, Белые медведи %} атакуют {% symlink fish, рыбу %} поблизости.
 
 
 ## {% href_link 🐆 | Оцелоты %}
@@ -147,14 +147,14 @@ page_id: wiki_misc_entity_changes
 Горящие снаряды распространят огонь при приземлении.
 
 Сюда входит:
-- Поджигание блоков, таких как {% symlink campfire_block_unlit, костры %}, {% symlink candle, свечи %} и {% symlink candle_cake, торт со свечкой %}.
+- Поджигание блоков, таких как {% symlink campfire_block_unlit, костры %}, {% symlink candles, свечи %} и {% symlink candle_cake, торт со свечкой %}.
 - Активация {% symlink tnt, динамита %}, {% symlink tnt_minecart_entity, вагонетки с динамитом %} и {% symlink creeper, криперов %}.
 - Создание блока {% symlink fire, огня %} в месте приземления.
 
 ### {% href_link 🎯 | Попадания снарядов (стрел/трезубцев) %}
 Попадание в {% symlink bee_nest, пчелиное гнездо %} заставит его упасть, выпустив разъяренных пчёл.
 
-Попадание в хрупкий блок сломает его.
+Попадание в {% symlink fragile_blocks, хрупкий блок %} сломает его.
 
 ### {% href_link 🧯 | Тушение водным зельем %}
 Бросок {% symlink splash_water_potion, взрывной бутылочки воды %}/{% symlink lingering_water_potion, бутылочки с водяной взвесью %} тушит {% symlink torch, факелы %}/{% symlink soul_torch, факелы душ %}/{% symlink copper_torch, медные факелы %}.
@@ -165,7 +165,7 @@ page_id: wiki_misc_entity_changes
 {% symlink snowball, Снежок %} добавляет 5 секунд замораживания при попадании в сущность. {% symlink snowball, Снежки %} имеют 4 тика времени перезарядки между бросками.
 
 ### {% href_link 🏹 | Стрелы работают в воде %}
-Сопротивление {% symlink arrow, стрел %} воде понижено, что позволяет им быть полезными под водой.
+Сопротивление {% symlink arrows, стрел %} воде понижено, что позволяет им быть полезными под водой.
 
 
 ## {% href_link 🧩 | Разное %}
@@ -213,7 +213,7 @@ page_id: wiki_misc_entity_changes
 Некоторые сущности могут перепрыгивать через пропасти.
 
 ### {% href_link 🚪 | Открываемые калитки %}
-Сущности, которые могут открывать {% symlink oak_door, двери %}, теперь также могут открывать одиночные {% symlink oak_fence_gate, калитки %}.
+Сущности, которые могут открывать {% symlink doors, двери %}, теперь также могут открывать одиночные {% symlink fence_gates, калитки %}.
 
 ### {% href_link 🧨 | Взрывчатые вагонетки можно поджечь вручную %}
 {% symlink tnt_minecart_entity, Вагонетки с динамитом %} могут быть активированы при помощи {% symlink flint_and_steel, огнива %} или {% symlink fire_charge, огненного заряда %}.

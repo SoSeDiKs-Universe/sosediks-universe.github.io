@@ -336,6 +336,12 @@ img.img-link {
   vertical-align: -0.125em;
 }
 
+// Fixed box, so members with different proportions don't shift the text while cycling
+img.img-cycle {
+  width: 1em;
+  object-fit: contain;
+}
+
 // One pixel of the Minecraft font (8 per em); its glyphs span 1px below the baseline to 7px above it,
 // and its line box spans 1px below to 10px above
 $fontPixel: 0.125em;
@@ -420,5 +426,39 @@ $fontPixel: 0.125em;
     gap: 6 * $fontPixel;
     margin-top: 2em;
     padding: 0 30px;
+  }
+}
+
+
+// Tooltip like in Minecraft (shown by wiki.js): translucent dark purple background with cut corners,
+// a faint purple gradient border inside it, and white text 2 font pixels from the border
+.mc-tooltip {
+  position: fixed;
+  z-index: 50;
+  pointer-events: none;
+  font-family: "Minecraft";
+  font-size: 1rem;
+  white-space: nowrap;
+  color: #ffffff;
+  text-shadow: $fontPixel $fontPixel 0 #3f3f3f;
+  // The line box has 3 empty font pixels above capitals and none below descenders
+  padding: 0 2 * $fontPixel 2 * $fontPixel;
+  border: $fontPixel solid;
+  border-image: linear-gradient(to bottom, rgba(80, 0, 255, 0.31), rgba(40, 0, 127, 0.31)) 1;
+  background-color: rgba(16, 0, 16, 0.94);
+  box-shadow:
+    0 (-$fontPixel) 0 rgba(16, 0, 16, 0.94),
+    0 $fontPixel 0 rgba(16, 0, 16, 0.94),
+    (-$fontPixel) 0 0 rgba(16, 0, 16, 0.94),
+    $fontPixel 0 0 rgba(16, 0, 16, 0.94);
+
+  &::before {
+    content: "";
+    display: block;
+    margin-top: -$fontPixel;
+  }
+
+  &[hidden] {
+    display: none;
   }
 }

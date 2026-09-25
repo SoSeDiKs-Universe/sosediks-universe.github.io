@@ -2,6 +2,7 @@ require 'net/http'
 require 'json'
 require 'uri'
 require 'fileutils'
+require 'cgi'
 
 module Jekyll
   module McImages
@@ -184,7 +185,90 @@ module Jekyll
       harmful_effect: 'mc-red'
     }
 
+    # Variant sets, in creative inventory order
+    DYE_COLORS = %w[white light_gray gray black brown red orange yellow lime green cyan light_blue blue purple magenta pink]
+    WOOD_TYPES = %w[oak spruce birch jungle acacia dark_oak mangrove cherry pale_oak bamboo crimson warped]
+    BOAT_WOOD_TYPES = %w[oak spruce birch jungle acacia dark_oak mangrove cherry pale_oak]
+    MOB_CLIMATES = %w[temperate warm cold]
+    # Tipped arrows that look distinct (without the plain ones), in creative inventory order
+    TIPPED_ARROW_EFFECTS = %w[
+      water night_vision invisibility leaping fire_resistance swiftness slowness turtle_master water_breathing healing
+      harming poison regeneration strength weakness luck slow_falling wind_charged weaving oozing infested
+    ]
+    # All slabs/stairs from the game's lang file, without waxed copper (same look) and the unobtainable petrified oak slab
+    SLABS = %w[
+      acacia_slab andesite_slab bamboo_mosaic_slab bamboo_slab birch_slab black_concrete_slab black_wool_slab
+      blackstone_slab blue_concrete_slab blue_wool_slab brick_slab brown_concrete_slab brown_wool_slab cherry_slab
+      cinnabar_brick_slab cinnabar_slab cobbled_deepslate_slab cobblestone_slab crimson_slab cut_copper_slab
+      cut_red_sandstone_slab cut_sandstone_slab cyan_concrete_slab cyan_wool_slab dark_oak_slab dark_prismarine_slab
+      deepslate_brick_slab deepslate_tile_slab diorite_slab end_stone_brick_slab exposed_cut_copper_slab
+      granite_slab gray_concrete_slab gray_wool_slab green_concrete_slab green_wool_slab jungle_slab
+      light_blue_concrete_slab light_blue_wool_slab light_gray_concrete_slab light_gray_wool_slab lime_concrete_slab
+      lime_wool_slab magenta_concrete_slab magenta_wool_slab mangrove_slab mossy_cobblestone_slab
+      mossy_stone_brick_slab mud_brick_slab nether_brick_slab oak_slab orange_concrete_slab orange_wool_slab
+      oxidized_cut_copper_slab pale_oak_slab pink_concrete_slab pink_wool_slab polished_andesite_slab
+      polished_blackstone_brick_slab polished_blackstone_slab polished_cinnabar_slab polished_deepslate_slab
+      polished_diorite_slab polished_granite_slab polished_sulfur_slab polished_tuff_slab poplar_slab
+      prismarine_brick_slab prismarine_slab purple_concrete_slab purple_wool_slab purpur_slab quartz_slab
+      red_concrete_slab red_nether_brick_slab red_sandstone_slab red_wool_slab resin_brick_slab sandstone_slab
+      smooth_quartz_slab smooth_red_sandstone_slab smooth_sandstone_slab smooth_stone_slab spruce_slab
+      stone_brick_slab stone_slab sulfur_brick_slab sulfur_slab tuff_brick_slab tuff_slab warped_slab
+      weathered_cut_copper_slab white_concrete_slab white_wool_slab yellow_concrete_slab yellow_wool_slab
+    ]
+    STAIRS = %w[
+      acacia_stairs andesite_stairs bamboo_mosaic_stairs bamboo_stairs birch_stairs black_concrete_stairs
+      black_wool_stairs blackstone_stairs blue_concrete_stairs blue_wool_stairs brick_stairs brown_concrete_stairs
+      brown_wool_stairs cherry_stairs cinnabar_brick_stairs cinnabar_stairs cobbled_deepslate_stairs
+      cobblestone_stairs crimson_stairs cut_copper_stairs cyan_concrete_stairs cyan_wool_stairs dark_oak_stairs
+      dark_prismarine_stairs deepslate_brick_stairs deepslate_tile_stairs diorite_stairs end_stone_brick_stairs
+      exposed_cut_copper_stairs granite_stairs gray_concrete_stairs gray_wool_stairs green_concrete_stairs
+      green_wool_stairs jungle_stairs light_blue_concrete_stairs light_blue_wool_stairs light_gray_concrete_stairs
+      light_gray_wool_stairs lime_concrete_stairs lime_wool_stairs magenta_concrete_stairs magenta_wool_stairs
+      mangrove_stairs mossy_cobblestone_stairs mossy_stone_brick_stairs mud_brick_stairs nether_brick_stairs
+      oak_stairs orange_concrete_stairs orange_wool_stairs oxidized_cut_copper_stairs pale_oak_stairs
+      pink_concrete_stairs pink_wool_stairs polished_andesite_stairs polished_blackstone_brick_stairs
+      polished_blackstone_stairs polished_cinnabar_stairs polished_deepslate_stairs polished_diorite_stairs
+      polished_granite_stairs polished_sulfur_stairs polished_tuff_stairs poplar_stairs prismarine_brick_stairs
+      prismarine_stairs purple_concrete_stairs purple_wool_stairs purpur_stairs quartz_stairs red_concrete_stairs
+      red_nether_brick_stairs red_sandstone_stairs red_wool_stairs resin_brick_stairs sandstone_stairs
+      smooth_quartz_stairs smooth_red_sandstone_stairs smooth_sandstone_stairs spruce_stairs stone_brick_stairs
+      stone_stairs sulfur_brick_stairs sulfur_stairs tuff_brick_stairs tuff_stairs warped_stairs
+      weathered_cut_copper_stairs white_concrete_stairs white_wool_stairs yellow_concrete_stairs yellow_wool_stairs
+    ]
+
+    def self.wiki_file(name)
+      "https://minecraft.wiki/wiki/Special:FilePath/#{name}"
+    end
+
+    # oak_door -> Oak_Door
+    def self.file_case(id)
+      id.split('_').map(&:capitalize).join('_')
+    end
+
     MAPPINGS = {
+      # Groups: a generic mention whose icon cycles through all members
+      'glass_blocks' => { group: ['glass', *DYE_COLORS.map { |c| "#{c}_stained_glass" }] },
+      'glass_panes' => { group: ['glass_pane', *DYE_COLORS.map { |c| "#{c}_stained_glass_pane" }] },
+      'rails' => { group: %w[rail powered_rail detector_rail activator_rail] },
+      'doors' => { group: [*WOOD_TYPES.map { |w| "#{w}_door" }, 'iron_door', 'copper_door'] },
+      'trapdoors' => { group: [*WOOD_TYPES.map { |w| "#{w}_trapdoor" }, 'iron_trapdoor', 'copper_trapdoor'] },
+      'fences' => { group: [*WOOD_TYPES.map { |w| "#{w}_fence" }, 'nether_brick_fence'] },
+      'fence_gates' => { group: WOOD_TYPES.map { |w| "#{w}_fence_gate" } },
+      'buttons' => { group: [*WOOD_TYPES.map { |w| "#{w}_button" }, 'stone_button', 'polished_blackstone_button'] },
+      'pressure_plates' => { group: [*WOOD_TYPES.map { |w| "#{w}_pressure_plate" }, 'stone_pressure_plate', 'polished_blackstone_pressure_plate', 'light_weighted_pressure_plate', 'heavy_weighted_pressure_plate'] },
+      'signs' => { group: WOOD_TYPES.map { |w| "#{w}_sign" } },
+      'leaves' => { group: %w[oak spruce birch jungle acacia dark_oak mangrove cherry pale_oak azalea flowering_azalea].map { |w| "#{w}_leaves" } },
+      'boats' => { group: [*BOAT_WOOD_TYPES.map { |w| "#{w}_boat_entity" }, 'bamboo_raft_entity'] },
+      'beds' => { group: DYE_COLORS.map { |c| "#{c}_bed" } },
+      'carpets' => { group: DYE_COLORS.map { |c| "#{c}_carpet" } },
+      'candles' => { group: ['candle', *DYE_COLORS.map { |c| "#{c}_candle" }] },
+      'slabs' => { group: SLABS },
+      'stairs' => { group: STAIRS },
+      'torches' => { group: %w[torch soul_torch copper_torch redstone_torch] },
+      'campfires' => { group: %w[campfire soul_campfire] },
+      'coal_ores' => { group: %w[coal_ore deepslate_coal_ore] },
+      'fish' => { group: %w[cod_entity salmon_fish pufferfish_entity tropical_fish_entity] },
+      'arrows' => { group: ['arrow', 'spectral_arrow', *TIPPED_ARROW_EFFECTS.map { |e| "#{e}_tipped_arrow" }] },
       # Entities
       'wandering_trader' => {
         image: 'https://minecraft.wiki/wiki/Special:FilePath/EntitySprite_wandering-trader.png',
@@ -194,25 +278,17 @@ module Jekyll
         image: 'https://minecraft.wiki/wiki/Special:FilePath/EntitySprite_steve.png',
         url: '/wiki/entity/player'
       },
-      'llama' => {
-        image: 'https://minecraft.wiki/wiki/Special:FilePath/EntitySprite_creamy-llama.png'
-      },
-      'sheep' => {
-        image: 'https://minecraft.wiki/wiki/Special:FilePath/White_Sheep.png'
-      },
+      'llama' => { group: %w[creamy white brown gray].map { |c| "#{c}_llama" } },
+      'sheep' => { group: DYE_COLORS.map { |c| "#{c}_sheep" } },
       'rainbow_sheep' => {
         image: 'https://minecraft.wiki/wiki/Special:FilePath/Jeb_Sheep_JE5.webp',
         text_class: 'mc-jeb'
       },
-      'chicken' => {
-        image: 'https://minecraft.wiki/wiki/Special:FilePath/Chicken.png'
-      },
+      'chicken' => { group: MOB_CLIMATES.map { |c| "#{c}_chicken" } },
       'baby_chicken' => {
         image: 'https://minecraft.wiki/wiki/Special:FilePath/Baby_Chicken.png'
       },
-      'horse' => {
-        image: 'https://minecraft.wiki/wiki/Special:FilePath/White_Horse.png'
-      },
+      'horse' => { group: %w[white creamy chestnut brown black gray dark_brown].map { |c| "#{c}_horse" } },
       'mule' => {
         image: 'https://minecraft.wiki/wiki/Special:FilePath/Mule.png'
       },
@@ -222,9 +298,7 @@ module Jekyll
       'skeleton_horse' => {
         image: 'https://minecraft.wiki/wiki/Special:FilePath/Skeleton_Horse.png'
       },
-      'frog' => {
-        image: 'https://minecraft.wiki/wiki/Special:FilePath/Temperate_Frog.gif'
-      },
+      'frog' => { group: MOB_CLIMATES.map { |c| "#{c}_frog" } },
       'squid' => {
         image: 'https://minecraft.wiki/wiki/Special:FilePath/Squid.gif'
       },
@@ -253,6 +327,7 @@ module Jekyll
         image: 'https://minecraft.wiki/wiki/Special:FilePath/Polar_Bear.png'
       },
       'salmon_fish' => {
+        name_key: 'entity.minecraft.salmon',
         image: 'https://minecraft.wiki/wiki/Special:FilePath/Salmon.gif'
       },
       'ocelot' => {
@@ -261,15 +336,10 @@ module Jekyll
       'phantom' => {
         image: 'https://minecraft.wiki/wiki/Special:FilePath/Phantom.gif'
       },
-      'parrot' => {
-        image: 'https://minecraft.wiki/wiki/Special:FilePath/Red_Parrot.png'
-      },
-      'wolf' => {
-        image: 'https://minecraft.wiki/wiki/Special:FilePath/Wolf.png'
-      },
-      'pig' => {
-        image: 'https://minecraft.wiki/wiki/Special:FilePath/Temperate_Pig.png'
-      },
+      'parrot' => { group: %w[red blue green cyan gray].map { |c| "#{c}_parrot" } },
+      'wolf' => { group: %w[pale woods ashen black chestnut rusty spotted snowy striped].map { |c| "#{c}_wolf" } },
+      'pig' => { group: MOB_CLIMATES.map { |c| "#{c}_pig" } },
+      'cow' => { group: MOB_CLIMATES.map { |c| "#{c}_cow" } },
       'bee' => {
         image: 'https://minecraft.wiki/wiki/Special:FilePath/Bee.gif'
       },
@@ -330,9 +400,7 @@ module Jekyll
       'snowman_sheared' => {
         image: 'https://minecraft.wiki/wiki/Special:FilePath/Sheared_Snow_Golem.png'
       },
-      'fox' => {
-        image: 'https://minecraft.wiki/wiki/Special:FilePath/Fox.png'
-      },
+      'fox' => { group: %w[red_fox snow_fox] },
       'bat' => {
         image: 'https://minecraft.wiki/wiki/Special:FilePath/Bat.png'
       },
@@ -571,6 +639,9 @@ module Jekyll
       'ice' => {
         image: 'https://minecraft.wiki/wiki/Special:FilePath/Invicon_Ice.png'
       },
+      'glass_pane' => {
+        image: 'https://minecraft.wiki/wiki/Special:FilePath/Invicon_Glass_Pane.png'
+      },
       'packed_ice' => {
         image: 'https://minecraft.wiki/wiki/Special:FilePath/Invicon_Packed_Ice.png'
       },
@@ -699,6 +770,11 @@ module Jekyll
       'gloves' => {
         emoji: '🧤',
         url: '/wiki/mechanics/gloves'
+      },
+      # Mechanics
+      'fragile_blocks' => {
+        emoji: '🪟',
+        url: '/wiki/mechanics/fragile_blocks'
       },
       # Internal
       'block_changes' => {
@@ -880,6 +956,99 @@ module Jekyll
       }
     }
 
+    # Group members; entries defined above take precedence
+    def self.add_image(id, file)
+      MAPPINGS[id] ||= { image: wiki_file(file) }
+    end
+
+    DYE_COLORS.each do |color|
+      name = file_case(color)
+      add_image("#{color}_stained_glass", "Invicon_#{name}_Stained_Glass.png")
+      add_image("#{color}_stained_glass_pane", "Invicon_#{name}_Stained_Glass_Pane.png")
+      add_image("#{color}_bed", "Invicon_#{name}_Bed.png")
+      add_image("#{color}_carpet", "Invicon_#{name}_Carpet.png")
+      add_image("#{color}_candle", "Invicon_#{name}_Candle.png")
+      add_image("#{color}_sheep", "#{name}_Sheep.png")
+    end
+
+    WOOD_TYPES.each do |wood|
+      %w[door trapdoor fence fence_gate button pressure_plate sign].each do |block|
+        add_image("#{wood}_#{block}", "Invicon_#{file_case("#{wood}_#{block}")}.png")
+      end
+    end
+    (SLABS + STAIRS).each { |id| add_image(id, "Invicon_#{file_case(id)}.png") }
+    %w[redstone_torch soul_campfire deepslate_coal_ore].each { |id| add_image(id, "Invicon_#{file_case(id)}.png") }
+    add_image('spectral_arrow', 'Invicon_Spectral_Arrow.png')
+    # Named "Arrow of <Effect>", with a few exceptions
+    tipped_arrow_files = { 'water' => 'Splashing', 'turtle_master' => 'the_Turtle_Master', 'wind_charged' => 'Wind_Charging', 'infested' => 'Infestation' }
+    TIPPED_ARROW_EFFECTS.each do |effect|
+      add_image("#{effect}_tipped_arrow", "Invicon_Arrow_of_#{tipped_arrow_files[effect] || file_case(effect)}.png")
+      MAPPINGS["#{effect}_tipped_arrow"][:name_key] = "item.minecraft.tipped_arrow.effect.#{effect}"
+    end
+    add_image('cod_entity', 'Cod.gif')
+    add_image('pufferfish_entity', 'Pufferfish.png')
+    add_image('tropical_fish_entity', 'Tropical_Fish.png')
+    %w[powered_rail activator_rail iron_door copper_door iron_trapdoor copper_trapdoor nether_brick_fence
+       stone_button polished_blackstone_button stone_pressure_plate polished_blackstone_pressure_plate
+       light_weighted_pressure_plate heavy_weighted_pressure_plate].each do |id|
+      add_image(id, "Invicon_#{file_case(id)}.png")
+    end
+    %w[spruce birch jungle acacia dark_oak mangrove cherry pale_oak azalea flowering_azalea].each do |wood|
+      add_image("#{wood}_leaves", "Invicon_#{file_case(wood)}_Leaves.png")
+    end
+    BOAT_WOOD_TYPES.each { |wood| add_image("#{wood}_boat_entity", "#{file_case(wood)}_Boat.png") }
+    add_image('bamboo_raft_entity', 'Bamboo_Raft.png')
+
+    # Mob variants
+    MOB_CLIMATES.each do |climate|
+      name = file_case(climate)
+      add_image("#{climate}_frog", "#{name}_Frog.gif")
+      add_image("#{climate}_pig", "#{name}_Pig.png")
+      add_image("#{climate}_cow", "#{name}_Cow.png")
+      add_image("#{climate}_chicken", climate == 'temperate' ? 'Chicken.png' : "#{name}_Chicken.png")
+    end
+    %w[creamy white brown gray].each { |c| add_image("#{c}_llama", "EntitySprite_#{c}-llama.png") }
+    %w[white creamy chestnut brown black gray].each { |c| add_image("#{c}_horse", "#{file_case(c)}_Horse.png") }
+    add_image('dark_brown_horse', 'Darkbrown_Horse.png')
+    %w[red blue green cyan gray].each { |c| add_image("#{c}_parrot", "#{file_case(c)}_Parrot.png") }
+    %w[pale woods ashen black chestnut rusty spotted snowy striped].each { |c| add_image("#{c}_wolf", "#{file_case(c)}_Wolf.png") }
+    add_image('red_fox', 'Fox.png')
+    add_image('snow_fox', 'Snow_Fox.png')
+
+    # Entries shown by an entry's icon: itself, or all members of a group (flattened)
+    def self.leaves_of(id)
+      data = MAPPINGS[id] or raise "symlink: unknown group member '#{id}'"
+      return [id] unless data[:group]
+
+      data[:group].flat_map { |member| leaves_of(member) }
+    end
+
+    def self.image_of(id)
+      Jekyll::McImages.url_for(id) || MAPPINGS[id][:image]
+    end
+
+    # Name of an entry in the page's language: mob variants from _data/variant_names.yml,
+    # everything else from the game's names in _data/game_names/<lang>.json
+    def self.name_of(id, site)
+      lang = site.active_lang
+      variant = site.data.dig('variant_names', lang, id)
+      return variant if variant
+
+      names = site.data.dig('game_names', lang) || {}
+      data = MAPPINGS[id]
+      keys = if data[:name_key]
+               [data[:name_key]]
+             elsif id.end_with?('_entity')
+               base = id.delete_suffix('_entity')
+               ["entity.minecraft.#{base}", "item.minecraft.#{base}"]
+             else
+               ["block.minecraft.#{id}", "item.minecraft.#{id}", "entity.minecraft.#{id}"]
+             end
+      name = keys.map { |key| names[key] }.compact.first
+      Jekyll.logger.warn "Symlink", "No #{lang} name for '#{id}'" unless name
+      name
+    end
+
     def initialize(tag_name, text, tokens)
       super
       @params = text.split(',').map(&:strip)
@@ -919,7 +1088,9 @@ module Jekyll
 
 
       link_text = @params[1]
-      image_src = Jekyll::McImages.url_for(id) || tag_data[:image]
+      leaves = self.class.leaves_of(id)
+      images = leaves.map { |leaf| self.class.image_of(leaf) }
+      image_src = images.first
       # Enchantments without an own image use the enchanted book
       if !image_src && [:enchantment, :curse].include?(tag_data[:kind])
         image_src = Jekyll::McImages.url_for('enchanted_book') || MAPPINGS['enchanted_book'][:image]
@@ -927,10 +1098,16 @@ module Jekyll
       emoji_src = tag_data[:emoji]
       current_url = context.environments.first['page']['url'] || context.environments.first['page']['permalink']
 
+      # Icons are decorative (empty alt), as the name follows right after them
       icon = if emoji_src
                %Q{<span>#{emoji_src}</span>}
+             elsif images.length > 1
+               # Cycled through by wiki.js, with a tooltip naming the currently shown member
+               site = context.registers[:site]
+               names = leaves.map { |leaf| self.class.name_of(leaf, site) || '' }
+               %Q{<img src="#{image_src}" data-cycle="#{images.join(' ')}" data-cycle-names="#{CGI.escapeHTML(names.join('|'))}" alt="" draggable="false" class="pixelated img-link img-cycle">}
              elsif image_src
-               %Q{<img src="#{image_src}" alt="#{link_text}" draggable="false" class="pixelated img-link">}
+               %Q{<img src="#{image_src}" alt="" draggable="false" class="pixelated img-link">}
              end
 
       text_class = tag_data[:text_class] || KIND_CLASSES[tag_data[:kind]] || 'mc-gold'

@@ -14,5 +14,5 @@ page_id: wiki_mechanics_gloves
 - Удержания горячих предметов.
 - Наполнения {% symlink bucket, вёдер %} {% symlink lava, лавой %}.
 - Наполнения {% symlink bucket, вёдер %} {% symlink water, водой %} в холодных биомах.
-- Разбивания {% symlink glass, стёкол %} голыми руками.
-    - Если разбить {% symlink glass, стекло %} голыми руками в `перчатках`{: .mc-gold}, то выпадет блок {% symlink glass, стекла %}.
+- Разбивания {% symlink glass_blocks, стёкол %} `/`{: .mc-dark-gray} {% symlink glass_panes, стеклянных панелей %} голыми руками.
+    - Если разбить {% symlink glass_blocks, стекло %} `/`{: .mc-dark-gray} {% symlink glass_panes, стеклянную панель %} голыми руками в `перчатках`{: .mc-gold}, то выпадет сам разбитый блок.

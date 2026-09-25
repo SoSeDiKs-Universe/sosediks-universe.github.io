@@ -14,5 +14,5 @@ page_id: wiki_mechanics_gloves
 - Hold hot items.
 - Fill {% symlink bucket, Buckets %} with {% symlink lava, Lava %}.
 - Fill {% symlink bucket, Buckets %} with {% symlink water, Water %} in cold biomes.
-- Break {% symlink glass, Glass %} with bare hands.
-    - Breaking {% symlink glass, Glass %} with bare hands while wearing `Gloves`{: .mc-gold} will drop the broken {% symlink glass, Glass %} block.
+- Break {% symlink glass_blocks, Glass %} `/`{: .mc-dark-gray} {% symlink glass_panes, Glass Panes %} with bare hands.
+    - Breaking {% symlink glass_blocks, Glass %} `/`{: .mc-dark-gray} {% symlink glass_panes, Glass Panes %} with bare hands while wearing `Gloves`{: .mc-gold} will drop the broken block itself.

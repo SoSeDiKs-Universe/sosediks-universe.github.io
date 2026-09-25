@@ -65,7 +65,7 @@ page_id: wiki_misc_entity_changes
 ## {% href_link 🐻‍❄️ | Білі медведі %}
 
 ### {% href_link 🎣 | Полювання на рибу %}
-{% symlink polar_bear, Білі медведі %} атакують {% symlink salmon_fish, рибу %} поблизу.
+{% symlink polar_bear, Білі медведі %} атакують {% symlink fish, рибу %} поблизу.
 
 
 ## {% href_link 🐆 | Оцелоти %}
@@ -147,14 +147,14 @@ page_id: wiki_misc_entity_changes
 Палаючі снаряди поширять вогонь при приземленні.
 
 Це включає:
-- Запалювання блоків, таких як {% symlink campfire_block_unlit, багаття %}, {% symlink candle, свічки %} і {% symlink candle_cake, торт зі свічкою %}.
+- Запалювання блоків, таких як {% symlink campfire_block_unlit, багаття %}, {% symlink candles, свічки %} і {% symlink candle_cake, торт зі свічкою %}.
 - Активація {% symlink tnt, динаміту %}, {% symlink tnt_minecart_entity, вагонетки з динамітом %} і {% symlink creeper, кріперів %}.
 - Створення блоку {% symlink fire, вогню %} в місці приземлення.
 
 ### {% href_link 🎯 | Влучання снаряда (стріли/тризубця) %}
 Влучання в {% symlink bee_nest, бджолине гніздо %} призведе до його падіння, випускаючи на волю розлючених бджіл.
 
-Влучання в крихкий блок зламає його.
+Влучання в {% symlink fragile_blocks, крихкий блок %} зламає його.
 
 ### {% href_link 🧯 | Гасіння водяним зіллям %}
 Кидання {% symlink splash_water_potion, вибухової пляшки води %}/{% symlink lingering_water_potion, осідальної пляшки води %} тушить {% symlink torch, смолоскипи %}/{% symlink soul_torch, смолоскипи душ %}/{% symlink copper_torch, мідні смолоскипи %}.
@@ -165,7 +165,7 @@ page_id: wiki_misc_entity_changes
 {% symlink snowball, Сніжки %} додають 5 секунд заморожування при влучанні в істоту. {% symlink snowball, Сніжки %} мають 4 такта часу перезарядки між кидками.
 
 ### {% href_link 🏹 | Стріли працюють у воді %}
-Опір {% symlink arrow, стріл %} воді знижений, що дозволяє їм бути корисними під водою.
+Опір {% symlink arrows, стріл %} воді знижений, що дозволяє їм бути корисними під водою.
 
 
 ## {% href_link 🧩 | Різне %}
@@ -213,7 +213,7 @@ page_id: wiki_misc_entity_changes
 Деякі істоти можуть перестрибувати прірви.
 
 ### {% href_link 🚪 | Відчинні хвіртки %}
-Істоти, які можуть відчиняти {% symlink oak_door, двері %}, тепер також можуть відчиняти поодинокі {% symlink oak_fence_gate, хвіртки %}.
+Істоти, які можуть відчиняти {% symlink doors, двері %}, тепер також можуть відчиняти поодинокі {% symlink fence_gates, хвіртки %}.
 
 ### {% href_link 🧨 | Вибухонебезпечні вагонетки можна підпалити вручну %}
 {% symlink tnt_minecart_entity, Вагонетки з динамітом %} можуть бути активовані за допомогою {% symlink flint_and_steel, кресала %} або {% symlink fire_charge, вогняного заряду %}.
