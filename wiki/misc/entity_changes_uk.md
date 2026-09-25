@@ -231,9 +231,9 @@ page_id: wiki_misc_entity_changes
 
 Для балансування та веселощів деякі істоти мають унікальну поведінку:
 - Маленький {% symlink skeleton, скелет %} озброєний {% symlink trumpet, трубою %}, щоб викликати кровотечу з вух у істот навколо.
-- Маленький {% symlink stray, примара %} оснащений {% symlink snowball, сніжками %} з камінчиком всередині (15 секунд {% symlink slowness, Повільності %} при попаданні).
+- Маленький {% symlink stray, примара %} оснащений {% symlink snowball, сніжками %} з камінчиком всередині (15 секунд {% symlink slowness, Повільности %} при попаданні).
 - Маленький {% symlink bogged, болотяник %} горить бажанням поділитися {% symlink red_mushroom, червоними %} та {% symlink brown_mushroom, коричневими грибами %} (2 секунди {% symlink poison, Отруєння %} при попаданні).
-- Маленький {% symlink parched, засушень %} любить гратися з {% symlink sandstone_rock, уламками пісковика %} (15 секунд {% symlink weakness, Слабкості %} при попаданні).
+- Маленький {% symlink parched, засушень %} любить гратися з {% symlink sandstone_rock, уламками пісковика %} (15 секунд {% symlink weakness, Слабкости %} при попаданні).
 - Маленький {% symlink wither_skeleton, візер-скелет %} боїться {% symlink player, гравців %}, думаючи, що вони вкрадуть його {% symlink wither_skeleton_skull, череп візер-скелета %}, який вони завжди носять із собою. Ви можете обміняти череп, давши ({% game_action use %}) їм {% symlink wither_rose, троянду візера %}.
 
 Такі маленькі істоти не ростуть.

@@ -340,6 +340,20 @@ img.img-link {
 // and its line box spans 1px below to 10px above
 $fontPixel: 0.125em;
 
+// Minecraft-style pixel box: bevel and an outline with cut corners
+@mixin mc-box($outline: #1e1e1e) {
+  background-color: #383838;
+  box-shadow:
+    // Bevel
+    inset $fontPixel $fontPixel 0 #4c4c4c,
+    inset (-$fontPixel) (-$fontPixel) 0 #262626,
+    // Outline with cut corners
+    0 (-$fontPixel) 0 $outline,
+    0 $fontPixel 0 $outline,
+    (-$fontPixel) 0 0 $outline,
+    $fontPixel 0 0 $outline;
+}
+
 // Inline (not inline-block), so the key doesn't grow the line; the keycap is drawn behind the text,
 // one font pixel around the glyphs, with the right padding a pixel smaller to account for glyph spacing
 .game-action-key {
@@ -357,15 +371,54 @@ $fontPixel: 0.125em;
     right: 0;
     top: 2 * $fontPixel;
     bottom: -$fontPixel;
-    background-color: #383838;
-    box-shadow:
-      // Bevel
-      inset $fontPixel $fontPixel 0 #4c4c4c,
-      inset (-$fontPixel) (-$fontPixel) 0 #262626,
-      // Outline with cut corners
-      0 (-$fontPixel) 0 #1e1e1e,
-      0 $fontPixel 0 #1e1e1e,
-      (-$fontPixel) 0 0 #1e1e1e,
-      $fontPixel 0 0 #1e1e1e;
+    @include mc-box;
+  }
+}
+
+// Button like in Minecraft menus: highlighted outline and yellow text on hover.
+// The line box has 3px of space above capitals and 1px below the baseline,
+// so the bottom padding is 2px larger to center the capitals
+.mc-button {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 20em;
+  margin: 0 auto;
+  padding: 2 * $fontPixel 2 * $fontPixel 4 * $fontPixel 3 * $fontPixel;
+  text-align: center;
+  text-decoration: none;
+  @include mc-box;
+
+  &:hover,
+  &:focus-visible {
+    @include mc-box(#ffffff);
+    outline: none;
+    color: #ffffa0;
+    text-shadow: 1px 1px 0 #3f3f28;
+  }
+}
+
+// 404 page, styled as the death screen
+.content:has(.not-found) {
+  text-align: center;
+
+  h2 {
+    color: #ff5555;
+    text-shadow: 1px 1px 0 #3f1515;
+  }
+}
+
+.not-found {
+  // Filled in by 404.js; hidden without it
+  .not-found-path:empty {
+    display: none;
+  }
+
+  .mc-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 6 * $fontPixel;
+    margin-top: 2em;
+    padding: 0 30px;
   }
 }
