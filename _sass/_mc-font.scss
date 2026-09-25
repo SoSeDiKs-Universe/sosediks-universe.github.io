@@ -150,27 +150,56 @@ $jebColorDuration: 0.6s;
   text-decoration: line-through 0.125em;
 }
 
-// Emoji drawn as pixel art from PixelTwemojiMC-9 (see _plugins/pixel_emoji.rb): 9 font pixels tall,
-// 8 of them above the baseline, like in-game. The emoji stays inside as invisible text for copying and searching
+// Emoji drawn as pixel art from PixelTwemojiMC-9 (see _plugins/pixel_emoji.rb), like in-game: 9 font pixels tall,
+// 8 of them above the baseline, with a shadow. The emoji stays inside as invisible text for copying and searching
 .emoji {
+  // One pixel of the emoji: a font pixel, rounded to whole screen pixels where supported, for the art to stay crisp
+  --p: 0.125em;
+  position: relative;
   display: inline-block;
-  width: 1.125em;
-  height: 1.125em;
-  vertical-align: -0.125em;
+  // Room for the shadow, a pixel right and down, which overlaps what follows like in-game
+  width: calc(var(--p) * 10);
+  height: calc(var(--p) * 10);
+  margin-right: calc(var(--p) * -1);
+  vertical-align: calc(var(--p) * -2);
   overflow: hidden;
   color: transparent;
   text-shadow: none;
   text-indent: 2em;
   white-space: nowrap;
-  // Both sheets are 16 cells wide
-  background: no-repeat calc(var(--x) * -1.125em) calc(var(--y) * -1.125em) / 18em auto;
-  image-rendering: pixelated;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(var(--p) * 9);
+    height: calc(var(--p) * 9);
+    // Both sheets are 16 cells wide
+    background: no-repeat calc(var(--x) * var(--p) * -9) calc(var(--y) * var(--p) * -9) / calc(var(--p) * 144) auto;
+    background-image: var(--sheet);
+    image-rendering: pixelated;
+  }
+
+  // The shadow: the emoji darkened to a quarter, like the shadow of white text
+  &::before {
+    top: var(--p);
+    left: var(--p);
+    filter: brightness(0.25);
+  }
+}
+
+@supports (width: round(1em, 1px)) {
+  .emoji {
+    --p: max(1px, round(0.125em, 1px));
+  }
 }
 
 .emoji-e {
-  background-image: url(../emoji/emoji.png);
+  --sheet: url(../emoji/emoji.png);
 }
 
 .emoji-f {
-  background-image: url(../emoji/flags.png);
+  --sheet: url(../emoji/flags.png);
 }

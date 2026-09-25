@@ -1,4 +1,6 @@
+locale: "ru_RU"
 index:
+  description: "Сервер Minecraft: Java Edition с выживанием, полным новых механик и изменений."
   title: "Вселенная Соседа"
   address: "Адрес сервера"
   copy: "Скопировать!"

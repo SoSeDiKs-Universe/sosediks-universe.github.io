@@ -1,4 +1,6 @@
+locale: "uk_UA"
 index:
+  description: "Сервер Minecraft: Java Edition із виживанням, сповненим нових механік і змін."
   title: "Всесвіт Сусіда"
   address: "Адреса сервера"
   copy: "Скопіювати!"

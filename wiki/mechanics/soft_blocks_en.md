@@ -10,7 +10,7 @@ page_id: wiki_mechanics_soft_blocks
 
 {% symlink soft_blocks, Soft blocks %} are blocks that cushion a fall: anything landing on them takes less fall damage. This stacks with the softening that {% symlink hay_block, Hay Bales %} and {% symlink beds, Beds %} already have in vanilla.
 
-Landing on a `soft block`{: .mc-gold} after a [Leap of Faith](/wiki/misc/player_changes#-leap-of-faith){: .mc-gold} negates the fall damage completely. On {% symlink leaves, Leaves %}, the player also sinks through the layers below (one per 5 blocks of the fall, up to 7).
+Landing on a `soft block`{: .mc-gold} after a [Leap of Faith](/wiki/misc/player_changes#leap-of-faith){: .mc-gold} negates the fall damage completely. On {% symlink leaves, Leaves %}, the player also sinks through the layers below (one per 5 blocks of the fall, up to 7).
 
 ## {% href_link 📋 | List of soft blocks %}
 

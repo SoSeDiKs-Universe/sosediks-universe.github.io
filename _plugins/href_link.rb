@@ -12,9 +12,7 @@ module Jekyll
       emoji = @params[0]
       title = @params[1]
 
-      ref = "#{emoji} #{title}".downcase
-                .gsub(/[^\p{Word}\- \t]/, '')
-                .tr(" \t", '-')
+      ref = Jekyll::HeadingIds.slug("#{emoji} #{title}")
 
       %Q{<a href="##{ref}" class="href-link">#{emoji}</a> #{title}}
     end

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.active_lang }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ site.title }}</title>
+    {% include meta.html title=site.title description=page.description %}
     <link rel="icon" href="./assets/favicon.svg" />
     <link rel="stylesheet" href="./assets/css/overview.css">
     <link rel="stylesheet" href="./assets/css/mc-font.css">

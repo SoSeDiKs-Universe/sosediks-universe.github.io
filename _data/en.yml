@@ -1,4 +1,6 @@
+locale: "en_US"
 index:
+  description: "A Minecraft: Java Edition survival server full of new mechanics and changes."
   title: "SoSeDiK's Universe"
   address: "Server Address"
   copy: "Copy!"

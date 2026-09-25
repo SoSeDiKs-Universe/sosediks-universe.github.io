@@ -1,0 +1,21 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{%- for page in site.pages -%}
+  {%- unless page.layout == "wiki" or page.layout == "overview" -%}{%- continue -%}{%- endunless -%}
+  {%- if page.noindex -%}{%- continue -%}{%- endif -%}
+  {%- for lang in site.languages -%}
+    {%- capture prefix -%}{%- unless lang == site.default_lang -%}/{{ lang }}{%- endunless -%}{%- endcapture %}
+  <url>
+    <loc>{{ site.url }}{{ prefix }}{{ page.url }}</loc>
+    {%- for alt in site.languages -%}
+      {%- capture alt_prefix -%}{%- unless alt == site.default_lang -%}/{{ alt }}{%- endunless -%}{%- endcapture %}
+    <xhtml:link rel="alternate" hreflang="{{ alt }}" href="{{ site.url }}{{ alt_prefix }}{{ page.url }}"/>
+    {%- endfor %}
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.url }}"/>
+  </url>
+  {%- endfor -%}
+{%- endfor %}
+</urlset>

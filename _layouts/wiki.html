@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.active_lang }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% if page.noindex %}<meta name="robots" content="noindex">{% endif %}
     <title>{{ page.title }} - {{ site.title }}</title>
+    {%- capture meta_title %}{{ page.title }} - {{ site.title }}{% endcapture -%}
+    {%- if page.description -%}{%- assign meta_description = page.description -%}{%- else -%}{%- assign meta_description = content | page_description -%}{%- endif %}
+    {% include meta.html title=meta_title description=meta_description %}
     <link rel="icon" href="/assets/favicon.svg" />
     <link rel="stylesheet" href="/assets/css/wiki.css">
     <link rel="stylesheet" href="/assets/css/mc-font.css">
