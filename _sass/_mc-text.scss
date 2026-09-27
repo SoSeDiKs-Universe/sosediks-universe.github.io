@@ -81,3 +81,21 @@ img.img-cycle {
     text-shadow: $fontPixel $fontPixel 0 #2a2a2a;
   }
 }
+
+// Text copied by clicking it (see mc-text.js): underlined like a link, and lighter while pointed at
+.copy-text {
+  display: inline;
+  padding: 0;
+  font: inherit;
+  text-align: inherit;
+  text-decoration: underline $fontPixel;
+  text-underline-offset: $fontPixel;
+  background: none;
+  border: 0;
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    color: #ffffa0;
+  }
+}

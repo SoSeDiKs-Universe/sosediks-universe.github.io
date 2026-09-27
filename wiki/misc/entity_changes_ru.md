@@ -199,7 +199,7 @@ page_id: wiki_misc_entity_changes
 - {% symlink vex, вредины %}.
 
 ### {% href_link 🧟 | Нежить игнорирует урон окружения %}
-Нежить не получает урон от {% symlink cactus, кактусов %} и {% symlink sweet_berries, кустов %}.
+Нежить не получает урон от {% symlink cactus, кактусов %} и {% symlink bushes, кустов %}.
 
 ### {% href_link 👁️ | Динамический диапазон видимости %}
 {% symlink blindness, Слепота %} уменьшает диапазон видимости на 90%.

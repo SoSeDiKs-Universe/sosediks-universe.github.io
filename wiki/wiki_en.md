@@ -13,7 +13,7 @@ Welcome to `SoSeDiK's Universe`{: .mc-dark-aqua} (i.e., the `"Neighbor's Univers
 
 You're reading `Playerpedia`{: .mc-red} — the combined knowledge database about the server's content.
 
-You may join the server using the following server address: `{{site.server_address}}`{: .mc-gold}. Currently, the server is on version `{{site.server_version}}`{: .mc-gold}.
+You may join the server using the following server address: <button type="button" class="copy-text mc-gold" data-copy="{{ site.server_address }}" data-tooltip="{{ site.data.index.copy_click }}" data-copied="{{ site.data.index.copied }}">{{ site.server_address }}</button>. Currently, the server is on version `{{site.server_version}}`{: .mc-gold}.
 
 To communicate with others or ask for help, join our 👾 [Discord]({{site.discord_invite}}){: .discord} server.
 </div>

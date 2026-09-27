@@ -199,7 +199,7 @@ Some mobs can be picked into a {% symlink book, Book %}:
 - {% symlink vex, Vexes %}.
 
 ### {% href_link 🧟 | Undead ignore environmental damage %}
-Undead mobs don't get hurt from {% symlink cactus, Cacti %} and {% symlink sweet_berries, Bushes %}.
+Undead mobs don't get hurt from {% symlink cactus, Cacti %} and {% symlink bushes, Bushes %}.
 
 ### {% href_link 👁️ | Dynamic visibility range %}
 {% symlink blindness, Blindness %} decreases the visibility range by 90%.

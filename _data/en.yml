@@ -5,6 +5,7 @@ index:
   address: "Server Address"
   copy: "Copy!"
   copied: "Copied!"
+  copy_click: "Click to Copy to Clipboard"
   wiki: "Playerpedia"
   pinging: "Pinging…"
   cannot_connect: "Can't connect to server"

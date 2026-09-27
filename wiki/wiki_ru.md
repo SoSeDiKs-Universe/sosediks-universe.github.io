@@ -13,7 +13,7 @@ page_id: wiki
 
 Вы читаете `Игрокопедию`{: .mc-red} — объединённую базу знаний о контенте сервера.
 
-Вы можете войти на сервер по адресу: `{{site.server_address}}`{: .mc-gold}. Сейчас сервер находится на версии `{{site.server_version}}`{: .mc-gold}.
+Вы можете войти на сервер по адресу: <button type="button" class="copy-text mc-gold" data-copy="{{ site.server_address }}" data-tooltip="{{ site.data.index.copy_click }}" data-copied="{{ site.data.index.copied }}">{{ site.server_address }}</button>. Сейчас сервер находится на версии `{{site.server_version}}`{: .mc-gold}.
 
 Для общения с другими или по каких-либо вопросах, присоединяйтесь к нашему сообществу в 👾 [Discord]({{site.discord_invite}}){: .discord}.
 </div>

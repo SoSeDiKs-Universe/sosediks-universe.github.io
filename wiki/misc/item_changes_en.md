@@ -93,4 +93,4 @@ Some items are considered {% symlink hot_items, hot %}: they can't be held witho
 ### {% href_link 🪖 | Armor and environment %}
 Wearing armor prevents some environmental damage:
 - Damage from {% symlink cactus, Cacti %} when wearing boots or leggings (depending on where the damage comes from).
-- Damage from {% symlink sweet_berry_bush, bushes %} when wearing boots and leggings (or the whole armor set when crawling).
+- Damage from {% symlink bushes, bushes %} when wearing boots and leggings (or the whole armor set when crawling).

@@ -13,7 +13,7 @@ page_id: wiki
 
 Ви читаєте `Гравцепедію`{: .mc-red} — обʼєднану базу знань про контент сервера.
 
-Ви можете увійти на сервер за адресою: `{{site.server_address}}`{: .mc-gold}. Наразі сервер знаходиться на версії `{{site.server_version}}`{: .mc-gold}.
+Ви можете увійти на сервер за адресою: <button type="button" class="copy-text mc-gold" data-copy="{{ site.server_address }}" data-tooltip="{{ site.data.index.copy_click }}" data-copied="{{ site.data.index.copied }}">{{ site.server_address }}</button>. Наразі сервер знаходиться на версії `{{site.server_version}}`{: .mc-gold}.
 
 Для спілкування з іншими або з будь-яких питань, приєднуйтесь до нашої спільноти в 👾 [Discord]({{site.discord_invite}}){: .discord}.
 </div>

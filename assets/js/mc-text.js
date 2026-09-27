@@ -155,3 +155,36 @@ if (cycleIcons.length) {
     if (tooltipTarget) updateTooltip();
   }, 2000);
 }
+
+// Text copied by clicking it (like the server address), with its tooltip saying so for a moment
+document.addEventListener("click", function (event) {
+  var target = event.target.closest("[data-copy]");
+  if (!target) return;
+
+  var text = target.getAttribute("data-copy");
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(text).catch(function () {});
+  } else {
+    var field = document.createElement("textarea");
+    field.value = text;
+    field.style.position = "fixed";
+    field.style.opacity = "0";
+    document.body.appendChild(field);
+    field.select();
+    document.execCommand("copy");
+    field.remove();
+  }
+
+  if (!target.hasAttribute("data-copy-hint")) target.setAttribute("data-copy-hint", target.getAttribute("data-tooltip"));
+  target.setAttribute("data-tooltip", target.getAttribute("data-copied"));
+  clearTimeout(target.copyTimer);
+  target.copyTimer = setTimeout(function () {
+    target.setAttribute("data-tooltip", target.getAttribute("data-copy-hint"));
+    if (tooltipTarget === target) updateTooltip();
+  }, 2000);
+
+  // Taps show it above the text; the mouse already has it
+  var rect = target.getBoundingClientRect();
+  if (tooltipTarget === target) updateTooltip();
+  else showTooltip(target, event.clientX || rect.left + rect.width / 2, event.clientY || rect.top);
+});

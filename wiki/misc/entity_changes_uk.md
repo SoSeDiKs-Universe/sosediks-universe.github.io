@@ -199,7 +199,7 @@ page_id: wiki_misc_entity_changes
 - {% symlink vex, бісики %}.
 
 ### {% href_link 🧟 | Нежить ігнорує шкоду оточення %}
-Нежить не отримує шкоди від {% symlink cactus, кактусів %} та {% symlink sweet_berries, кущів %}.
+Нежить не отримує шкоди від {% symlink cactus, кактусів %} та {% symlink bushes, кущів %}.
 
 ### {% href_link 👁️ | Динамічний діапазон видимості %}
 {% symlink blindness, Сліпота %} зменшує діапазон видимості на 90%.

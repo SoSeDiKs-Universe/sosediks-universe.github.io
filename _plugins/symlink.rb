@@ -267,6 +267,8 @@ module Jekyll
       'stairs' => { group: STAIRS },
       'torches' => { group: %w[torch soul_torch copper_torch redstone_torch] },
       'campfires' => { group: %w[campfire soul_campfire] },
+      # Bushes that prick (the server's own Sweet Berry Pips Bush has no texture on the wiki yet)
+      'bushes' => { group: %w[sweet_berry_bush] },
       'coal_ores' => { group: %w[coal_ore deepslate_coal_ore] },
       'fish' => { group: %w[cod_entity salmon_fish pufferfish_entity tropical_fish_entity] },
       'arrows' => { group: ['arrow', 'spectral_arrow', *TIPPED_ARROW_EFFECTS.map { |e| "#{e}_tipped_arrow" }] },
@@ -1005,6 +1007,9 @@ module Jekyll
     (SLABS + STAIRS).each { |id| add_image(id, "Invicon_#{file_case(id)}.png") }
     %w[redstone_torch soul_campfire deepslate_coal_ore].each { |id| add_image(id, "Invicon_#{file_case(id)}.png") }
     add_image('spectral_arrow', 'Invicon_Spectral_Arrow.png')
+    add_image('map', 'Invicon_Map.png')
+    add_image('empty_map', 'Invicon_Empty_Map.png')
+    add_image('sweet_berry_bush', 'Sweet_Berry_Bush_Age_3.png')
     # Named "Arrow of <Effect>", with a few exceptions
     tipped_arrow_files = { 'water' => 'Splashing', 'turtle_master' => 'the_Turtle_Master', 'wind_charged' => 'Wind_Charging', 'infested' => 'Infestation' }
     TIPPED_ARROW_EFFECTS.each do |effect|
@@ -1088,7 +1093,8 @@ module Jekyll
       # Just text if no mapping
       if (!tag_data)
         link_text = @params[1]
-        return %Q{<span class="mc-gold">#{link_text}</span>&nbsp;<span class="mc-red">[🛠️]</span>}
+        # The marker stands in for the icon: before the text, and kept on its line
+        return %Q{<span class="icon-link"><span class="mc-red">[🛠️]</span><span class="mc-gold">#{link_text}</span></span>}
       end
 
       if (tag_data[:pmc])
