@@ -9,7 +9,11 @@ page_id: wiki_misc_player_changes
 ## {% href_link 🎮️ | Gameplay %}
 
 ### {% href_link ⛏️ | Proper tooling %}
-You need to use a correct tool for breaking blocks, otherwise you won't break them. Moreover, you won't be able to break blocks in complete darkness.
+You need to use a correct tool for breaking blocks, otherwise you won't break them.
+
+Many building blocks, like {% symlink planks, Planks %}, {% symlink stairs, Stairs %} or {% symlink glass_blocks, Glass %}, can only be placed with a {% symlink hammer, Hammer %} in the other hand.
+
+You also can't break or place blocks in complete darkness (light level 3 or lower). A light source lets you see when held in either hand (like a {% symlink torches, Torch %} or a {% symlink lanterns, Lantern %}) or worn as clothing on your head, and so does {% symlink night_vision, Night Vision %}. Some blocks are exempt: for example, {% symlink flowers, Flowers %} and {% symlink saplings, Saplings %} can still be placed and broken in the dark. And yes, this means you can bury yourself with no way out! >:)
 
 ### {% href_link 🪦 | Tombstones on death %}
 If possible, {% symlink player, Players %} will leave skeleton remains upon death. Breaking them will restore the inventory and dropped experience.

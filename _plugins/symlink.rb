@@ -195,6 +195,17 @@ module Jekyll
       water night_vision invisibility leaping fire_resistance swiftness slowness turtle_master water_breathing healing
       harming poison regeneration strength weakness luck slow_falling wind_charged weaving oozing infested
     ]
+    # Walls from the game's tag (26.3), without the waxed copper ones (same look)
+    WALLS = %w[
+      cobblestone_wall mossy_cobblestone_wall brick_wall prismarine_wall red_sandstone_wall mossy_stone_brick_wall
+      granite_wall stone_brick_wall nether_brick_wall andesite_wall red_nether_brick_wall sandstone_wall
+      end_stone_brick_wall diorite_wall blackstone_wall polished_blackstone_brick_wall polished_blackstone_wall
+      cobbled_deepslate_wall polished_deepslate_wall deepslate_tile_wall deepslate_brick_wall mud_brick_wall tuff_wall
+      polished_tuff_wall tuff_brick_wall resin_brick_wall cinnabar_wall polished_cinnabar_wall cinnabar_brick_wall
+      sulfur_wall polished_sulfur_wall sulfur_brick_wall
+    ]
+    PLANKS_WOOD_TYPES = %w[oak spruce birch jungle acacia dark_oak pale_oak crimson warped mangrove bamboo cherry poplar]
+    ORES = %w[coal iron copper gold redstone emerald lapis diamond].flat_map { |ore| ["#{ore}_ore", "deepslate_#{ore}_ore"] } + ['nether_quartz_ore']
     # All slabs/stairs from the game's lang file, without waxed copper (same look) and the unobtainable petrified oak slab
     SLABS = %w[
       acacia_slab andesite_slab bamboo_mosaic_slab bamboo_slab birch_slab black_concrete_slab black_wool_slab
@@ -267,6 +278,21 @@ module Jekyll
       'stairs' => { group: STAIRS },
       'torches' => { group: %w[torch soul_torch copper_torch redstone_torch] },
       'campfires' => { group: %w[campfire soul_campfire] },
+      'walls' => { group: WALLS },
+      'planks' => { group: PLANKS_WOOD_TYPES.map { |w| "#{w}_planks" } },
+      'banners' => { group: DYE_COLORS.map { |c| "#{c}_banner" } },
+      'terracotta_blocks' => { group: ['terracotta', *DYE_COLORS.map { |c| "#{c}_terracotta" }] },
+      'glazed_terracotta' => { group: DYE_COLORS.map { |c| "#{c}_glazed_terracotta" } },
+      'concrete' => { group: DYE_COLORS.map { |c| "#{c}_concrete" } },
+      'concrete_powder' => { group: DYE_COLORS.map { |c| "#{c}_concrete_powder" } },
+      'shulker_boxes' => { group: ['shulker_box', *DYE_COLORS.map { |c| "#{c}_shulker_box" }] },
+      'lanterns' => { group: %w[lantern soul_lantern copper_lantern exposed_copper_lantern weathered_copper_lantern oxidized_copper_lantern] },
+      'anvils' => { group: %w[anvil chipped_anvil damaged_anvil] },
+      'stone_brick_blocks' => { group: %w[stone_bricks mossy_stone_bricks cracked_stone_bricks chiseled_stone_bricks] },
+      'ores' => { group: ORES },
+      'axes' => { group: %w[wooden_axe stone_axe copper_axe iron_axe golden_axe diamond_axe netherite_axe] },
+      'flowers' => { group: %w[dandelion poppy blue_orchid allium azure_bluet red_tulip orange_tulip white_tulip pink_tulip oxeye_daisy cornflower lily_of_the_valley torchflower] },
+      'saplings' => { group: %w[oak spruce birch jungle acacia dark_oak mangrove_propagule cherry pale_oak].map { |w| w.end_with?('propagule') ? w : "#{w}_sapling" } },
       # Bushes that prick (the server's own Sweet Berry Pips Bush has no texture on the wiki yet)
       'bushes' => { group: %w[sweet_berry_bush] },
       'coal_ores' => { group: %w[coal_ore deepslate_coal_ore] },
@@ -755,6 +781,10 @@ module Jekyll
         image: 'https://minecraft.wiki/wiki/Special:FilePath/Fire_Resistance.png',
         kind: :beneficial_effect
       },
+      'night_vision' => {
+        image: 'https://minecraft.wiki/wiki/Special:FilePath/Night_Vision.png',
+        kind: :beneficial_effect
+      },
       'blindness' => {
         image: 'https://minecraft.wiki/wiki/Special:FilePath/Blindness.png',
         kind: :harmful_effect
@@ -785,6 +815,10 @@ module Jekyll
       'gloves' => {
         emoji: '🧤',
         url: '/wiki/mechanics/gloves'
+      },
+      'hammer' => {
+        emoji: '🔨',
+        url: '/wiki/mechanics/hammer'
       },
       # Mechanics
       'fragile_blocks' => {
@@ -1010,6 +1044,25 @@ module Jekyll
     add_image('map', 'Invicon_Map.png')
     add_image('empty_map', 'Invicon_Empty_Map.png')
     add_image('sweet_berry_bush', 'Sweet_Berry_Bush_Age_3.png')
+    # Members of the groups above, and blocks named on the Hammer page (some files are named differently)
+    add_image('lapis_ore', 'Invicon_Lapis_Lazuli_Ore.png')
+    add_image('deepslate_lapis_ore', 'Invicon_Deepslate_Lapis_Lazuli_Ore.png')
+    add_image('lily_of_the_valley', 'Invicon_Lily_of_the_Valley.png')
+    (WALLS + ORES + PLANKS_WOOD_TYPES.map { |w| "#{w}_planks" }).each { |id| add_image(id, "Invicon_#{file_case(id)}.png") }
+    DYE_COLORS.each do |color|
+      %w[banner terracotta glazed_terracotta concrete concrete_powder shulker_box].each do |block|
+        add_image("#{color}_#{block}", "Invicon_#{file_case("#{color}_#{block}")}.png")
+      end
+    end
+    %w[terracotta shulker_box lantern soul_lantern copper_lantern exposed_copper_lantern weathered_copper_lantern
+       oxidized_copper_lantern anvil chipped_anvil damaged_anvil stone_bricks mossy_stone_bricks cracked_stone_bricks
+       chiseled_stone_bricks dandelion poppy blue_orchid allium azure_bluet red_tulip orange_tulip white_tulip pink_tulip
+       oxeye_daisy cornflower lily_of_the_valley torchflower oak_sapling spruce_sapling birch_sapling jungle_sapling
+       acacia_sapling dark_oak_sapling mangrove_propagule cherry_sapling pale_oak_sapling
+       stone smooth_stone obsidian bookshelf ladder barrel furnace
+       wooden_axe stone_axe copper_axe iron_axe golden_axe diamond_axe netherite_axe].each do |id|
+      add_image(id, "Invicon_#{file_case(id)}.png")
+    end
     # Named "Arrow of <Effect>", with a few exceptions
     tipped_arrow_files = { 'water' => 'Splashing', 'turtle_master' => 'the_Turtle_Master', 'wind_charged' => 'Wind_Charging', 'infested' => 'Infestation' }
     TIPPED_ARROW_EFFECTS.each do |effect|
